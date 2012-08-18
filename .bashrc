@@ -7,8 +7,13 @@ export PATH=/usr/local/git/bin:$PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # Aliases
 alias l='ls -a'
-alias sshjr='ssh jamesrampton@jamesrampton.webfactional.com'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
+# Source private aliases
+if [ -f ~/dotfiles/private/.bash_aliases ]; then
+    . ~/dotfiles/private/.bash_aliases
+fi
 # Colour options
 export CLICOLOR=1
-source ~/.inputrc
+if [ -f ~/dotfiles/.inputrc ]; then
+. ~/dotfiles/.inputrc
+fi
