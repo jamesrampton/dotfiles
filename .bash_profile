@@ -1,4 +1,7 @@
-export PS1='\[\033[37m\]\w\n\[\033[0m\]\$ '
+parse_git_branch () {
+  git name-rev HEAD 2> /dev/null | sed 's#HEAD\ \(.*\)# \1#'
+}
+export PS1='\[\033[37m\]\w\[\033[0m\]$(parse_git_branch)\n\$ '
 # Path settings
 # Set PATH for Python 2.7
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/mysql/bin:${PATH}"
@@ -8,13 +11,7 @@ export PATH=/usr/local/git/bin:$PATH
 # Aliases
 alias l='ls -a'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
-alias cppwd='pwd | tr -d '\n | pbcopy''
-# Source private aliases
-if [ -f ~/dotfiles/private/.bash_aliases ]; then
-    . ~/dotfiles/private/.bash_aliases
-fi
+alias cppwd='pwd | tr -d "\n" | pbcopy'
 # Colour options
 export CLICOLOR=1
-if [ -f ~/dotfiles/.inputrc ]; then
-. ~/dotfiles/.inputrc
-fi
+source ~/.inputrc
