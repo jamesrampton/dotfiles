@@ -3,8 +3,10 @@
 	email = me@jamesrampton.com
 [alias]
     a=add
+    b=branch
     cm=commit -m
     co=checkout
+    monolog= log --graph --pretty=format:'%h -%d %s (%cr) %an' --abbrev-commit --date=relative
     l=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue(%cr)%Creset %an' --abbrev-commit --date=relative
     pu=pull
     ps=push

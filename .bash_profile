@@ -1,5 +1,5 @@
 parse_git_branch () {
-  git name-rev HEAD 2> /dev/null | sed 's#HEAD\ \(.*\)# \1#'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1='\[\033[37m\]\w\[\033[0m\]$(parse_git_branch)\n\$ '
 # Path settings

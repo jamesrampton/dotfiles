@@ -1,7 +1,8 @@
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
-
+call pathogen#infect()
+let g:syntastic_check_on_open=1
 "========== Display ==========
 "
 " Use solarized colorscheme
@@ -14,7 +15,7 @@ if has('gui')
 else
     set bg=dark
 endif
-set guifont=Inconsolata:h14
+set guifont=Menlo:h12
 syntax on                       " Enable syntax highlighting
 set gcr=a:blinkon0              " Diable blinking cursor
 set number                      " Show line numbers
@@ -29,6 +30,8 @@ set go-=T
 set go-=r
 set go-=L
 
+" Automatically read files written outside of vim
+set autoread
 " Allow backspace in insert mode
 set backspace=indent,eol,start
 
@@ -86,9 +89,11 @@ set wrap
 " IDE stuff
 nnoremap <F5> :!python %<cr>
 nnoremap <F6> :!ruby %<cr>
+nnoremap <F7> :!/Users/james/Sites/hmic/wp-content/themes/hmic/scripts/src/uglify.sh
 au Bufread,BufNewFile *.jade set filetype=jade
 au Bufread,BufNewFile *.scss set filetype=scss
 " Use system clipboard
 set clipboard=unnamed
 set hidden
 nnoremap <C-Y> ggVGy
+set autochdir
