@@ -8,5 +8,4 @@ cp -i .gitconfig ~/.gitconfig
 cp -i .inputrc ~/.inputrc
 cp -i .vimrc ~/.vimrc
 source ~/.bash_profile
-source ~/.inputrc
 
