@@ -11,7 +11,7 @@ let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
 if has('gui')
-    set bg=light
+    set bg=dark
 else
     set bg=dark
 endif
@@ -76,9 +76,9 @@ set nohlsearch                  " Disable search result highlighting
 " ========== Viminfo ==========
 set viminfo='100,f1,<500        " Save up to 100 marks; enable uppercase marks
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 " More natural navigation for wrapped lines
 nnoremap j gj
 nnoremap k gk
