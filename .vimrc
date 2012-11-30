@@ -11,13 +11,13 @@ let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
 if has('gui')
-    set bg=dark
+    set bg=light
 else
     set bg=dark
 endif
-set guifont=Menlo:h12
+set guifont=Menlo:h14
 syntax on                       " Enable syntax highlighting
-set gcr=a:blinkon0              " Diable blinking cursor
+set gcr=a:blinkon0              " Disable blinking cursor
 set number                      " Show line numbers
 set ruler                       " Show the cursor position all the time
 set showmode                    " Show current mode
@@ -45,13 +45,10 @@ map Q gq
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-
+" set linebreak
 
 filetype plugin indent on
 
-" For all text files set 'textwidth' to 78 characters.
-"autocmd FileType text setlocal textwidth=78
-"set linebreak
 set autoindent                  " always set autoindenting on
 
 
@@ -82,6 +79,8 @@ set softtabstop=2
 " More natural navigation for wrapped lines
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 " <leader><space> to un-highlight search matches
 set scrolloff=3
 set encoding=utf-8
@@ -95,5 +94,6 @@ au Bufread,BufNewFile *.scss set filetype=scss
 " Use system clipboard
 set clipboard=unnamed
 set hidden
+" Yank the whole file with Cmd + Y
 nnoremap <C-Y> ggVGy
 set autochdir
