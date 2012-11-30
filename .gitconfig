@@ -12,3 +12,9 @@
     ps=push
     s=status
 
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[push]
+	default = simple
