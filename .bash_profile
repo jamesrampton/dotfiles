@@ -13,6 +13,7 @@ alias l='ls -a'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias cppwd='pwd | tr -d "\n" | pbcopy'
 alias g='git'
+alias edit='open -a macvim'
 # Colour options
 export CLICOLOR=1
 source ~/.inputrc
