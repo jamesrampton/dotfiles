@@ -1,11 +1,4 @@
-WD=`pwd`
-if [[ $WD =~ dotfiles$ ]]
-then echo -n
-else cd dotfiles
-fi
-cp -i .bash_profile ~/.bash_profile
-cp -i .gitconfig ~/.gitconfig
-cp -i .inputrc ~/.inputrc
-cp -i .vimrc ~/.vimrc
+#!/bin/bash
+git pull
+rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
 source ~/.bash_profile
-
