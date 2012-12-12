@@ -21,6 +21,8 @@ set gcr=a:blinkon0              " Disable blinking cursor
 set number                      " Show line numbers
 set ruler                       " Show the cursor position all the time
 set showmode                    " Show current mode
+set cursorline
+set cursorcolumn
 
 " Display tabs and trailling spaces    
 set list listchars=tab:\ \ ,trail:·
