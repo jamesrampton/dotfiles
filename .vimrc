@@ -47,11 +47,8 @@ map Q gq
 inoremap <C-U> <C-G>u<C-U>
 
 " set linebreak
-
 filetype plugin indent on
-
 set autoindent                  " always set autoindenting on
-
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
@@ -101,3 +98,4 @@ set hidden
 " Yank the whole file with Cmd + Y
 nnoremap <C-Y> ggVGy
 set autochdir
+inoremap <TAB> <C-p>
