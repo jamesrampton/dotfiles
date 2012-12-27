@@ -13,7 +13,6 @@ alias l='ls -a'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias g='git'
 alias o='open -a macvim'
-alias tree='find . -print | sed -e "s;[^/]*/;|____;g;s;____|; |;g"'
 # Colour options
 export CLICOLOR=1
 source ~/.inputrc
