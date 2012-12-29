@@ -10,7 +10,7 @@ export PATH=/usr/local/bin:$PATH #git/bin:$PATH
 alias l='ls -a'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias g='git'
-alias o='open -a macvim'
+alias mvim='mvim --remote-silent'
 # Colour options
 export CLICOLOR=1
 source ~/.inputrc
