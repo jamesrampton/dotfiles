@@ -84,8 +84,8 @@ set scrolloff=3
 set encoding=utf-8
 set wrap
 " Navigate buffers
-nnoremap <C-TAB> :bp<cr>
-nnoremap <s-C-TAB> :bn<cr>
+nnoremap <C-TAB> :bn<cr>
+nnoremap <s-C-TAB> :bp<cr>
 " IDE stuff
 nnoremap <F5> :!python %<cr>
 nnoremap <F6> :!ruby %<cr>
