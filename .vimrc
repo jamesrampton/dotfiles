@@ -35,7 +35,7 @@ set go-=L
 set autoread
 " Allow backspace in insert mode
 set backspace=indent,eol,start
-
+let mapleader=","
 set history=1000                " keep loads of command line history
 set showcmd                     " display incomplete commands
 
@@ -79,7 +79,6 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
-" <leader><space> to un-highlight search matches
 set scrolloff=3
 set encoding=utf-8
 set wrap
@@ -87,8 +86,8 @@ set wrap
 nnoremap <C-TAB> :bn<cr>
 nnoremap <s-C-TAB> :bp<cr>
 " IDE stuff
-nnoremap <F5> :!python %<cr>
-nnoremap <F6> :!ruby %<cr>
+nnoremap <leader>p :!python %<cr>
+nnoremap <leader>r :!ruby %<cr>
 nnoremap <F7> :!/Users/james/Sites/hmic/wp-content/themes/hmic/scripts/src/uglify.sh
 au Bufread,BufNewFile *.jade set filetype=jade
 au Bufread,BufNewFile *.scss set filetype=scss
@@ -96,7 +95,7 @@ au Bufread,BufNewFile *.scss set filetype=scss
 set clipboard=unnamed
 set hidden
 " Yank the whole file with Cmd + Y
-nnoremap <C-Y> ggVGy
+noremap <leader>y ggVGy
 set autochdir
 inoremap <TAB> <C-p>
 nnoremap ; :
