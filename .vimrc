@@ -99,3 +99,4 @@ set hidden
 nnoremap <C-Y> ggVGy
 set autochdir
 inoremap <TAB> <C-p>
+nnoremap ; :
