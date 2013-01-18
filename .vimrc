@@ -99,3 +99,4 @@ noremap <leader>y ggVGy
 set autochdir
 inoremap <TAB> <C-p>
 nnoremap ; :
+inoremap jj <ESC>
