@@ -100,3 +100,11 @@ set autochdir
 inoremap <TAB> <C-p>
 nnoremap ; :
 inoremap jj <ESC>
+nnoremap <UP> <nop>
+nnoremap <DOWN> <nop>
+nnoremap <LEFT> <nop>
+nnoremap <RIGHT> <nop>
+inoremap <UP> <nop>
+inoremap <DOWN> <nop>
+inoremap <LEFT> <nop>
+inoremap <RIGHT> <nop>
