@@ -1,10 +1,22 @@
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+
+" =============================================================================
+"
+" Global
+"
+" =============================================================================
+
 call pathogen#infect()
 let g:syntastic_check_on_open=1
-"========== Display ==========
+
+" =============================================================================
 "
+" Display
+"
+" =============================================================================
+
 " Use solarized colorscheme
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
@@ -16,14 +28,20 @@ else
     set bg=dark
 endif
 set guifont=Menlo:h14
-syntax on                       " Enable syntax highlighting
-set gcr=a:blinkon0              " Disable blinking cursor
-set number                      " Show line numbers
-set ruler                       " Show the cursor position all the time
-set showmode                    " Show current mode
+" Enable syntax highlighting
+syntax on
+" Disable blinking cursor
+set gcr=a:blinkon0
+" Show line numbers
+set number
+"Always show the cursor position
+set ruler
+" Show the current mode we're in
+set showmode
+" Make it really obvious what line we're on
 set cursorline
 
-" Display tabs and trailling spaces    
+" Display tabs and trailling spaces like this:    
 set list listchars=tab:\ \ ,trail:·
 
 " Hide toolbars and scrollbars in MacVim
@@ -36,8 +54,10 @@ set autoread
 " Allow backspace in insert mode
 set backspace=indent,eol,start
 let mapleader=","
-set history=1000                " keep loads of command line history
-set showcmd                     " display incomplete commands
+" Remember lots of commands
+set history=1000
+" Help us out with commands we type
+set showcmd
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -48,7 +68,8 @@ inoremap <C-U> <C-G>u<C-U>
 
 " set linebreak
 filetype plugin indent on
-set autoindent                  " always set autoindenting on
+" Erm, set auto-indentation?
+set autoindent
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
@@ -69,7 +90,8 @@ set incsearch                   " Do incremental searching
 set nohlsearch                  " Disable search result highlighting
 
 " ========== Viminfo ==========
-set viminfo='100,f1,<500        " Save up to 100 marks; enable uppercase marks
+" Save up too 100, possibly uppercase marks
+set viminfo='100,f1,<500
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -100,8 +122,8 @@ set autochdir
 inoremap <TAB> <C-p>
 nnoremap ; :
 inoremap jj <ESC>
-nnoremap <UP> <nop>
-nnoremap <DOWN> <nop>
+nnoremap <UP> <NOP>
+nnoremap <DOWN> <NOP>
 nnoremap <LEFT> <nop>
 nnoremap <RIGHT> <nop>
 inoremap <UP> <nop>
