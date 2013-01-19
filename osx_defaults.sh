@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
-# James Rampton's dotfiles, based on:
-# sjl/dotfiles
-
-# This script will need some serious work, but the starter for ten:
+# James Rampton's osx defaults, based on various githubber's dotfiles.
 
 # ========================================================================
-# General GUI
+# General UI
 # ========================================================================
 
 # Disable menu bar transparency
@@ -28,15 +25,24 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# ========================================================================
-# File handling
-# ========================================================================
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# ========================================================================
+# Input
+# ========================================================================
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0
 
 # ========================================================================
 # Finder
@@ -73,6 +79,13 @@ defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+# ========================================================================
+# Mail
+# ========================================================================
+
+# Send mail with ⌘+Enter
+$ defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
 # ========================================================================
 # Restart affected processes
