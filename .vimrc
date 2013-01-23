@@ -108,9 +108,7 @@ set wrap
 nnoremap <C-TAB> :bn<cr>
 nnoremap <s-C-TAB> :bp<cr>
 " IDE stuff
-nnoremap <leader>p :!python %<cr>
 nnoremap <leader>r :!ruby %<cr>
-nnoremap <F7> :!/Users/james/Sites/hmic/wp-content/themes/hmic/scripts/src/uglify.sh
 au Bufread,BufNewFile *.jade set filetype=jade
 au Bufread,BufNewFile *.scss set filetype=scss
 " Use system clipboard
@@ -124,9 +122,9 @@ nnoremap ; :
 inoremap jj <ESC>
 nnoremap <UP> <NOP>
 nnoremap <DOWN> <NOP>
-nnoremap <LEFT> <nop>
-nnoremap <RIGHT> <nop>
-inoremap <UP> <nop>
-inoremap <DOWN> <nop>
-inoremap <LEFT> <nop>
-inoremap <RIGHT> <nop>
+nnoremap <LEFT> <NOP>
+nnoremap <RIGHT> <NOP>
+inoremap <UP> <NOP>
+inoremap <DOWN> <NOP>
+inoremap <LEFT> <NOP>
+inoremap <RIGHT> <NOP>
