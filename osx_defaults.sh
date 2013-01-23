@@ -87,7 +87,7 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # ========================================================================
 
 # Send mail with ⌘+Enter
-$ defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
+defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
 # ========================================================================
 # Restart affected processes
