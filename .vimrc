@@ -27,7 +27,7 @@ if has('gui')
 else
     set bg=dark
 endif
-set guifont=Menlo:h14
+set guifont=Source\ Code\ Pro:h15
 " Enable syntax highlighting
 syntax on
 " Disable blinking cursor
