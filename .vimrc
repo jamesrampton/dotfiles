@@ -39,7 +39,7 @@ set ruler
 " Show the current mode we're in
 set showmode
 " Make it really obvious what line we're on
-set cursorline
+"set cursorline
 
 " Display tabs and trailling spaces like this:    
 set list listchars=tab:\ \ ,trail:·
