@@ -128,3 +128,13 @@ inoremap <UP> <NOP>
 inoremap <DOWN> <NOP>
 inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
+function! LineNumbers()
+  if &rnu == 'norelativenumber'
+    echo "Setting relative numbers"
+    set rnu
+  else
+    echo "Setting absolute numbers"
+    set nu
+  endif
+endfunction
+nnoremap <leader>n :call LineNumbers()<CR>
