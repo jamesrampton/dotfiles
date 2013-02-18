@@ -138,3 +138,6 @@ function! LineNumbers()
   endif
 endfunction
 nnoremap <leader>n :call LineNumbers()<CR>
+" Insert newlines without entering INSERT mode
+nnoremap <C-j> o<esc>
+nnoremap <C-k> O<esc>

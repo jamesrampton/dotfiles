@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/james/Documents/hmic/website'
-let g:netrw_dirhist_2='/Users/james/Sites/hmic/wp-content/themes/hmic/scripts/src'
-let g:netrw_dirhist_3='/Users/james/Sites/jr-blog/app/views/home'
-let g:netrw_dirhist_4='/Users/james/Sites/publications/output/avon'
-let g:netrw_dirhist_5='/Users/james/Sites/publications/output/bedfordshire'
