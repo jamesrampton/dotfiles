@@ -20,6 +20,7 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gpl='git pull'
 alias gps='git push'
 alias gs='git status'
+alias gm='git merge --no-ff'
 alias mvim='mvim --remote-silent'
 # Colour options
 export CLICOLOR=1
