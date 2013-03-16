@@ -21,6 +21,7 @@ alias gpl='git pull'
 alias gps='git push'
 alias gs='git status'
 alias gm='git merge --no-ff'
+alias grm='git rm'
 alias mvim='mvim --remote-silent'
 # Colour options
 export CLICOLOR=1
