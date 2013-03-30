@@ -19,13 +19,13 @@ let g:syntastic_check_on_open=1
 
 " Use solarized colorscheme
 let g:solarized_termtrans=1
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
 if has('gui')
     set bg=light
 else
-    set bg=dark
+    set bg=light
 endif
 set guifont=Source\ Code\ Pro:h15
 " Enable syntax highlighting
