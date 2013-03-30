@@ -9,6 +9,7 @@ export PATH=/usr/local/bin:$PATH #git/bin:$PATH
 # Aliases
 alias l='ls -a'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
+alias grep='GREP_COLOR="1;37;41" LANG=C grep --color=auto'
 alias g='git'
 alias ga='git add'
 alias gb='git branch'
@@ -21,6 +22,7 @@ alias gpl='git pull'
 alias gps='git push'
 alias gs='git status'
 alias gm='git merge --no-ff'
+alias grm='git rm'
 alias mvim='mvim --remote-silent'
 # Colour options
 export CLICOLOR=1
