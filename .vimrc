@@ -22,18 +22,15 @@ let g:solarized_termtrans=1
 "let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
-if has('gui')
-    set bg=light
-else
-    set bg=light
-endif
+set bg=light
 set guifont=Source\ Code\ Pro:h15
+set lazyredraw
 " Enable syntax highlighting
 syntax on
 " Disable blinking cursor
 set gcr=a:blinkon0
 " Show cursor position
-set cursorline cursorcolumn
+set cursorline
 " Show line numbers
 set number
 "Always show the cursor position
