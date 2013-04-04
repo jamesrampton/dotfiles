@@ -32,6 +32,8 @@ set guifont=Source\ Code\ Pro:h15
 syntax on
 " Disable blinking cursor
 set gcr=a:blinkon0
+" Show cursor position
+set cursorline cursorcolumn
 " Show line numbers
 set number
 "Always show the cursor position
@@ -116,7 +118,7 @@ set clipboard=unnamed
 set hidden
 " Yank the whole file with Cmd + Y
 noremap <leader>y ggVGy
-set autochdir
+"set autochdir
 inoremap <TAB> <C-p>
 nnoremap ; :
 inoremap jj <ESC>
