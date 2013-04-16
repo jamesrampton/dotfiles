@@ -103,6 +103,7 @@ vnoremap k gk
 set scrolloff=3
 set encoding=utf-8
 set wrap
+nnoremap <leader>w :set wrap!<cr>
 " Navigate buffers
 nnoremap <C-TAB> :bn<cr>
 nnoremap <s-C-TAB> :bp<cr>
