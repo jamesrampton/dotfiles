@@ -7,6 +7,9 @@ export PATH=/usr/local/bin:$PATH #git/bin:$PATH
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # Aliases
+alias cd..='cd ..'
+alias ..='cd ..'
+alias j='jobs'
 alias l='ls -a'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
