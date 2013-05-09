@@ -27,7 +27,7 @@ alias gs='git status'
 alias gm='git merge --no-ff'
 alias grm='git rm'
 alias mvim='mvim --remote-silent'
-alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias vi='vim'
 
 # Colour options
 export CLICOLOR=1
