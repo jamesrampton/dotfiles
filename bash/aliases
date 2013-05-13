@@ -1,6 +1,5 @@
 # shell
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
-alias cd..='cd ..'
 alias ..='cd ..'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
@@ -8,20 +7,21 @@ alias l='ls -AF'
 alias reload='. ~/bin/dotfiles/.bashrc'
 
 # git
-alias g='git'
+alias g='git status'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
-alias gcm='git commit -m'
+function gcm() {
+  git commit -v -m "$*"
+}
 alias gco='git checkout'
 alias glm='git log --graph --pretty=format:"%h -%d %s (%cr) %an" --abbrev-commit --date="relative"'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue(%cr)%Creset %an" --abbrev-commit --date="relative"'
 alias gpl='git pull'
 alias gps='git push'
-alias gs='git status'
 alias gm='git merge --no-ff'
 alias grm='git rm'
 
 # vim
 alias mvim='mvim --remote-silent'
-alias vi='vim'
+alias v='vim'
