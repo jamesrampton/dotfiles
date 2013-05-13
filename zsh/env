@@ -5,3 +5,6 @@ export PATH=/usr/local/bin:$HOME/bin:$PATH
 
 # Colour options
 export CLICOLOR=1
+
+# Other
+export VISUAL="vim"
