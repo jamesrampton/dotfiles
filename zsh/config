@@ -1,3 +1,4 @@
 setopt prompt_subst
 export PS1='%F{yellow}%n@%m %F{blue}%~ %F{red}$(vcprompt)
 %F{grey}$ '
+bindkey -v
