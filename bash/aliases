@@ -1,6 +1,7 @@
 # shell
-alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias ..='cd ..'
+alias a='vim ~/bin/dotfiles/bash/aliases'
+alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
 alias l='ls -AF'
