@@ -1,16 +1,14 @@
 # shell
 alias ..='cd ..'
-alias ab='vim ~/bin/dotfiles/bash/aliases'
-alias az='vim ~/bin/dotfiles/zsh/aliases'
+alias a='vim ~/bin/dotfiles/zsh/aliases'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
 alias l='ls -AF'
-alias sob='source ~/bin/dotfiles/.bashrc'
-alias soz='source ~/bin/dotfiles/.zshrc'
+alias reload='source ~/bin/dotfiles/.zshrc'
 alias t='tree -aI .git | less'
 function take() {
-  mkdir "$*"
+  mkdir -p "$*"
   cd "$*"
 }
 

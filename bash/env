@@ -1,7 +1,0 @@
-# Path settings
-export PATH=/usr/local/bin:$HOME/bin:$PATH
-# This loads RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# Colour options
-export CLICOLOR=1
