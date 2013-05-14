@@ -1,4 +1,16 @@
+## Completions
+autoload -U compinit
+compinit -C
+
+## case-insensitive (all),partial-word and then substring completion
+## from http://www.rlazo.org/2010/11/18/zsh-case-insensitive-completion/
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
+    'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+## prompt settings
 setopt prompt_subst
 PROMPT='%F{yellow}%n@%m %F{blue}%~ %F{red}$(vcprompt)
 %F{grey}$ '
+
+## vim mode instead of emacs
 bindkey -v
