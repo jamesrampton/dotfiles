@@ -6,9 +6,13 @@ alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/bac
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
 alias l='ls -AF'
-alias bso='source ~/bin/dotfiles/.bashrc'
-alias zso='source ~/bin/dotfiles/.zshrc'
+alias sob='source ~/bin/dotfiles/.bashrc'
+alias soz='source ~/bin/dotfiles/.zshrc'
 alias t='tree -aI .git | less'
+function take() {
+  mkdir "$*"
+  cd "$*"
+}
 
 # git
 alias g='git'
