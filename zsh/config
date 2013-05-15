@@ -15,11 +15,19 @@ setopt HIST_IGNORE_ALL_DUPS
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
     'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
+## vim mode instead of emacs
+bindkey -v
+# set VIMODE according to the current mode (default “[i]”)
+VIMODE='[i]'
+function zle-keymap-select {
+ VIMODE="${${KEYMAP/vicmd/[n]}/(main|viins)/[i]}"
+ zle reset-prompt
+}
+zle -N zle-keymap-select
+#
 ## prompt settings
 setopt prompt_subst
-
+RPROMPT='%F{blue}${VIMODE}'
 PROMPT='%F{yellow}%n@%m %F{blue}%~ %F{red}$(vcprompt -f "%b %a%m%u")
 %F{grey}%# '
 
-## vim mode instead of emacs
-bindkey -v
