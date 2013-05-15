@@ -5,7 +5,7 @@ alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/bac
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
 alias l='ls -AF'
-alias reload='source ~/bin/dotfiles/.zshrc'
+alias reload='. ~/.zshrc'
 alias t='tree -aI .git | less'
 function take() {
   mkdir -p "$*"
