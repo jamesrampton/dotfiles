@@ -1,7 +1,0 @@
-# ingore case in completion
-set completion-ignore-case on
-# use the command line like vi
-set editing-mode vi
-set keymap vi
-# Cycle through completions.
-bind 'TAB: menu-complete'
