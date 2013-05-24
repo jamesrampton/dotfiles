@@ -63,6 +63,10 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
+# Get that dock away
+defaults write com.apple.dock orientation -string right
+defaults write com.apple.dock pinning -string start
+
 # ========================================================================
 # Safari
 # ========================================================================
