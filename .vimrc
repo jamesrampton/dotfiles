@@ -31,6 +31,7 @@ syntax on
 set gcr=a:blinkon0
 " Show cursor position
 set cursorline
+set cursorcolumn
 " Show line numbers
 set number
 "Always show the cursor position
