@@ -7,3 +7,4 @@ export CLICOLOR=1
 
 # Other
 export VISUAL="vim"
+export EDITOR=vim
