@@ -11,6 +11,7 @@ function take() {
   mkdir -p "$*"
   cd "$*"
 }
+alias xumt='tmux kill-server'
 
 # git
 alias g='git'
