@@ -16,7 +16,7 @@ setopt HIST_IGNORE_ALL_DUPS
 # case-insensitive (all),partial-word and then substring completion
 # from http://www.rlazo.org/2010/11/18/zsh-case-insensitive-completion/
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
-    'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+  'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # ==============================================================================
 # input
@@ -32,8 +32,8 @@ bindkey -v
 # set VIMODE according to the current mode (default “[i]”)
 VIMODE='[i]'
 function zle-keymap-select {
- VIMODE="${${KEYMAP/vicmd/[n]}/(main|viins)/[i]}"
- zle reset-prompt
+VIMODE="${${KEYMAP/vicmd/[n]}/(main|viins)/[i]}"
+zle reset-prompt
 }
 zle -N zle-keymap-select
 setopt prompt_subst

@@ -1,6 +1,6 @@
 # shell
 alias ..='cd ..'
-alias a='vim ~/bin/dotfiles/zsh/aliases'
+alias a='vim ~/bin/dotfiles/zsh/aliases.sh'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
