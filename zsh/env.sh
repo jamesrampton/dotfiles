@@ -8,8 +8,3 @@ export CLICOLOR=1
 # Other
 export VISUAL="vim"
 export EDITOR=vim
-
-# Start tmux on launch
-if [[ ! $TERM =~ screen ]]; then
-  exec tmux -f ~/bin/dotfiles/tmux-default.conf attach
-fi
