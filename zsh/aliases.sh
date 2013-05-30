@@ -2,6 +2,8 @@
 alias ..='cd ..'
 alias a='vim ~/bin/dotfiles/zsh/aliases.sh'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
+alias c='vim ~/bin/dotfiles/zsh/config.sh'
+alias e='vim ~/bin/dotfiles/zsh/env.sh'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
 alias l='ls -AF'
