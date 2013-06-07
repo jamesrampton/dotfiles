@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-Run `. bootstrap.sh` to copy to files into your home directory.
+I make way too many commits to this.
