@@ -29,8 +29,6 @@ set lazyredraw
 syntax on
 " Disable blinking cursor
 set gcr=a:blinkon0
-" Show cursor position
-set cursorline
 " Show line numbers
 set number
 "Always show the cursor position

@@ -13,7 +13,11 @@ function take() {
   mkdir -p "$*"
   cd "$*"
 }
-alias xumt='tmux kill-server'
+# tmux
+function newt() {
+  TMUX= tmux new-session -d -s $1
+  tmux switch-client -t $1
+}
 
 # git
 alias g='git'
