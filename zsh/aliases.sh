@@ -17,6 +17,10 @@ function take() {
 function newt() {
   TMUX= tmux new-session -d -s $1
   tmux switch-client -t $1
+  if [ -f $(pwd)/.tmux.conf ]
+  then
+    tmux source-file $(pwd)/.tmux.conf
+  fi
 }
 
 # git
