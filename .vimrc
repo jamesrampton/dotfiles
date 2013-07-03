@@ -23,7 +23,7 @@ let g:solarized_termtrans=1
 set t_Co=256
 colorscheme solarized
 set bg=light
-set guifont=Source\ Code\ Pro:h15
+set guifont=Nitti\ Basic:h16
 set lazyredraw
 " Enable syntax highlighting
 syntax on
@@ -39,7 +39,7 @@ set showmode
 "set cursorline
 
 " Display tabs and trailling spaces like this:    
-set list listchars=tab:\ \ ,trail:·
+set list listchars=tab:\ \ ,trail:·,extends:»,precedes:«
 
 " Hide toolbars and scrollbars in MacVim
 set go-=T

@@ -37,7 +37,5 @@ zle reset-prompt
 }
 zle -N zle-keymap-select
 setopt prompt_subst
-RPROMPT='%F{red}${VIMODE}'
-PROMPT='%F{yellow}%n@%m %F{blue}%~ %F{red}$(vcprompt -f "%b %a%m%u")
-%F{grey}%# '
-
+PROMPT='%F{blue}%~ %F{red}$(vcprompt -f "%b %a%m%u")
+%F{red}${VIMODE} %F{grey}%# '

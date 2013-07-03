@@ -22,6 +22,7 @@ function newt() {
     tmux source-file $(pwd)/.tmux.conf
   fi
 }
+alias tks='tmux kill-session -t $1'
 
 # git
 alias g='git'
@@ -43,3 +44,6 @@ alias grm='git rm'
 # vim
 alias mvim='mvim --remote-silent'
 alias v='vim'
+
+# ruby
+alias be='bundle exec'
