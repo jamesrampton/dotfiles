@@ -100,6 +100,12 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
 # ========================================================================
+# Misc
+# ========================================================================
+
+defaults write com.apple.screencapture location ~/Pictures/
+
+# ========================================================================
 # Restart affected processes
 # ========================================================================
 
