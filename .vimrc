@@ -16,7 +16,7 @@ let g:syntastic_check_on_open=1
 " Display
 "
 " =============================================================================
-
+set laststatus=2
 " Use solarized colorscheme
 let g:solarized_termtrans=1
 "let g:solarized_termcolors=256
