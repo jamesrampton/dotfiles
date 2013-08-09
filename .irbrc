@@ -1,0 +1,1 @@
+pry || exit rescue LoadError
