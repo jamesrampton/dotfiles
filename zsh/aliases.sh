@@ -49,3 +49,5 @@ alias e='vim'
 
 # ruby
 alias be='bundle exec'
+alias bi='bundle install'
+alias bc='bundle console'
