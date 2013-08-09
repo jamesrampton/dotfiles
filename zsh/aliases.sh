@@ -9,6 +9,7 @@ alias ev='vim ~/bin/dotfiles/zsh/env.sh'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
 alias l='ls -AF'
+alias pat='pygmentize -g'
 alias reload='. ~/.zshrc'
 alias t='tree -aI .git | less'
 function take() {
