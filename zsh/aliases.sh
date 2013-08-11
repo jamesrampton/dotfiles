@@ -31,13 +31,10 @@ alias tks='tmux kill-session -t $1'
 alias g='git'
 alias ga='git add'
 alias gb='git branch'
-alias gc='git commit'
-function gcm() {
-  git commit -v -m "$*"
-}
+alias gc='git commit -v'
 alias gco='git checkout'
-alias glm='git log --graph --pretty=format:"%h -%d %s (%cr) %an" --abbrev-commit --date="relative"'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue(%cr)%Creset %an" --abbrev-commit --date="relative"'
+alias glm='git log --graph --pretty=format:"%h -%d %s (%cr) %an" --abbrev-commit --date="relative"'
 alias gpl='git pull'
 alias gps='git push'
 alias gs='git status'
