@@ -110,9 +110,7 @@ nnoremap <leader>r :!ruby %<cr>
 au Bufread,BufNewFile *.jade set filetype=jade
 au Bufread,BufNewFile *.scss set filetype=scss
 " Use system clipboard
-if $TMUX == ''
-  set clipboard+=unnamed
-endif
+set clipboard+=unnamed
 set hidden
 " Yank the whole file with Cmd + Y
 noremap <leader>y ggVGy
