@@ -48,7 +48,8 @@ alias grm='git rm'
 alias mvim='mvim --remote-silent'
 alias e='vim'
 
-# ruby
+# bundler
 alias be='bundle exec'
 alias bi='bundle install'
+alias bib='bundle install --binstubs'
 alias bc='bundle console'
