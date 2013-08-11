@@ -16,6 +16,9 @@ let g:syntastic_check_on_open=1
 " Display
 "
 " =============================================================================
+" more natural window slpits
+set splitbelow
+set splitright
 set laststatus=2
 " Use solarized colorscheme
 let g:solarized_termtrans=1
