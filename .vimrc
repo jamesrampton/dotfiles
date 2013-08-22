@@ -87,7 +87,8 @@ set noswapfile
 " ========== Searching ==========
 set cpoptions+=$                " Show a $ at the end of a replace operation
 set incsearch                   " Do incremental searching
-set nohlsearch                  " Disable search result highlighting
+set hls                         " Enable search result highlighting
+nnoremap <silent> <space> :nohl<CR>
 
 " ========== Viminfo ==========
 " Save up too 100, possibly uppercase marks
@@ -140,7 +141,6 @@ function! LineNumbers()
 endfunction
 nnoremap <leader>n :call LineNumbers()<CR>
 " Insert newlines without entering INSERT mode
-" nnoremap <C-j> o<esc>
-"nnoremap <C-j> o<esc>
-"nnoremap <C-k> O<esc>
+nnoremap <leader>o o<esc>k
+nnoremap <leader>O O<esc>j
 nnoremap <leader>v :e $MYVIMRC<CR>
