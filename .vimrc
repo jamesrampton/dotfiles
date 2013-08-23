@@ -120,7 +120,7 @@ au Bufread,BufNewFile *.scss set filetype=scss
 set clipboard+=unnamed
 set hidden
 " Yank the whole file and return to previous position
-noremap <leader>y ggVGy''
+noremap <leader>y ggVGy``
 "set autochdir
 inoremap <TAB> <C-p>
 nnoremap ; :
