@@ -1,12 +1,13 @@
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
 " =============================================================================
 "
 "                                    Global
 "
 " =============================================================================
 
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
 call pathogen#infect()
 let g:syntastic_check_on_open=1
 
@@ -22,20 +23,21 @@ let g:syntastic_check_on_open=1
 
 " Use solarized colorscheme
 let g:solarized_termtrans=1
-"let g:solarized_termcolors=256 " works for terminal, not for iTerm2
+"let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
 set bg=light
-" more natural window slpits
-set splitbelow
-set splitright
-" vim slows down a bit in tmux
-set lazyredraw
 
 " -----------------------------------------------------------------------------
 "                                  Text area
 " -----------------------------------------------------------------------------
 
+" more natural window slpits
+set splitbelow
+set splitright
+set laststatus=2
+" vim slows down a bit in tmux
+set lazyredraw
 " Enable syntax highlighting
 syntax on
 " Disable blinking cursor
@@ -53,8 +55,10 @@ set ruler
 set showmode
 " Make it really obvious what line we're on
 set cursorline
-" Always show the satatus bar
-set laststatus=2
+
+" Display tabs and trailing spaces like this:    
+set list listchars=tab:\ \ ,trail:·,extends:»,precedes:«
+
 " Hide toolbars and scrollbars in MacVim
 set go-=T
 set go-=r
@@ -110,10 +114,18 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+" More natural navigation for wrapped lines
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 set scrolloff=3
 set encoding=utf-8
 set wrap
 nnoremap <leader>w :set wrap!<cr>
+" Navigate buffers
+nnoremap <C-TAB> :bn<cr>
+nnoremap <s-C-TAB> :bp<cr>
 " IDE stuff
 nnoremap <leader>r :!ruby %<cr>
 au Bufread,BufNewFile *.jade set filetype=jade
@@ -146,5 +158,3 @@ endfunction
 nnoremap <leader>n :call LineNumbers()<CR>
 " Edit and source $MYVIMRC
 nnoremap <leader>v :e $MYVIMRC<CR>
-nnoremap <leader><leader>v :so $MYVIMRC<CR>
-nnoremap <leader>! :<UP>!<CR>
