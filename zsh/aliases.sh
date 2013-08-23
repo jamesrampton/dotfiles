@@ -42,7 +42,6 @@ alias gm='git merge --no-ff'
 alias grm='git rm'
 
 # vim
-alias mvim='mvim --remote-silent'
 alias e='vim'
 
 # bundler
