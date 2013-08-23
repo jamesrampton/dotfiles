@@ -144,9 +144,6 @@ function! LineNumbers()
   endif
 endfunction
 nnoremap <leader>n :call LineNumbers()<CR>
-" Insert newlines without entering INSERT mode
-nnoremap <leader>o o<esc>k
-nnoremap <leader>O O<esc>j
 " Edit and source $MYVIMRC
 nnoremap <leader>v :e $MYVIMRC<CR>
 nnoremap <leader><leader>v :so $MYVIMRC<CR>
