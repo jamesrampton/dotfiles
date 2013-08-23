@@ -1,13 +1,12 @@
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-
 " =============================================================================
 "
 " Global
 "
 " =============================================================================
 
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
 call pathogen#infect()
 let g:syntastic_check_on_open=1
 
@@ -16,22 +15,37 @@ let g:syntastic_check_on_open=1
 " Display
 "
 " =============================================================================
-" more natural window slpits
-set splitbelow
-set splitright
-set laststatus=2
+
+" -----------------------------------------------------------------------------
+" Rendering
+" -----------------------------------------------------------------------------
+
 " Use solarized colorscheme
 let g:solarized_termtrans=1
-"let g:solarized_termcolors=256
+"let g:solarized_termcolors=256 " works for terminal, not for iTerm2
 set t_Co=256
 colorscheme solarized
 set bg=light
 set guifont=Nitti\ Basic:h16
+" more natural window slpits
+set splitbelow
+set splitright
+" vim slows down a bit in tmux
 set lazyredraw
+
+" -----------------------------------------------------------------------------
+" Text area
+" -----------------------------------------------------------------------------
+
 " Enable syntax highlighting
 syntax on
 " Disable blinking cursor
 set gcr=a:blinkon0
+
+" -----------------------------------------------------------------------------
+" Window decoration
+" -----------------------------------------------------------------------------
+
 " Show line numbers
 set number
 "Always show the cursor position
@@ -40,10 +54,8 @@ set ruler
 set showmode
 " Make it really obvious what line we're on
 set cursorline
-
-" Display tabs and trailling spaces like this:    
-set list listchars=tab:\ \ ,trail:·,extends:»,precedes:«
-
+" Always show the satatus bar
+set laststatus=2
 " Hide toolbars and scrollbars in MacVim
 set go-=T
 set go-=r
@@ -97,18 +109,10 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-" More natural navigation for wrapped lines
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
 set scrolloff=3
 set encoding=utf-8
 set wrap
 nnoremap <leader>w :set wrap!<cr>
-" Navigate buffers
-nnoremap <C-TAB> :bn<cr>
-nnoremap <s-C-TAB> :bp<cr>
 " IDE stuff
 nnoremap <leader>r :!ruby %<cr>
 au Bufread,BufNewFile *.jade set filetype=jade
@@ -143,4 +147,7 @@ nnoremap <leader>n :call LineNumbers()<CR>
 " Insert newlines without entering INSERT mode
 nnoremap <leader>o o<esc>k
 nnoremap <leader>O O<esc>j
+" Edit and source $MYVIMRC
 nnoremap <leader>v :e $MYVIMRC<CR>
+nnoremap <leader><leader>v :so $MYVIMRC<CR>
+nnoremap <leader>! :<UP>!<CR>
