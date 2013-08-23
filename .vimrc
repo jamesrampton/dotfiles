@@ -26,7 +26,6 @@ let g:solarized_termtrans=1
 set t_Co=256
 colorscheme solarized
 set bg=light
-set guifont=Nitti\ Basic:h16
 " more natural window slpits
 set splitbelow
 set splitright
