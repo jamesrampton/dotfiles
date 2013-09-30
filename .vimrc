@@ -26,7 +26,7 @@ let g:solarized_termtrans=1
 "let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
-set bg=light
+set bg=dark
 
 " -----------------------------------------------------------------------------
 "                                  Text area
@@ -152,9 +152,12 @@ function! LineNumbers()
     set rnu
   else
     echo "Setting absolute numbers"
-    set nu
+    set nornu
   endif
 endfunction
 nnoremap <leader>n :call LineNumbers()<CR>
 " Edit and source $MYVIMRC
 nnoremap <leader>v :e $MYVIMRC<CR>
+nnoremap <leader>fs :set fdm=syntax<CR>
+nnoremap <leader>fm :set fdm=manual<CR>
+nnoremap <leader>fd :set fdm=manual<CR>zE
