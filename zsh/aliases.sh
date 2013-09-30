@@ -1,11 +1,11 @@
 # shell
 alias ..='cd ..'
-alias a='vim ~/bin/dotfiles/zsh/aliases.sh'
+alias a='$EDITOR ~/bin/dotfiles/zsh/aliases.sh'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
-alias c='vim ~/bin/dotfiles/zsh/config.sh'
+alias c='$EDITOR ~/bin/dotfiles/zsh/config.sh'
 alias cd..='cd ..'
 alias cd-='cd -'
-alias ev='vim ~/bin/dotfiles/zsh/env.sh'
+alias ev='$EDITOR ~/bin/dotfiles/zsh/env.sh'
 alias fg='fg %$1'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
@@ -17,6 +17,7 @@ function take() {
   mkdir -p "$*"
   cd "$*"
 }
+alias vi='vim'
 # tmux
 function newt() {
   TMUX= tmux new-session -d -s $1
@@ -31,6 +32,7 @@ alias tks='tmux kill-session -t $1'
 # git
 alias g='git'
 alias ga='git add'
+alias gaa='git add --all'
 alias gb='git branch'
 alias gc='git commit -v'
 alias gco='git checkout'
@@ -41,9 +43,6 @@ alias gps='git push'
 alias gs='git status'
 alias gm='git merge --no-ff'
 alias grm='git rm'
-
-# vim
-alias e='vim'
 
 # bundler
 alias be='bundle exec'

@@ -19,23 +19,9 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
   'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # ==============================================================================
-# input
-# ==============================================================================
-
-# vim mode instead of emacs
-bindkey -v
-
-# ==============================================================================
 # prompt settings
 # ==============================================================================
 
-# set VIMODE according to the current mode (default “[i]”)
-VIMODE='[i]'
-function zle-keymap-select {
-VIMODE="${${KEYMAP/vicmd/[n]}/(main|viins)/[i]}"
-zle reset-prompt
-}
-zle -N zle-keymap-select
 setopt prompt_subst
 PROMPT='%F{yellow}%n@%M %F{blue}%~ %F{red}$(vcprompt -f "%b %a%m%u")
-%F{red}${VIMODE} %F{grey}%# '
+%F{grey}%# '
