@@ -81,7 +81,7 @@ map Q gq
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-" set linebreak
+set linebreak
 filetype plugin indent on
 " Erm, set auto-indentation?
 set autoindent
@@ -114,15 +114,9 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-" More natural navigation for wrapped lines
-" nnoremap j gj
-" nnoremap k gk
-" vnoremap j gj
-" vnoremap k gk
 set scrolloff=3
 set encoding=utf-8
 set wrap
-nnoremap <leader>w :set wrap!<cr>
 " IDE stuff
 nnoremap <leader>r :!ruby %<cr>
 au Bufread,BufNewFile *.jade set filetype=jade
@@ -142,18 +136,8 @@ inoremap <UP> <NOP>
 inoremap <DOWN> <NOP>
 inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
-function! LineNumbers()
-  if &rnu == 'norelativenumber'
-    echo "Setting relative numbers"
-    set rnu
-  else
-    echo "Setting absolute numbers"
-    set nornu
-  endif
-endfunction
-nnoremap <leader>n :call LineNumbers()<CR>
-" Edit and source $MYVIMRC
 nnoremap <leader>v :e $MYVIMRC<CR>
 nnoremap <leader>fs :set fdm=syntax<CR>
 nnoremap <leader>fm :set fdm=manual<CR>
 nnoremap <leader>fd :set fdm=manual<CR>zE
+nnoremap <leader>s :w<CR>
