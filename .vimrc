@@ -127,6 +127,7 @@ set hidden
 " Yank the whole file and return to previous position
 noremap <leader>y ggVGy``
 nnoremap ; :
+vnoremap ; :
 inoremap jj <ESC>
 nnoremap <UP> <NOP>
 nnoremap <DOWN> <NOP>
