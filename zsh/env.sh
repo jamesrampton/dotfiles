@@ -11,5 +11,4 @@ export CLICOLOR=1
 export VISUAL="vim"
 export EDITOR=vim
 export PGDATA='/usr/local/var/postgres/'
-export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced

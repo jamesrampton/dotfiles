@@ -22,6 +22,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
 # prompt settings
 # ==============================================================================
 
+bindkey -e
+
 setopt prompt_subst
 PROMPT='%F{yellow}%n@%M %F{blue}%~ %F{red}$(vcprompt -f "%b %a%m%u")
 %F{grey}%# '
