@@ -17,17 +17,8 @@ function take() {
   mkdir -p "$*"
   cd "$*"
 }
-alias vi='vim'
-# tmux
-function newt() {
-  TMUX= tmux new-session -d -s $1
-  tmux switch-client -t $1
-  if [ -f $(pwd)/.tmux.conf ]
-  then
-    tmux source-file $(pwd)/.tmux.conf
-  fi
-}
 alias tks='tmux kill-session -t $1'
+alias vi='vim'
 
 # git
 alias g='git'
