@@ -99,7 +99,7 @@ endif
 " -----------------------------------------------------------------------------
 set nobackup
 set nowritebackup
-set noswapfile
+"set noswapfile
 
 " ========== Searching ==========
 set cpoptions+=$                " Show a $ at the end of a replace operation
