@@ -12,8 +12,20 @@ alias j='jobs'
 alias l='ls -AF'
 alias md='mkdir'
 alias pat='pygmentize -g'
-alias reload='. ~/.zshrc'
+
+function reload() {
+  if [ $SHELL ]
+  then
+    echo exec $SHELL
+    exec $SHELL
+  else
+    echo SHELL environment variable not set
+    exit 1
+  fi
+}
+
 alias t='tree -aI .git | less'
+
 function take() {
   mkdir -p "$*"
   cd "$*"
