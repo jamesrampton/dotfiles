@@ -143,3 +143,7 @@ nnoremap <leader>fm :set fdm=manual<CR>
 nnoremap <leader>fd :set fdm=manual<CR>zE
 nnoremap <leader>s :w<CR>
 set dir=~/.vimswap//
+nnoremap / /\v
+vnoremap / /\v
+nnoremap ,/ /
+vnoremap ,/ /
