@@ -5,6 +5,7 @@ alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/bac
 alias c='$EDITOR ~/bin/dotfiles/zsh/config.sh'
 alias cd..='cd ..'
 alias cd-='cd -'
+alias db='HOME=$HOME/Documents/work-dropbox /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
 alias ev='$EDITOR ~/bin/dotfiles/zsh/env.sh'
 alias fg='fg %$1'
 alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
