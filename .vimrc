@@ -99,7 +99,7 @@ endif
 " -----------------------------------------------------------------------------
 set nobackup
 set nowritebackup
-"set noswapfile
+set noswapfile
 
 " ========== Searching ==========
 set cpoptions+=$                " Show a $ at the end of a replace operation
@@ -142,8 +142,8 @@ nnoremap <leader>fs :set fdm=syntax<CR>
 nnoremap <leader>fm :set fdm=manual<CR>
 nnoremap <leader>fd :set fdm=manual<CR>zE
 nnoremap <leader>s :w<CR>
-set dir=~/.vimswap//
 nnoremap / /\v
 vnoremap / /\v
 nnoremap ,/ /
 vnoremap ,/ /
+nnoremap <leader>gp ggVGp
