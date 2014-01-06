@@ -17,6 +17,8 @@ set history=1000
 " Help us out with commands we type
 set showcmd
 
+" allow backspace in insert mode
+:set backspace=2
 " -----------------------------------------------------------------------------
 "                              Searching
 " -----------------------------------------------------------------------------
