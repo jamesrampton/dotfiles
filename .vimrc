@@ -180,9 +180,8 @@ nnoremap <leader>fd :set fdm=manual<CR>zE
 " Quicker save
 nnoremap <leader>s :update<CR>
 
-" Very magic searching and substitution
+" Very magic searching
 nnoremap / /\v
 vnoremap / /\v
 nnoremap ,/ /
 vnoremap ,/ /
-cnoremap s/ s/\v
