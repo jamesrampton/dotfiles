@@ -179,9 +179,6 @@ nnoremap <leader>fs :set fdm=syntax<CR>
 nnoremap <leader>fm :set fdm=manual<CR>
 nnoremap <leader>fd :set fdm=manual<CR>zE
 
-" Quicker save
-nnoremap <leader>s :update<CR>
-
 " Very magic searching
 nnoremap / /\v
 vnoremap / /\v
