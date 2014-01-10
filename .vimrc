@@ -71,6 +71,7 @@ endif
 
 au Bufread,BufNewFile *.jade set filetype=jade
 au Bufread,BufNewFile *.scss set filetype=scss
+au Bufread,BufNewFile *.md set filetype=markdown
 
 " =============================================================================
 "
@@ -88,7 +89,7 @@ let g:solarized_termtrans=1
 "let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
-set bg=dark
+set bg=light
 
 " -----------------------------------------------------------------------------
 "                                  Text area
@@ -117,6 +118,9 @@ set cursorline
 
 " Display tabs and trailing spaces, and indicate long lines
 set list listchars=tab:\ \ ,trail:·,extends:»,precedes:«
+
+" Wrap lines nicely when nolist is set
+set linebreak
 
 " -----------------------------------------------------------------------------
 "                              Window decoration
@@ -184,3 +188,15 @@ nnoremap / /\v
 vnoremap / /\v
 nnoremap ,/ /
 vnoremap ,/ /
+
+" Vimux commands
+function! VmxRun()
+  call inputsave()
+  let l:cmd = input(':')
+  call inputrestore()
+  call VimuxRunCommand(l:cmd)
+endfunction
+
+nnoremap [vr :call VmxRun()<CR>
+nnoremap [vl :call VimuxRunLastCommand()<CR>
+nnoremap [vc :call VimuxCloseRunner()<CR>
