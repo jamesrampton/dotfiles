@@ -200,3 +200,6 @@ endfunction
 nnoremap [vr :call VmxRun()<CR>
 nnoremap [vl :call VimuxRunLastCommand()<CR>
 nnoremap [vc :call VimuxCloseRunner()<CR>
+
+nnoremap [vs :call VimuxRunCommand("rspec " . expand("%:p"))<CR>
+nnoremap [vx :call VimuxRunCommand(expand("%:p"))<CR>
