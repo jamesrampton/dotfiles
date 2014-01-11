@@ -91,6 +91,19 @@ set t_Co=256
 colorscheme solarized
 set bg=light
 
+" Enable syntax highlighting
+syntax on
+
+" more obvious SpellBad highlighting
+hi SpellBad cterm=NONE
+hi SpellBad ctermfg=white
+hi SpellBad ctermbg=red
+
+" mark when lines go over 80 chars
+" https://docs.google.com/file/d/0Bx3f0gFZh5Jqc0MtcUstV3BKdTQ/preview?pli=1
+hi ColorColumn cterm=underline
+call matchadd('ColorColumn', '\%81v', 100)
+
 " -----------------------------------------------------------------------------
 "                                  Text area
 " -----------------------------------------------------------------------------
@@ -103,8 +116,6 @@ set laststatus=2
 " vim slows down a bit in tmux
 set lazyredraw
 
-" Enable syntax highlighting
-syntax on
 
 " Set auto-indentation
 filetype plugin indent on
