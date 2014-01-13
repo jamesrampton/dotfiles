@@ -3,7 +3,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH
 eval "$(rbenv init -)"
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 . `brew --prefix`/etc/profile.d/z.sh
-
+# load python scripts
+export PATH=/usr/local/share/python:$PATH
 # Colour options
 export CLICOLOR=1
 
