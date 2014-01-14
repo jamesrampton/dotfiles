@@ -116,7 +116,6 @@ set laststatus=2
 " vim slows down a bit in tmux
 set lazyredraw
 
-
 " Set auto-indentation
 filetype plugin indent on
 set autoindent
