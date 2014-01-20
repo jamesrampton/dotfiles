@@ -171,8 +171,14 @@ noremap <leader>y ggVGy``
 
 " paste over the entire file
 nnoremap <leader>p ggVGp
+
+" easier command mode
 nnoremap ; :
+nnoremap : ;
 vnoremap ; :
+vnoremap : ;
+
+" easier escaping
 inoremap jj <ESC>
 
 " Disable those pesky cursor keys
