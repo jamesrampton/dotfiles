@@ -33,6 +33,7 @@ function take() {
 }
 alias tks='tmux kill-session -t $1'
 alias vi='vim'
+alias vnew='vim -c e $@'
 
 # git
 alias g='git'
