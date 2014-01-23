@@ -127,9 +127,10 @@ set gcr=a:blinkon0
 set cursorline
 
 " Display tabs and trailing spaces, and indicate long lines
-set list listchars=tab:\ \ ,trail:·,extends:»,precedes:«
+match ErrorMsg '\s\+$'
 
-" Wrap lines nicely when nolist is set
+" Wrap lines nicely
+set nolist
 set linebreak
 
 " -----------------------------------------------------------------------------
@@ -177,6 +178,7 @@ nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
+nnoremap q; q:
 
 " easier escaping
 inoremap jj <ESC>
@@ -194,6 +196,9 @@ inoremap <RIGHT> <NOP>
 " Get here really fast
 nnoremap <leader>v :e $MYVIMRC<CR>
 
+" Source this file really fast
+nnoremap <leader>so :so $MYVIMRC<CR>
+
 " Folding
 nnoremap <leader>fs :set fdm=syntax<CR>
 nnoremap <leader>fm :set fdm=manual<CR>
@@ -204,6 +209,10 @@ nnoremap / /\v
 vnoremap / /\v
 nnoremap ,/ /
 vnoremap ,/ /
+
+" Remove trailing whitespace and blank lines
+nnoremap <leader>rtw :%s/\s\+$//e<CR>
+nnoremap <leader>rbl :g/^$/d<CR>
 
 " Vimux commands
 function! VmxRun()
