@@ -210,9 +210,10 @@ vnoremap / /\v
 nnoremap ,/ /
 vnoremap ,/ /
 
-" Remove trailing whitespace and blank lines
-nnoremap <leader>rtw :%s/\s\+$//e<CR>
-nnoremap <leader>rbl :g/^$/d<CR>
+" Remove trailing whitespace, blank lines, and carraige returns
+nnoremap <leader>rtw :%s/\s\+$//e<CR>''
+nnoremap <leader>rbl :g/^$/d<CR>''
+nnoremap <leader>rcr :%s/<C-V><C-M>//e<CR>''
 
 " Vimux commands
 function! VmxRun()
