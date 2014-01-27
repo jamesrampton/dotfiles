@@ -108,7 +108,7 @@ call matchadd('ColorColumn', '\%81v', 100)
 "                                  Text area
 " -----------------------------------------------------------------------------
 
-" more natural window slpits
+" more natural window splits
 set splitbelow
 set splitright
 set laststatus=2
