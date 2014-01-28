@@ -127,7 +127,7 @@ set gcr=a:blinkon0
 set cursorline
 
 " Display tabs and trailing spaces, and indicate long lines
-match ErrorMsg '\s\+$'
+match ErrorMsg /\s\+\%#\@<!$/
 
 " Wrap lines nicely
 set nolist
