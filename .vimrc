@@ -69,6 +69,9 @@ endif
 "                              File types
 " -----------------------------------------------------------------------------
 
+filetype on
+filetype plugin on
+filetype indent on
 au Bufread,BufNewFile *.jade set filetype=jade
 au Bufread,BufNewFile *.scss set filetype=scss
 au Bufread,BufNewFile *.md set filetype=markdown
@@ -212,7 +215,7 @@ vnoremap ,/ /
 
 " Remove trailing whitespace, blank lines, and carraige returns
 nnoremap <leader>rtw :%s/\s\+$//e<CR>''
-nnoremap <leader>rbl :g/^$/d<CR>''
+nnoremap <leader>rbl :g/^\s\+$/d<CR>''
 nnoremap <leader>rcr :%s/<C-V><C-M>//e<CR>''
 
 " Vimux commands
