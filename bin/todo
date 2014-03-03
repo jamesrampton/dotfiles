@@ -16,5 +16,4 @@
 set -e
 
 # Run our new web 2.0 todo list application and raise millions of VC dollars.
-# Super-awesome nested todos by James Rampton
-cp -r $(dirname $0)/new-todo/ ~/Desktop/"$*"
+touch ~/Desktop/"$*"
