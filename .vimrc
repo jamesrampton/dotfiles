@@ -10,6 +10,7 @@ set nocompatible
 
 call pathogen#infect()
 let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
 
 " Remember lots of commands
 set history=1000
@@ -39,7 +40,7 @@ set shiftwidth=2
 set softtabstop=2
 set scrolloff=3
 set encoding=utf-8
-set wrap
+" set wrap
 
 " Use system clipboard
 set clipboard+=unnamed
@@ -104,8 +105,8 @@ hi SpellBad ctermbg=red
 
 " mark when lines go over 80 chars
 " https://docs.google.com/file/d/0Bx3f0gFZh5Jqc0MtcUstV3BKdTQ/preview?pli=1
-hi ColorColumn cterm=underline
-call matchadd('ColorColumn', '\%81v', 100)
+" hi ColorColumn cterm=underline
+" call matchadd('ColorColumn', '\%81v', 100)
 
 " -----------------------------------------------------------------------------
 "                                  Text area
@@ -127,7 +128,7 @@ set autoindent
 set gcr=a:blinkon0
 
 " Make it really obvious what line we're on
-set cursorline
+" set cursorline
 
 " Display tabs and trailing spaces, and indicate long lines
 match ErrorMsg /\s\+\%#\@<!$/
@@ -187,6 +188,7 @@ nnoremap q; q:
 inoremap jj <ESC>
 
 " Disable those pesky cursor keys
+
 nnoremap <UP> <NOP>
 nnoremap <DOWN> <NOP>
 nnoremap <LEFT> <NOP>
@@ -215,7 +217,7 @@ vnoremap ,/ /
 
 " Remove trailing whitespace, blank lines, and carraige returns
 nnoremap <leader>rtw :%s/\s\+$//e<CR>''
-nnoremap <leader>rbl :g/^\s\+$/d<CR>''
+nnoremap <leader>rbl :g/^\s*$/d<CR>''
 nnoremap <leader>rcr :%s/<C-V><C-M>//e<CR>''
 
 " Vimux commands
