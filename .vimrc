@@ -168,9 +168,6 @@ inoremap <C-U> <C-G>u<C-U>
 " Stop highlighting search results
 nnoremap <silent> <space> :nohl<CR>
 
-" IDE stuff
-nnoremap <leader>r :!ruby %<cr>
-
 " Yank the whole file and return to previous position
 noremap <leader>y ggVGy``
 
@@ -188,7 +185,6 @@ nnoremap q; q:
 inoremap jj <ESC>
 
 " Disable those pesky cursor keys
-
 nnoremap <UP> <NOP>
 nnoremap <DOWN> <NOP>
 nnoremap <LEFT> <NOP>
@@ -234,3 +230,13 @@ nnoremap [vc :call VimuxCloseRunner()<CR>
 
 nnoremap [vs :call VimuxRunCommand("rspec " . expand("%:p"))<CR>
 nnoremap [vx :call VimuxRunCommand(expand("%:p"))<CR>
+
+" -----------------------------------------------------------------------------
+"                              File handling
+" -----------------------------------------------------------------------------
+
+" File explorer
+nnoremap <leader>o :Ex<CR>
+
+" Run files
+nnoremap <leader>r :!ruby %<CR>
