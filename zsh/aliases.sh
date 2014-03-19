@@ -50,6 +50,7 @@ alias gpl='git pull'
 alias gps='git push'
 alias gs='git status'
 alias gm='git merge --no-ff'
+alias gmt='git mergetool'
 alias grm='git rm'
 
 # bundler
