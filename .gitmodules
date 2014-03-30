@@ -1,0 +1,24 @@
+[submodule ".vim/bundle/abolish"]
+	path = .vim/bundle/abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule ".vim/bundle/fugitive"]
+	path = .vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/repeat"]
+	path = .vim/bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule ".vim/bundle/json"]
+	path = .vim/bundle/json
+	url = https://github.com/leshill/vim-json.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/unimpaired"]
+	path = .vim/bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".vim/bundle/tmux-navigator"]
+	path = .vim/bundle/tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
