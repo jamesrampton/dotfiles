@@ -8,7 +8,8 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-call pathogen#infect()
+execute pathogen#infect()
+call pathogen#helptags()
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 
