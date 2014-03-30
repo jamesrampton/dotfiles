@@ -163,7 +163,7 @@ let mapleader=","
 inoremap <C-U> <C-G>u<C-U>
 
 " Stop highlighting search results
-nnoremap <silent> <space> :nohl<CR>
+nnoremap <silent> <leader><cr> :nohl<CR>
 
 " Yank the whole file and return to previous position
 noremap <leader>y ggVGy``
