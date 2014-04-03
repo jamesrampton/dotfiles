@@ -135,6 +135,27 @@ match ErrorMsg /\s\+\%#\@<!$/
 set nolist
 set linebreak
 
+" Don't close window, when deleting a buffer
+" from https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
+command! Bclose call <SID>BufcloseCloseIt()
+function! <SID>BufcloseCloseIt()
+   let l:currentBufNum = bufnr("%")
+   let l:alternateBufNum = bufnr("#")
+
+   if buflisted(l:alternateBufNum)
+     buffer #
+   else
+     bnext
+   endif
+
+   if bufnr("%") == l:currentBufNum
+     new
+   endif
+
+   if buflisted(l:currentBufNum)
+     execute("bdelete! ".l:currentBufNum)
+   endif
+endfunction
 " -----------------------------------------------------------------------------
 "                              Window decoration
 " -----------------------------------------------------------------------------
@@ -164,7 +185,8 @@ let mapleader=","
 inoremap <C-U> <C-G>u<C-U>
 
 " Stop highlighting search results
-nnoremap <silent> <leader><cr> :nohl<CR>
+nnoremap <silent> \ :noh<CR>
+nnoremap <silent> <leader>\ :let @/=""<cr>
 
 " Yank the whole file and return to previous position
 noremap <leader>y ggVGy``
