@@ -34,7 +34,6 @@ function take() {
 }
 alias tks='tmux kill-session -t $1'
 alias vi='vim'
-alias vnew='vim -c e $@'
 
 # git
 alias g='git'
@@ -43,8 +42,8 @@ alias gaa='git add --all :/'
 alias gb='git branch'
 alias gc='git commit -v'
 alias gco='git checkout'
-alias gd='git diff'
-alias gdt='git difftool'
+alias gdiff='git diff'
+alias gd='git difftool'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue(%cr)%Creset %an" --abbrev-commit --date="relative"'
 alias glm='git log --graph --pretty=format:"%h -%d %s (%cr) %an" --abbrev-commit --date="relative"'
 alias gpl='git pull'
