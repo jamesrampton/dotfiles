@@ -26,7 +26,7 @@ function reload() {
 }
 
 alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
-alias t='tree -aI .git | less'
+alias t='tree -aI .git --charset=ansi'
 
 function take() {
   mkdir -p "$*"
