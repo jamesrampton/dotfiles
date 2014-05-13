@@ -25,5 +25,5 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
 bindkey -e
 
 setopt prompt_subst
-PROMPT='%F{yellow}%n@%M %F{blue}%~ %F{red}$(vcprompt -f "%b %a%m%u")
+PROMPT='%F{yellow}%n@%M %F{blue}%~ %F{red}$(vcprompt -f "%b at %h %a%m%u")
 %F{grey}%# '
