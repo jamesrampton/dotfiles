@@ -128,6 +128,9 @@ set gcr=a:blinkon0
 " Make it really obvious what line we're on
 " set cursorline
 
+" stop going to the start of a line on buffer switch
+set nostartofline
+
 " Display tabs and trailing spaces, and indicate long lines
 match ErrorMsg /\s\+\%#\@<!$/
 
