@@ -131,9 +131,10 @@ set gcr=a:blinkon0
 " stop going to the start of a line on buffer switch
 set nostartofline
 
-" Display tabs and trailing spaces
-hi TraillingWhite ctermbg=red
-match TraillingWhite /\s\+$/
+" Display tabs and trailing spaces   
+hi ExtraWhitespace  ctermbg=white
+:au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+:au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Wrap lines nicely
 set nolist
