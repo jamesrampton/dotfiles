@@ -5,6 +5,7 @@ alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/bac
 alias c='$EDITOR ~/dotfiles/zsh/config.sh'
 alias cd..='cd ..'
 alias cd-='cd -'
+alias ci='vi'
 alias db='HOME=$HOME/Documents/work-dropbox /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
 alias ev='$EDITOR ~/dotfiles/zsh/env.sh'
 alias fg='fg %$1'
