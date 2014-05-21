@@ -131,7 +131,7 @@ set gcr=a:blinkon0
 " stop going to the start of a line on buffer switch
 set nostartofline
 
-" Display tabs and trailing spaces   
+" Display trailing spaces   
 hi ExtraWhitespace  ctermbg=white
 :au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 :au InsertLeave * match ExtraWhitespace /\s\+$/
@@ -220,7 +220,7 @@ inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
 
 " Get here really fast
-nnoremap <leader>v :e $MYVIMRC<CR>
+nnoremap cv :e $MYVIMRC<CR>
 
 " Source this file really fast
 nnoremap <leader>so :so $MYVIMRC<CR>
