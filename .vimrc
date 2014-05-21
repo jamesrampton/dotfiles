@@ -131,8 +131,9 @@ set gcr=a:blinkon0
 " stop going to the start of a line on buffer switch
 set nostartofline
 
-" Display tabs and trailing spaces, and indicate long lines
-match ErrorMsg /\s\+\%#\@<!$/
+" Display tabs and trailing spaces
+hi TraillingWhite ctermbg=red
+match TraillingWhite /\s\+$/
 
 " Wrap lines nicely
 set nolist
@@ -235,9 +236,9 @@ nnoremap ,/ /
 vnoremap ,/ /
 
 " Remove trailing whitespace, blank lines, and carraige returns
-nnoremap <leader>c :%s/\s\+$//e<CR>''
-nnoremap <leader>cr :g/^\s*$/d<CR>''
-nnoremap <leader>ccr :%s/<C-V><C-M>//e<CR>''
+nnoremap dcw :%s/\s\+$//e<CR>''
+nnoremap dcr :g/^\s*$/d<CR>''
+nnoremap dcc :%s/<C-V><C-M>//e<CR>''
 
 " Vimux commands
 function! VmxRun()
