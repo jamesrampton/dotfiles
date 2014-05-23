@@ -133,8 +133,7 @@ set nostartofline
 
 " Display trailing spaces   
 hi ExtraWhitespace  ctermbg=white
-:au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-:au InsertLeave * match ExtraWhitespace /\s\+$/
+match ExtraWhitespace /\(\s\+\|\%xa0\+\)\%#\@<!$/
 
 " Wrap lines nicely
 set nolist
