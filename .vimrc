@@ -132,7 +132,7 @@ set gcr=a:blinkon0
 set nostartofline
 
 " Display trailing spaces   
-hi ExtraWhitespace  ctermbg=white
+hi ExtraWhitespace ctermbg=white
 match ExtraWhitespace /\(\s\+\|\%xa0\+\)\%#\@<!$/
 
 " Wrap lines nicely
