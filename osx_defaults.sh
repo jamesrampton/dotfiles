@@ -100,7 +100,7 @@ defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 # Misc
 # ========================================================================
 
-defaults write com.apple.screencapture location ~/Pictures/
+defaults write com.apple.screencapture location ~/Desktop/
 
 # ========================================================================
 # Restart affected processes
