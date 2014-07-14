@@ -1,5 +1,5 @@
 # Path settings
-export PATH=/usr/local/bin:/usr/local/sbin:$HOME/dotfiles:$HOME/dotfiles/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$HOME/dotfiles:$HOME/dotfiles/bin:/usr/local/share/npm/bin/:$PATH
 eval "$(rbenv init -)"
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 . `brew --prefix`/etc/profile.d/z.sh
