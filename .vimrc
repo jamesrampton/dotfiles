@@ -261,6 +261,6 @@ nnoremap [vx :call VimuxRunCommand(expand("%:p"))<CR>
 
 " File explorer
 nnoremap <leader>o :Ex<CR>
+" Goto buffer
+nnoremap gb :ls<CR>:b
 
-" Run files
-nnoremap <leader>r :!ruby %<CR>
