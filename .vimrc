@@ -67,6 +67,10 @@ if !exists(":DiffOrig")
                 \ | wincmd p | diffthis
 endif
 
+" Bash-like file completion
+set wildmode=longest,list
+set wildmenu
+
 " -----------------------------------------------------------------------------
 "                              File types
 " -----------------------------------------------------------------------------
