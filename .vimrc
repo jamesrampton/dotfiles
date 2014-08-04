@@ -244,6 +244,11 @@ nnoremap dcw :%s/\s\+$//e<CR>''
 nnoremap dcr :g/^\s*$/d<CR>''
 nnoremap dcc :%s/<C-V><C-M>//e<CR>''
 
+" Set ultisnips triggers
+let g:UltiSnipsExpandTrigger="<tab>"                                            
+let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
 " Vimux commands
 function! VmxRun()
   call inputsave()
