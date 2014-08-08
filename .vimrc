@@ -257,6 +257,9 @@ function! VmxRun()
   call VimuxRunCommand(l:cmd)
 endfunction
 
+" Invoke gundo
+nnoremap <leader>g :GundoToggle<CR>
+
 nnoremap [vr :call VmxRun()<CR>
 nnoremap [vl :call VimuxRunLastCommand()<CR>
 nnoremap [vc :call VimuxCloseRunner()<CR>

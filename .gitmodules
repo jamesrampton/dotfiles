@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/ultisnips"]
 	path = .vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule ".vim/bundle/gundo"]
+	path = .vim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
