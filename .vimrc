@@ -257,6 +257,9 @@ function! VmxRun()
   call VimuxRunCommand(l:cmd)
 endfunction
 
+" Vimroom commands
+nnoremap <leader>v :VimroomToggle<CR>
+
 " Invoke gundo
 nnoremap <leader>g :GundoToggle<CR>
 
