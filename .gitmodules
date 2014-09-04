@@ -28,9 +28,6 @@
 [submodule ".vim/bundle/mustache"]
 	path = .vim/bundle/mustache
 	url = git://github.com/mustache/vim-mustache-handlebars.git
-[submodule ".vim/bundle/base16"]
-	path = .vim/bundle/base16
-	url = https://github.com/chriskempson/base16-vim.git
 [submodule ".vim/bundle/exchange"]
 	path = .vim/bundle/exchange
 	url = git://github.com/tommcdo/vim-exchange.git
