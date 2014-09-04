@@ -228,6 +228,9 @@ nnoremap cv :e $MYVIMRC<CR>
 " Source this file really fast
 nnoremap <leader>so :so $MYVIMRC<CR>
 
+" for when vim messes up
+nnoremap <leader>r :redraw!<CR>
+
 " Folding
 nnoremap <leader>fs :set fdm=syntax<CR>
 nnoremap <leader>fm :set fdm=manual<CR>
