@@ -263,6 +263,9 @@ endfunction
 " Vimroom commands
 nnoremap <leader>v :VimroomToggle<CR>
 
+" Tabular commands
+nnoremap <leader>t :TableFormat<CR>
+
 " Invoke gundo
 nnoremap <leader>g :GundoToggle<CR>
 
