@@ -129,9 +129,6 @@ set autoindent
 " Disable blinking cursor
 set gcr=a:blinkon0
 
-" Make it really obvious what line we're on
-" set cursorline
-
 " stop going to the start of a line on buffer switch
 set nostartofline
 
@@ -142,6 +139,13 @@ match ExtraWhitespace /\(\s\+\|\%xa0\+\)\%#\@<!$/
 " Wrap lines nicely
 set nolist
 set linebreak
+
+" Use limelight with Goyo
+autocmd User GoyoEnter Limelight
+autocmd User GoyoLeave Limelight!
+
+" Limelight settings
+let g:limelight_conceal_ctermfg = 252
 
 " Don't close window, when deleting a buffer
 " from https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
@@ -164,6 +168,7 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
 " -----------------------------------------------------------------------------
 "                              Window decoration
 " -----------------------------------------------------------------------------
@@ -260,8 +265,8 @@ function! VmxRun()
   call VimuxRunCommand(l:cmd)
 endfunction
 
-" Vimroom commands
-nnoremap <leader>v :VimroomToggle<CR>
+" Make things like iA Writer
+nnoremap <leader>ia :Goyo<CR>
 
 " Tabular commands
 nnoremap <leader>t :TableFormat<CR>
