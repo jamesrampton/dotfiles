@@ -266,7 +266,10 @@ function! VmxRun()
 endfunction
 
 " Make things like iA Writer
-nnoremap <leader>ia :Goyo<CR>
+nnoremap <leader>i :Goyo<CR>
+nnoremap <leader>l :Limelight!!<CR>
+nnoremap <leader>= :silent !osascript -e "repeat 5 times" -e "tell application \"System Events\" to keystroke \"+\" using command down" -e "end repeat"<CR>
+nnoremap <leader>- :silent !osascript -e "tell application \"System Events\" to keystroke \"0\" using command down"<CR>
 
 " Tabular commands
 nnoremap <leader>t :TableFormat<CR>
