@@ -13,6 +13,7 @@ alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
 alias l='ls -AF'
 alias md='mkdir'
+alias mkdn='python -m markdown -x toc -x fenced_code -x tables $1'
 alias pat='pygmentize -g'
 
 function reload() {
