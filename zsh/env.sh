@@ -12,5 +12,10 @@ export PGDATA='/usr/local/var/postgres/'
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PIP_REQUIRE_VIRTUAL_ENV=true
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+
+# Virtualenvs
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+# if [ -n "$VIRTUAL_ENV" ]; then
+#   . "$VIRTUAL_ENV/bin/activate"
+# fi

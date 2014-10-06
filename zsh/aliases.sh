@@ -15,6 +15,8 @@ alias l='ls -AF'
 alias md='mkdir'
 alias mkdn='python -m markdown -x toc -x fenced_code -x tables $1'
 alias pat='pygmentize -g'
+alias remoteoff='sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist'
+alias remoteon='sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist'
 
 function reload() {
   if [ $SHELL ]
