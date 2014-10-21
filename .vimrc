@@ -95,7 +95,7 @@ au Bufread,BufNewFile *.md set filetype=markdown
 " colorscheme
 set t_Co=256
 colorscheme solarized
-set bg=light
+set bg=dark
 
 " Enable syntax highlighting
 syntax on
