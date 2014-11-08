@@ -1,9 +1,12 @@
 # shell
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 alias a='$EDITOR ~/dotfiles/zsh/aliases.sh'
 alias backup='/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper'
 alias c='$EDITOR ~/dotfiles/zsh/config.sh'
-alias cd..='cd ..'
 alias cd-='cd -'
 alias ci='vi'
 alias db='HOME=$HOME/Documents/work-dropbox /Applications/Dropbox.app/Contents/MacOS/Dropbox &'

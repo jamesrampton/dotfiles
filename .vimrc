@@ -95,7 +95,7 @@ au Bufread,BufNewFile *.md set filetype=markdown
 " colorscheme
 set t_Co=256
 colorscheme solarized
-set bg=dark
+set bg=light
 
 " Enable syntax highlighting
 syntax on
@@ -105,6 +105,7 @@ hi SpellBad cterm=NONE
 hi SpellBad ctermfg=white
 hi SpellBad ctermbg=red
 
+set breakindent
 " mark when lines go over 80 chars
 " https://docs.google.com/file/d/0Bx3f0gFZh5Jqc0MtcUstV3BKdTQ/preview?pli=1
 " hi ColorColumn cterm=underline
