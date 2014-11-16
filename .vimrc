@@ -278,12 +278,19 @@ nnoremap <leader>t :TableFormat<CR>
 " Invoke gundo
 nnoremap <leader>g :GundoToggle<CR>
 
+" Vimux commands
 nnoremap [vr :call VmxRun()<CR>
 nnoremap [vl :call VimuxRunLastCommand()<CR>
 nnoremap [vc :call VimuxCloseRunner()<CR>
 
 nnoremap [vs :call VimuxRunCommand("rspec " . expand("%:p"))<CR>
 nnoremap [vx :call VimuxRunCommand(expand("%:p"))<CR>
+
+" Open a quick notes file
+nnoremap <leader>sp :vs<CR>:e ~/Documents/scratchpad<CR>
+
+" Git stuff
+nnoremap <leader>b :Gblame<CR>
 
 " -----------------------------------------------------------------------------
 "                              File handling

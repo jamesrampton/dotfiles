@@ -32,6 +32,7 @@ function reload() {
   fi
 }
 
+alias sp='vi ~/Documents/scratchpad'
 alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
 alias t='tree -aI .git --charset=ansi'
 
@@ -39,8 +40,18 @@ function take() {
   mkdir -p "$*"
   cd "$*"
 }
-alias tks='tmux kill-session -t $1'
+alias tk='tmux kill-session -t $1'
+alias tls='tmux list-sessions'
+function tn() {
+  TMUX= tmux new-session -d -s $1
+  tmux switch-client -t $1
+}
+alias ts='tmux switch-client -t $1'
 alias vi='vim'
+
+# directories
+alias setroot='export ROOT_DIR=`pwd`'
+alias cdroot='cd $ROOT_DIR'
 
 # git
 alias g='git'
