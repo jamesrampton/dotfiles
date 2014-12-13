@@ -216,7 +216,7 @@ vnoremap : ;
 nnoremap q; q:
 
 " easier escaping
-inoremap jj <ESC>
+inoremap jk <ESC>
 
 " Disable those pesky cursor keys
 nnoremap <UP> <NOP>
@@ -253,9 +253,12 @@ nnoremap dcw :%s/\s\+$//e<CR>''
 nnoremap dcr :g/^\s*$/d<CR>''
 nnoremap dcc :%s/<C-V><C-M>//e<CR>''
 
+" ack mappings
+nnoremap <leader>a :Ack 
+
 " Set ultisnips triggers
-let g:UltiSnipsExpandTrigger="<tab>"                                            
-let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Vimux commands
@@ -301,3 +304,4 @@ nnoremap <leader>o :Ex<CR>
 " Goto buffer
 nnoremap gb :ls<CR>:b
 
+let g:ctrlp_custom_ignore = '\v\.pyc'
