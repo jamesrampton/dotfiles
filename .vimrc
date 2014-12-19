@@ -36,9 +36,9 @@ set hls                         " Enable search result highlighting
 " Save up too 100, possibly uppercase marks
 set viminfo='100,f1,<500
 set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set scrolloff=3
 set encoding=utf-8
 " set wrap
