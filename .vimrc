@@ -71,6 +71,10 @@ endif
 set wildmode=longest,list
 set wildmenu
 
+" Use ag instead of ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:ack_use_dispatch = 1
+
 " -----------------------------------------------------------------------------
 "                              File types
 " -----------------------------------------------------------------------------
@@ -110,6 +114,8 @@ set breakindent
 " https://docs.google.com/file/d/0Bx3f0gFZh5Jqc0MtcUstV3BKdTQ/preview?pli=1
 " hi ColorColumn cterm=underline
 " call matchadd('ColorColumn', '\%81v', 100)
+
+hi StatusLine ctermbg=8
 
 " -----------------------------------------------------------------------------
 "                                  Text area
@@ -254,7 +260,7 @@ nnoremap dcr :g/^\s*$/d<CR>''
 nnoremap dcc :%s/<C-V><C-M>//e<CR>''
 
 " ack mappings
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ack! 
 
 " Set ultisnips triggers
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -305,3 +311,8 @@ nnoremap <leader>o :Ex<CR>
 nnoremap gb :ls<CR>:b
 
 let g:ctrlp_custom_ignore = '\v\.pyc'
+
+" -----------------------------------------------------------------------------
+"                              Python mode
+" -----------------------------------------------------------------------------
+let g:pymode_rope_project_root=$VIRTUAL_ENV
