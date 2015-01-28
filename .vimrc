@@ -214,12 +214,12 @@ noremap <leader>y ggVGy``
 " paste over the entire file
 nnoremap <leader>p ggVGp
 
-" easier command mode
-nnoremap ; :
-nnoremap : ;
-vnoremap ; :
-vnoremap : ;
-nnoremap q; q:
+" " easier command mode
+" nnoremap ; :
+" nnoremap : ;
+" vnoremap ; :
+" vnoremap : ;
+" nnoremap q; q:
 
 " easier escaping
 inoremap jk <ESC>
@@ -316,3 +316,15 @@ let g:ctrlp_custom_ignore = '\v\.pyc'
 "                              Python mode
 " -----------------------------------------------------------------------------
 let g:pymode_rope_project_root=$VIRTUAL_ENV
+let g:pymode_rope_complete_on_dot=0
+let g:pymode_rope_completion = 1
+let g:pymode_rope_completion_bind = '<C-,>'
+let g:pymode_rope_regenerate_on_write = 0
+let g:pymode_options_colorcolumn = 0
+let g:pymode_options_max_line_length = 9999
+let g:pymode_folding = 0
+let g:pymode_lint_cwindow = 1
+" let g:pymode_lint_ignore = 'E501'
+nnoremap <leader><leader>r :PymodeRopeRegenerate<CR>
+nnoremap <leader>c :ccl <bar> :lcl<CR>
+nnoremap <leader><leader>p :!python %<CR>

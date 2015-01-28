@@ -11,7 +11,6 @@ alias cd-='cd -'
 alias ci='vi'
 alias db='HOME=$HOME/Documents/work-dropbox /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
 alias ev='$EDITOR ~/dotfiles/zsh/env.sh'
-alias grep='GREP_COLOR="1;37;31" LANG=C grep --color=auto'
 alias j='jobs'
 alias l='ls -AF'
 alias md='mkdir'
@@ -22,6 +21,12 @@ alias pyserver='python -m SimpleHTTPServer'
 alias ql='qlmanage -p "$@" >& /dev/null'
 alias remoteoff='sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist'
 alias remoteon='sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist'
+
+function gotmux() {
+  if [[ ! $TERM =~ screen ]]; then
+    exec tmux -f ~/dotfiles/tmux-default.conf attach
+  fi
+}
 
 function reload() {
   if [ $SHELL ]
@@ -64,6 +69,7 @@ alias gc='git commit -v'
 alias gca='git commit --amend'
 alias gcl='git clone'
 alias gco='git checkout'
+alias gcp='git cherry-pick'
 alias gdiff='git diff'
 alias gd='git difftool'
 alias gdlast='git difftool HEAD^ HEAD'
