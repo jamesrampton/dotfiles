@@ -16,6 +16,9 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 # Virtualenvs
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
-# if [ -n "$VIRTUAL_ENV" ]; then
-#   . "$VIRTUAL_ENV/bin/activate"
-# fi
+
+# Antigen
+source "$HOME/dotfiles/bin/antigen/antigen.zsh"
+# Syntax highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen apply
