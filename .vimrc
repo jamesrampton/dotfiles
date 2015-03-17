@@ -308,9 +308,10 @@ nnoremap <leader>b :Gblame<CR>
 " File explorer
 nnoremap <leader>o :Ex<CR>
 " Goto buffer
-nnoremap gb :ls<CR>:b
+nnoremap gb :CtrlPBuffer<CR>
 
 let g:ctrlp_custom_ignore = '\v\.pyc'
+let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
 " -----------------------------------------------------------------------------
 "                              Python mode
