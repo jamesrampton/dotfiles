@@ -329,3 +329,8 @@ let g:pymode_lint_cwindow = 1
 nnoremap <leader><leader>r :PymodeRopeRegenerate<CR>
 nnoremap <leader>c :ccl <bar> :lcl<CR>
 nnoremap <leader><leader>p :!python %<CR>
+
+" -----------------------------------------------------------------------------
+"                              Vim-Pad
+" -----------------------------------------------------------------------------
+let g:pad#dir="~/Dropbox/vim_notes"
