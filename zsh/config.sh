@@ -29,5 +29,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 setopt prompt_subst
-PROMPT='%F{yellow}%n@%M %F{blue}%~ %F{green}$(vcprompt -f "%b at %h %a%m%u")
+PROMPT='%F{blue}%n@%M %~ %F{green}$(vcprompt -f "%b at %h %a%m%u")
 %F{grey}%# '
