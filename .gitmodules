@@ -88,3 +88,15 @@
 [submodule ".vim/bundle/vim-pad"]
 	path = .vim/bundle/vim-pad
 	url = git@github.com:fmoralesc/vim-pad.git
+[submodule ".vim/bundle/vim-g"]
+	path = .vim/bundle/vim-g
+	url = git@github.com:szw/vim-g.git
+[submodule ".vim/bundle/javascript-syntax"]
+	path = .vim/bundle/javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule ".vim/bundle/closetag"]
+	path = .vim/bundle/closetag
+	url = https://github.com/vim-scripts/closetag.vim.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

@@ -13,8 +13,8 @@ alias db='HOME=$HOME/Documents/work-dropbox /Applications/Dropbox.app/Contents/M
 alias ev='$EDITOR ~/dotfiles/zsh/env.sh'
 alias j='jobs'
 alias l='ls -AF'
-alias md='mkdir'
 alias mkdn='python -m markdown -x toc -x fenced_code -x tables $1'
+alias mkve='mkvirtualenv --python=/usr/local/Cellar/python/2.7.9/bin/python'
 alias pat='pygmentize -g'
 alias phpserver='php -S 127.0.0.1:8000'
 alias pyserver='python -m SimpleHTTPServer'
@@ -91,3 +91,7 @@ alias bc='bundle console'
 # mac os x
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
+
+# manage.py
+alias rs='./manage.py runserver'
+alias rsp='./manage.py runserver_plus'

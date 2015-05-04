@@ -27,6 +27,7 @@ set showcmd
 
 set cpoptions+=$                " Show a $ at the end of a replace operation
 set incsearch                   " Do incremental searching
+set smartcase                   " Case insensitive search unless the regex includes uppercase chars
 set hls                         " Enable search result highlighting
 
 " -----------------------------------------------------------------------------
@@ -116,7 +117,6 @@ set breakindent
 " call matchadd('ColorColumn', '\%81v', 100)
 
 hi StatusLine ctermbg=8
-
 " -----------------------------------------------------------------------------
 "                                  Text area
 " -----------------------------------------------------------------------------
@@ -279,7 +279,8 @@ endfunction
 nnoremap <leader>i :Goyo<CR>
 nnoremap <leader>l :Limelight!!<CR>
 nnoremap <leader>= :silent !osascript -e "tell application \"System Events\" to keystroke \"0\" using command down" -e "repeat 6 times" -e "tell application \"System Events\" to keystroke \"+\" using command down" -e "end repeat"<CR><CR>
-nnoremap <leader>- :silent !osascript -e "tell application \"System Events\" to keystroke \"0\" using command down"<CR><CR>
+nnoremap <leader>- :silent !osascript -e "tell application \"System Events\" to keystroke \"0\" using command down" -e "repeat 10 times" -e "tell application \"System Events\" to keystroke \"-\" using command down" -e "end repeat"<CR><CR>
+nnoremap <leader>0 :silent !osascript -e "tell application \"System Events\" to keystroke \"0\" using command down"<CR><CR>
 
 " Tabular commands
 nnoremap <leader>t :TableFormat<CR>
@@ -312,6 +313,9 @@ nnoremap gb :CtrlPBuffer<CR>
 
 let g:ctrlp_custom_ignore = '\v\.pyc'
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:32,results:32'
+
+nnoremap <leader>e :NERDTree<CR>
 
 " -----------------------------------------------------------------------------
 "                              Python mode
