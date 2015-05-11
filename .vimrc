@@ -86,6 +86,7 @@ filetype indent on
 au Bufread,BufNewFile *.jade set filetype=jade
 au Bufread,BufNewFile *.scss set filetype=scss
 au Bufread,BufNewFile *.md set filetype=markdown
+au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 
 " =============================================================================
 "
@@ -146,6 +147,9 @@ match ExtraWhitespace /\(\s\+\|\%xa0\+\)\%#\@<!$/
 " Wrap lines nicely
 set nolist
 set linebreak
+
+" Highlight current line
+set cursorline
 
 " Use limelight with Goyo
 autocmd User GoyoEnter Limelight
@@ -241,7 +245,7 @@ nnoremap cv :e $MYVIMRC<CR>
 nnoremap <leader>so :so $MYVIMRC<CR>
 
 " for when vim messes up
-nnoremap <leader>r :redraw!<CR>
+nnoremap <leader>rd :redraw!<CR>
 
 " Folding
 nnoremap <leader>fs :set fdm=syntax<CR>
@@ -316,6 +320,11 @@ let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:32,results:32'
 
 nnoremap <leader>e :NERDTree<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+
+nnoremap <leader>tag :TlistToggle<CR>
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 48
 
 " -----------------------------------------------------------------------------
 "                              Python mode
