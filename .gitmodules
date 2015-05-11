@@ -134,3 +134,7 @@
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
     ignore = dirty
+[submodule "bin/times"]
+	path = bin/times
+	url = /Users/james/Dropbox/git/times.git
+    ignore = dirty
