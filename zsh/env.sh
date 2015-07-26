@@ -22,4 +22,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 source "$HOME/dotfiles/bin/antigen/antigen.zsh"
 # Syntax highlighting
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle pip
 antigen apply
