@@ -73,7 +73,7 @@ set wildmode=longest,list
 set wildmenu
 
 " Use ag instead of ack
-let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:ackprg = 'ag --follow --nogroup --nocolor --column'
 let g:ack_use_dispatch = 1
 
 " -----------------------------------------------------------------------------
@@ -100,8 +100,9 @@ au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 
 " colorscheme
 set t_Co=256
-colorscheme base16-default
+colorscheme solarized
 set bg=light
+set guifont=Nitti\ Basic
 
 " Enable syntax highlighting
 syntax on
@@ -156,7 +157,7 @@ autocmd User GoyoEnter Limelight
 autocmd User GoyoLeave Limelight!
 
 " Limelight settings
-let g:limelight_conceal_ctermfg = 252
+" let g:limelight_conceal_ctermfg = 252
 
 " Don't close window, when deleting a buffer
 " from https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
@@ -228,6 +229,12 @@ nnoremap <leader>p ggVGp
 " easier escaping
 inoremap jk <ESC>
 
+" butterfingers when saving etc
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
 " Disable those pesky cursor keys
 nnoremap <UP> <NOP>
 nnoremap <DOWN> <NOP>
@@ -286,9 +293,6 @@ nnoremap <leader>= :silent !osascript -e "tell application \"System Events\" to 
 nnoremap <leader>- :silent !osascript -e "tell application \"System Events\" to keystroke \"0\" using command down" -e "repeat 10 times" -e "tell application \"System Events\" to keystroke \"-\" using command down" -e "end repeat"<CR><CR>
 nnoremap <leader>0 :silent !osascript -e "tell application \"System Events\" to keystroke \"0\" using command down"<CR><CR>
 
-" Tabular commands
-nnoremap <leader>t :TableFormat<CR>
-
 " Invoke gundo
 nnoremap <leader>g :GundoToggle<CR>
 
@@ -304,7 +308,7 @@ nnoremap [vx :call VimuxRunCommand(expand("%:p"))<CR>
 nnoremap <leader>sp :vs<CR>:e ~/Documents/scratchpad<CR>
 
 " Git stuff
-nnoremap <leader>b :Gblame<CR>
+nnoremap <leader>bl :Gblame<CR>
 
 " -----------------------------------------------------------------------------
 "                              File handling
@@ -316,13 +320,15 @@ nnoremap <leader>o :Ex<CR>
 nnoremap gb :CtrlPBuffer<CR>
 
 let g:ctrlp_custom_ignore = '\v\.pyc'
+let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
+" let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co && cd $VIRTUAL_ENV && find . -type d -name .git -execdir git ls-files --exclude-standard -co \;']
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:32,results:32'
 
 nnoremap <leader>e :NERDTree<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 
-nnoremap <leader>tag :TlistToggle<CR>
+nnoremap <leader>t :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 48
 
@@ -336,13 +342,19 @@ let g:pymode_rope_completion_bind = '<C-,>'
 let g:pymode_rope_regenerate_on_write = 0
 let g:pymode_options_colorcolumn = 0
 let g:pymode_options_max_line_length = 9999
-let g:pymode_folding = 0
+let g:pymode_folding = 1
 let g:pymode_lint_cwindow = 1
+let g:pymode_rope_goto_definition_cmd = 'e'
+let g:pymode_lint = 0
 " let g:pymode_lint_ignore = 'E501'
 nnoremap <leader><leader>r :PymodeRopeRegenerate<CR>
 nnoremap <leader>c :ccl <bar> :lcl<CR>
 nnoremap <leader><leader>p :!python %<CR>
-
+" -----------------------------------------------------------------------------
+"                              Syntastic
+" -----------------------------------------------------------------------------
+let g:syntastic_always_populate_loc_list = 1                                    
+let g:syntastic_auto_loc_list = 1
 " -----------------------------------------------------------------------------
 "                              Vim-Pad
 " -----------------------------------------------------------------------------

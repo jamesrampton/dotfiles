@@ -12,6 +12,7 @@ export PGDATA='/usr/local/var/postgres/'
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PIP_REQUIRE_VIRTUAL_ENV=true
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+export MC_SKIN=$HOME/.mc/solarized.ini
 
 # Virtualenvs
 export WORKON_HOME=~/.virtualenvs

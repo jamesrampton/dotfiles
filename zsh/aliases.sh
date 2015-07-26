@@ -11,6 +11,7 @@ alias cd-='cd -'
 alias ci='vi'
 alias db='HOME=$HOME/Documents/work-dropbox /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
 alias ev='$EDITOR ~/dotfiles/zsh/env.sh'
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias j='jobs'
 alias l='ls -AF'
 alias mkdn='python -m markdown -x toc -x fenced_code -x tables $1'
@@ -21,6 +22,8 @@ alias pyserver='python -m SimpleHTTPServer'
 alias ql='qlmanage -p "$@" >& /dev/null'
 alias remoteoff='sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist'
 alias remoteon='sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist'
+alias tsd='time_sessions today'
+alias tsm='time_sessions month'
 
 function gotmux() {
   if [[ ! $TERM =~ screen ]]; then
