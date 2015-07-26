@@ -10,7 +10,7 @@ set nocompatible
 
 execute pathogen#infect()
 call pathogen#helptags()
-let g:syntastic_check_on_open=1
+let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
 
 " Remember lots of commands
@@ -157,7 +157,7 @@ autocmd User GoyoEnter Limelight
 autocmd User GoyoLeave Limelight!
 
 " Limelight settings
-" let g:limelight_conceal_ctermfg = 252
+let g:limelight_conceal_ctermfg = 252
 
 " Don't close window, when deleting a buffer
 " from https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
@@ -347,6 +347,17 @@ let g:pymode_lint_cwindow = 1
 let g:pymode_rope_goto_definition_cmd = 'e'
 let g:pymode_lint = 0
 " let g:pymode_lint_ignore = 'E501'
+" Add the virtualenv's site-packages to vim path
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
 nnoremap <leader><leader>r :PymodeRopeRegenerate<CR>
 nnoremap <leader>c :ccl <bar> :lcl<CR>
 nnoremap <leader><leader>p :!python %<CR>

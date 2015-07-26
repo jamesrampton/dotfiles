@@ -144,6 +144,9 @@
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "bin/--force"]
+	path = bin/--force
+	url = https://github.com/zsh-users/antigen.git
 [submodule "bin/antigen"]
 	path = bin/antigen
-	url = git@github.com:mgdm/zsh-antigen.git
+	url = https://github.com/zsh-users/antigen.git
