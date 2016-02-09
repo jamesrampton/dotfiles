@@ -10,8 +10,6 @@ set nocompatible
 
 execute pathogen#infect()
 call pathogen#helptags()
-let g:syntastic_check_on_open=0
-let g:syntastic_enable_signs=1
 
 " Remember lots of commands
 set history=1000
@@ -42,7 +40,7 @@ set shiftwidth=4
 set softtabstop=4
 set scrolloff=3
 set encoding=utf-8
-" set wrap
+set wrap
 
 " Use system clipboard
 set clipboard+=unnamed
@@ -85,6 +83,7 @@ filetype plugin on
 filetype indent on
 au Bufread,BufNewFile *.jade set filetype=jade
 au Bufread,BufNewFile *.scss set filetype=scss
+au BufNewFile,BufRead *.html set filetype=htmldjango
 au Bufread,BufNewFile *.md set filetype=markdown
 au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 
@@ -99,26 +98,13 @@ au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 " -----------------------------------------------------------------------------
 
 " colorscheme
-set t_Co=256
 colorscheme solarized
-set bg=light
-set guifont=Nitti\ Basic
 
 " Enable syntax highlighting
 syntax on
 
-" more obvious SpellBad highlighting
-hi SpellBad cterm=NONE
-hi SpellBad ctermfg=white
-hi SpellBad ctermbg=red
-
 set breakindent
-" mark when lines go over 80 chars
-" https://docs.google.com/file/d/0Bx3f0gFZh5Jqc0MtcUstV3BKdTQ/preview?pli=1
-" hi ColorColumn cterm=underline
-" call matchadd('ColorColumn', '\%81v', 100)
 
-hi StatusLine ctermbg=8
 " -----------------------------------------------------------------------------
 "                                  Text area
 " -----------------------------------------------------------------------------
@@ -329,44 +315,11 @@ nnoremap <leader>e :NERDTree<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 
 nnoremap <leader>t :TlistToggle<CR>
-let Tlist_Use_Right_Window = 1
+" let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 48
 
-" -----------------------------------------------------------------------------
-"                              Python mode
-" -----------------------------------------------------------------------------
-let g:pymode_rope_project_root=$VIRTUAL_ENV
-let g:pymode_rope_complete_on_dot=0
-let g:pymode_rope_completion = 1
-let g:pymode_rope_completion_bind = '<C-,>'
-let g:pymode_rope_regenerate_on_write = 0
-let g:pymode_options_colorcolumn = 0
-let g:pymode_options_max_line_length = 9999
-let g:pymode_folding = 1
-let g:pymode_lint_cwindow = 1
-let g:pymode_rope_goto_definition_cmd = 'e'
-let g:pymode_lint = 0
-" let g:pymode_lint_ignore = 'E501'
-" Add the virtualenv's site-packages to vim path
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
-nnoremap <leader><leader>r :PymodeRopeRegenerate<CR>
-nnoremap <leader>c :ccl <bar> :lcl<CR>
-nnoremap <leader><leader>p :!python %<CR>
-" -----------------------------------------------------------------------------
-"                              Syntastic
-" -----------------------------------------------------------------------------
-let g:syntastic_always_populate_loc_list = 1                                    
-let g:syntastic_auto_loc_list = 1
 " -----------------------------------------------------------------------------
 "                              Vim-Pad
 " -----------------------------------------------------------------------------
 let g:pad#dir="~/Dropbox/vim_notes"
+nnoremap <leader>fp :echo expand('%:p')<CR>

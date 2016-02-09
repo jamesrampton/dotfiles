@@ -12,6 +12,9 @@ alias ci='vi'
 alias db='HOME=$HOME/Documents/work-dropbox /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
 alias ev='$EDITOR ~/dotfiles/zsh/env.sh'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+alias ggl='google $@'
+alias gn='geeknote'
+alias gt='gittower'
 alias j='jobs'
 alias l='ls -AF'
 alias mkdn='python -m markdown -x toc -x fenced_code -x tables $1'
@@ -25,7 +28,7 @@ alias remoteon='sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist'
 alias tsd='time_sessions today'
 alias tsm='time_sessions month'
 
-function gotmux() {
+function t() {
   if [[ ! $TERM =~ screen ]]; then
     exec tmux -f ~/dotfiles/tmux-default.conf attach
   fi
@@ -44,7 +47,7 @@ function reload() {
 
 alias sp='vi ~/Documents/scratchpad'
 alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
-alias t='tree -aI .git --charset=ansi'
+alias tree='tree -aI .git --charset=ansi'
 
 function take() {
   mkdir -p "$*"

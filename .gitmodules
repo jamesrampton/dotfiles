@@ -106,10 +106,6 @@
 	path = .vim/bundle/dispatch
 	url = git://github.com/tpope/vim-dispatch.git
     ignore = dirty
-[submodule ".vim/bundle/python-mode"]
-	path = .vim/bundle/python-mode
-	url = git@github.com:klen/python-mode.git
-    ignore = dirty
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
@@ -150,3 +146,12 @@
 [submodule "bin/antigen"]
 	path = bin/antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule ".vim/bundle/geeknote"]
+	path = .vim/bundle/geeknote
+	url = https://github.com/neilagabriel/vim-geeknote
+[submodule ".vim/bundle/delimitMate"]
+	path = .vim/bundle/delimitMate
+	url = git@github.com:Raimondi/delimitMate.git

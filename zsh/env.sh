@@ -21,6 +21,10 @@ source /usr/local/bin/virtualenvwrapper.sh
 # Antigen
 source "$HOME/dotfiles/bin/antigen/antigen.zsh"
 # Syntax highlighting
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle dirhistory
+antigen bundle fabric
 antigen bundle pip
+antigen bundle sudo
+antigen bundle web-search
+antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
