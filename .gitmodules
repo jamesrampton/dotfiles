@@ -54,10 +54,6 @@
 	path = .vim/bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
     ignore = dirty
-[submodule ".vim/bundle/ultisnips"]
-	path = .vim/bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
-    ignore = dirty
 [submodule ".vim/bundle/gundo"]
 	path = .vim/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
@@ -106,10 +102,6 @@
 	path = .vim/bundle/dispatch
 	url = git://github.com/tpope/vim-dispatch.git
     ignore = dirty
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline.git
-    ignore = dirty
 [submodule ".vim/bundle/vim-pad"]
 	path = .vim/bundle/vim-pad
 	url = git@github.com:fmoralesc/vim-pad.git
@@ -149,9 +141,24 @@
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = git@github.com:ervandew/supertab.git
-[submodule ".vim/bundle/geeknote"]
-	path = .vim/bundle/geeknote
-	url = https://github.com/neilagabriel/vim-geeknote
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
+[submodule ".vim/bundle/python-mode"]
+	path = .vim/bundle/python-mode
+	url = https://github.com/klen/python-mode.git
+[submodule ".vim/bundle/braceless"]
+	path = .vim/bundle/braceless
+	url = git@github.com:tweekmonster/braceless.vim.git
+[submodule ".vim/bundle/multiple-cursors"]
+	path = .vim/bundle/multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
+[submodule ".vim/bundle/vim-renamer"]
+	path = .vim/bundle/vim-renamer
+	url = git://github.com/qpkorr/vim-renamer.git
+[submodule ".vim/bundle/vitality"]
+	path = .vim/bundle/vitality
+	url = git@github.com:sjl/vitality.vim.git
+[submodule ".vim/bundle/switch.vim"]
+	path = .vim/bundle/switch.vim
+	url = git@github.com:AndrewRadev/switch.vim.git
