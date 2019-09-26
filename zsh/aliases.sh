@@ -101,3 +101,7 @@ alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 # manage.py
 alias rs='./manage.py runserver'
 alias rsp='./manage.py runserver_plus'
+alias mig='./manage.py migrate --fake-initial'
+
+# virtualenv
+alias wk='workon'

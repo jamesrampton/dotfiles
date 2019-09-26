@@ -71,8 +71,11 @@ set wildmode=longest,list
 set wildmenu
 
 " Use ag instead of ack
-let g:ackprg = 'ag --follow --nogroup --nocolor --column'
-let g:ack_use_dispatch = 1
+" let g:ackprg = 'ag --follow --nogroup --nocolor --column'
+" let g:ack_use_dispatch = 1
+" set titlestring=%{system('basename\ $VIRTUAL_ENV')}
+
+autocmd FocusGained :e!
 
 " -----------------------------------------------------------------------------
 "                              File types
@@ -103,6 +106,9 @@ colorscheme solarized
 " Enable syntax highlighting
 syntax on
 
+" MacVim options
+set guifont=Nitti\ Basic:h20
+set lines=43 columns=130
 set breakindent
 
 " -----------------------------------------------------------------------------
@@ -221,6 +227,9 @@ inoremap jk <ESC>
 :command W w
 :command Q q
 
+nnoremap <leader>8 oprint "*"*80<ESC>
+nnoremap <leader>* Oprint "*"*80<ESC>
+
 " Disable those pesky cursor keys
 nnoremap <UP> <NOP>
 nnoremap <DOWN> <NOP>
@@ -259,10 +268,6 @@ nnoremap dcc :%s/<C-V><C-M>//e<CR>''
 " ack mappings
 nnoremap <leader>a :Ack! 
 
-" Set ultisnips triggers
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Vimux commands
 function! VmxRun()
@@ -317,9 +322,11 @@ nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>t :TlistToggle<CR>
 " let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 48
-
+nnoremap <leader>c :ccl <bar> :lcl<CR>
 " -----------------------------------------------------------------------------
 "                              Vim-Pad
 " -----------------------------------------------------------------------------
 let g:pad#dir="~/Dropbox/vim_notes"
 nnoremap <leader>fp :echo expand('%:p')<CR>
+
+autocmd FileType python BracelessEnable +indent
