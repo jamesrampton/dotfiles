@@ -1,5 +1,5 @@
 # Path settings
-export PATH=/usr/local/opt/imagemagick@6/bin:/usr/local/opt/python/libexec/bin:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/local/sbin:$HOME/dotfiles:$HOME/dotfiles/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/usr/local/opt/imagemagick@6/bin:/usr/local/opt/python/libexec/bin:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/local/sbin:$HOME/dotfiles:$HOME/dotfiles/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/opt/local/bin:/opt/local/sbin:/usr/local/opt/mysql@5.7/bin:$PATH
 eval "$(rbenv init -)"
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 . `brew --prefix`/etc/profile.d/z.sh
@@ -16,18 +16,15 @@ export MC_SKIN=$HOME/.mc/solarized.ini
 
 # Virtualenvs
 export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
 
-# Antigen
-source /usr/local/share/antigen/antigen.zsh
 # Syntax highlighting
-# antigen bundle dirhistory
-# antigen bundle fabric
-# antigen bundle pip
-# antigen bundle sudo
-# antigen bundle web-search
-# antigen bundle zsh-users/zsh-syntax-highlighting
-# antigen bundle MichaelAquilina/zsh-autoswitch-virtualenv
-# antigen apply
+source <(antibody init)
+antibody bundle robbyrussell/oh-my-zsh path:plugins/pip
+antibody bundle robbyrussell/oh-my-zsh path:plugins/sudo
+antibody bundle robbyrussell/oh-my-zsh path:plugins/web-search
+antibody bundle zsh-users/zsh-syntax-highlighting
+# antibody bundle MichaelAquilina/zsh-autoswitch-virtualenv
 
 eval "$(nodenv init -)"
