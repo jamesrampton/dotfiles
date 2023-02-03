@@ -47,7 +47,7 @@ let-env ENV_CONVERSIONS = {
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 let-env PATH = [
-"/Users/jhr/.nvm/versions/node/v14.17.6/bin",
+"/Users/jr/.nvm/versions/node/v14.17.6/bin",
 "/usr/local/bin",
 "/usr/bin",
 "/bin",
@@ -56,16 +56,17 @@ let-env PATH = [
 "/Library/TeX/texbin",
 "/usr/local/go/bin",
 "/Library/Apple/usr/bin",
-"/Users/jhr/.cargo/bin",
+"/Users/jr/.cargo/bin",
 "/usr/local/opt/ruby/bin",
 "/opt/bin",
 "/usr/local/sbin",
 "/Library/Apple/bin",
 "/usr/libexec",
-"/Users/jhr/.local/bin",
-"/Users/jhr/.bun/bin",
+"/Users/jr/.local/bin",
+"/Users/jr/.bun/bin",
 "/usr/local/opt/llvm/bin",
 ]
+let-env PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 
 # Directories to search for scripts when calling source or use
 #
@@ -89,8 +90,8 @@ let-env EDITOR = 'hx'
 let-env HOMEBREW_INSTALL_BADGE = '☕️'
 # Starship init
 mkdir ~/.cache/starship
-#starship init nu | save ~/.cache/starship/init.nu
+# starship init nu | save ~/.cache/starship/init.nu
 
 # zoxide init
 let-env _ZO_ECHO = 1
-#zoxide init nushell --cmd j --hook prompt | save ~/.zoxide.nu
+# zoxide init nushell --cmd j --hook prompt | save ~/.zoxide.nu
