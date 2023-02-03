@@ -1,0 +1,40 @@
+theme = "rose_pine_moon"
+
+[editor]
+cursorline = false
+line-number = "relative"
+color-modes = true
+shell = ["nu", "-c"]
+bufferline = "multiple"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "all"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+
+[keys.normal]
+"ret" = ["open_below", "normal_mode"]
+
+[keys.normal.space]
+c = ":buffer-close"
+C = ":buffer-close-others"
+W = ":write"
+Q = ":quit"
+# i = ":insert-output"
+
+[keys.normal.backspace]
+c = ":config-open"
+s = ":config-reload"
+
+# [keys.insert]
+# j = { b = "normal_mode" }
