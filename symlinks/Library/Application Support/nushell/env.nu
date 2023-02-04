@@ -94,4 +94,4 @@ mkdir ~/.cache/starship
 
 # zoxide init
 let-env _ZO_ECHO = 1
-# zoxide init nushell --cmd j --hook prompt | save ~/.zoxide.nu
+# zoxide init nushell --cmd j --hook prompt | save ~/.cache/.zoxide.nu

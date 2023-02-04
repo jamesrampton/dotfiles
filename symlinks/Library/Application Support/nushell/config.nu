@@ -572,4 +572,4 @@ alias l = ls -a
 source ~/.cache/starship/init.nu
 
 # zoxide config
-source ~/.zoxide.nu
+source ~/.cache/.zoxide.nu
