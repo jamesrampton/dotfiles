@@ -87,7 +87,7 @@ let-env LS_COLORS = (vivid generate nord | str trim)
 let-env EDITOR = 'hx'
 
 # Homebrew
-let-env HOMEBREW_INSTALL_BADGE = '☕️'
+let-env HOMEBREW_INSTALL_BADGE = '🫖'
 # Starship init
 mkdir ~/.cache/starship
 # starship init nu | save ~/.cache/starship/init.nu
