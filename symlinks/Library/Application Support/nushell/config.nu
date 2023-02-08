@@ -573,3 +573,6 @@ source ~/.cache/starship/init.nu
 
 # zoxide config
 source ~/.cache/.zoxide.nu
+
+# show system info on load
+neofetch
