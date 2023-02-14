@@ -165,7 +165,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 18.0
+  size: 19.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -189,7 +189,7 @@ font:
   builtin_box_drawing: true
 
 # If `true`, bold text is drawn using the bright color variants.
-# draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
 #colors:
