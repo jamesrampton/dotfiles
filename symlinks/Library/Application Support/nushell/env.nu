@@ -65,6 +65,7 @@ let-env PATH = [
 "/Users/jr/.local/bin",
 "/Users/jr/.bun/bin",
 "/usr/local/opt/llvm/bin",
+"/Users/jr/Library/Python/3.9/bin",
 ]
 let-env PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 
