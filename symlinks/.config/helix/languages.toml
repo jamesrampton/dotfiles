@@ -5,7 +5,7 @@ injection-regex = "html"
 file-types = ["html"]
 roots = []
 language-server = { command = "html-languageserver", args = ["--stdio"] }
-auto-format = true
+auto-format = false
 config = { "provideFormatter" = true }
 indent = { tab-width = 2, unit = "  " }
 
