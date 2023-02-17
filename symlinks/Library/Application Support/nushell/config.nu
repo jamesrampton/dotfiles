@@ -566,7 +566,7 @@ alias server = (simple-http-server -p 80 -i) # -i flag auto-renders index.html f
 alias s = ssh (rg "^Host ([^*]+)$" ~/.ssh/config | sd 'Host ' '' | fzf | sd \n '')
 
 # Random aliases
-alias h = hx
+alias e = hx
 alias l = ls -a
 
 # Starship config
