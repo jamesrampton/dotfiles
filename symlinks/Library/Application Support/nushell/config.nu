@@ -160,7 +160,7 @@ let dark_theme = {
     shape_float: purple_bold
     shape_range: yellow_bold
     shape_internalcall: yellow_bold
-    shape_external: purple
+    shape_external: yellow_bold
     shape_externalarg: green_bold
     shape_literal: blue
     shape_operator: yellow
