@@ -155,30 +155,30 @@ let dark_theme = {
     # shapes are used to change the cli syntax highlighting
     shape_garbage: { fg: "#FFFFFF" bg: "#FF0000" attr: b}
     shape_binary: purple_bold
-    shape_bool: light_blue
+    shape_bool: light_cyan
     shape_int: purple_bold
     shape_float: purple_bold
     shape_range: yellow_bold
-    shape_internalcall: yellow_bold
-    shape_external: purple
+    shape_internalcall: cyan_bold
+    shape_external: cyan
     shape_externalarg: green_bold
     shape_literal: blue
     shape_operator: yellow
     shape_signature: green_bold
     shape_string: green
-    shape_string_interpolation: blue_bold
-    shape_datetime: blue_bold
-    shape_list: blue_bold
+    shape_string_interpolation: cyan_bold
+    shape_datetime: cyan_bold
+    shape_list: cyan_bold
     shape_table: blue_bold
-    shape_record: blue_bold
+    shape_record: cyan_bold
     shape_block: blue_bold
-    shape_filepath: white
-    shape_directory: white
-    shape_globpattern: blue_bold
+    shape_filepath: cyan
+    shape_directory: cyan
+    shape_globpattern: cyan_bold
     shape_variable: purple
     shape_flag: blue_bold
     shape_custom: green
-    shape_nothing: light_blue
+    shape_nothing: light_cyan
     shape_matching_brackets: { attr: u }
 }
 
