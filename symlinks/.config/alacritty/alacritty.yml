@@ -186,7 +186,7 @@ font:
   # If `true`, Alacritty will use a custom built-in font for box drawing
   # characters (Unicode points 2500 - 259f).
   #
-  builtin_box_drawing: true
+  builtin_box_drawing: false
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
@@ -399,7 +399,7 @@ cursor:
     #   - _ Underline
     #   - | Beam
     # shape: Beam
-    shape: Beam
+    shape: Block
 
     # Cursor blinking state
     #
@@ -424,7 +424,7 @@ cursor:
   # Time after which cursor stops blinking, in seconds.
   #
   # Specifying '0' will disable timeout for blinking.
-  blink_timeout: 5
+  blink_timeout: 0
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
@@ -432,7 +432,7 @@ cursor:
 
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.
-  thickness: 0.25
+  thickness: 0.15
 
 # Live config reload (changes require restart)
 #live_config_reload: true
