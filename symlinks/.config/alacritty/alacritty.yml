@@ -21,10 +21,10 @@ font:
     family: MonoLisa
     style: Bold
   italic:
-    family: MonoLisa
-    style: Italic
+    family: "MonoLisa script"
+    style: Light Italic
   bold_italic:
-    family: MonoLisa
+    family: "MonoLisa script"
     style: Bold Italic
   size: 20.0
   offset:
