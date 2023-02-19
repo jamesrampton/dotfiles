@@ -7,6 +7,9 @@
 "ui.background" = { bg = "base" }
 "ui.background.separator" = { bg = "base" }
 
+"ui.bufferline" = { fg = "highlight_high" }
+"ui.bufferline.active" = { fg = "text" }
+
 "ui.cursor" = { fg = "text", bg = "highlight_high" }
 # "ui.cursor.select" = {}
 "ui.cursor.match" = { fg = "text", bg = "highlight_low" }
@@ -37,7 +40,7 @@
 
 "ui.virtual.ruler" = { bg = "overlay" }
 "ui.virtual.whitespace" = { fg = "highlight_med" }
-"ui.virtual.indent-guide" = { fg = "muted" }
+"ui.virtual.indent-guide" = { fg = "highlight_low" }
 
 "ui.menu" = { fg = "subtle", bg = "surface" }
 "ui.menu.selected" = { fg = "text" }
