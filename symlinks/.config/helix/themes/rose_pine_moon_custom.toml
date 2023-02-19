@@ -7,8 +7,8 @@
 "ui.background" = { bg = "base" }
 "ui.background.separator" = { bg = "base" }
 
-"ui.bufferline" = { fg = "highlight_high" }
-"ui.bufferline.active" = { fg = "text" }
+"ui.bufferline" = { fg = "subtle" }
+"ui.bufferline.active" = { fg = "subtle", modifiers = ["reversed"] }
 
 "ui.cursor" = { fg = "text", bg = "highlight_high" }
 # "ui.cursor.select" = {}
