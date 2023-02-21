@@ -22,8 +22,9 @@ shebangs = ["python"]
 roots = [".git"]
 comment-token = "#"
 language-server = { command = "pylsp" }
-formatter = { command = "sh", args = ["-c", "isort - | black --quiet -"]}
+formatter = { command = "sh", args = ["-c", "isort - | black --quiet --line-length=99 -"]}
 auto-format = true
+config = {pylsp={plugins={pycodestyle={enabled=false},flake8={enabled=true,maxLineLength=99},pyflakes={enabled=false}}}}
 # TODO: pyls needs utf-8 offsets
 indent = { tab-width = 4, unit = "    " }
 
