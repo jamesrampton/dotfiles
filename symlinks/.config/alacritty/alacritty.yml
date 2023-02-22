@@ -1,5 +1,6 @@
 import:
   - ~/.config/alacritty/rosepine/rose-pine-moon.yml
+  # - ~/.config/alacritty/rosepine/rose-pine-dawn.yml
 
 env:
   TERM: alacritty
@@ -33,7 +34,7 @@ font:
   glyph_offset:
     x: 0
     y: 2
-  builtin_box_drawing: false
+  builtin_box_drawing: true
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
