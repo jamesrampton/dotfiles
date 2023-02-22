@@ -1,11 +1,11 @@
-theme = "rose_pine_moon"
+theme = "rose_pine_moon_custom"
 
 [editor]
 cursorline = false
 line-number = "relative"
 color-modes = true
 shell = ["nu", "-c"]
-bufferline = "multiple"
+bufferline = "always"
 
 [editor.cursor-shape]
 normal = "block"
@@ -16,11 +16,19 @@ space = "none"
 tab = "all"
 newline = "all"
 
+[editor.whitespace.characters]
+newline = "⤶"
+
 [editor.file-picker]
 hidden = false
 
 [editor.lsp]
 display-messages = true
+
+[editor.indent-guides]
+render = true
+character = "│"
+skip-levels = 1
 
 [keys.normal]
 "ret" = ["open_below", "normal_mode"]
