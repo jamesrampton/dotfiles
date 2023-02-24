@@ -64,7 +64,7 @@ let-env PATH = [
 "/usr/libexec",
 "/Users/jr/.local/bin",
 "/Users/jr/.bun/bin",
-"/usr/local/opt/llvm/bin",
+"/opt/homebrew/opt/llvm/bin"
 "/opt/homebrew/bin",
 ]
 let-env PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
@@ -87,10 +87,12 @@ let-env LS_COLORS = (vivid generate nord | str trim)
 
 let-env EDITOR = 'hx'
 
+let-env RUSTC_WRAPPER = 'sccache'
+
 # Homebrew
 let-env HOMEBREW_INSTALL_BADGE = '🫖'
 # Starship init
-mkdir ~/.cache/starship
+# mkdir ~/.cache/starship
 # starship init nu | save ~/.cache/starship/init.nu
 
 # zoxide init
