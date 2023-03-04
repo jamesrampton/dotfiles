@@ -568,6 +568,7 @@ alias s = ssh (rg "^Host ([^*]+)$" ~/.ssh/config | sd 'Host ' '' | sk | sd \n ''
 # Random aliases
 alias e = hx
 alias l = ls -a
+alias ca = cargo
 
 # Starship config
 source ~/.cache/starship/init.nu
