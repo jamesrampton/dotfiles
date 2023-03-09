@@ -12,7 +12,7 @@
 
 "ui.cursor" = { fg = "text", bg = "highlight_high" }
 # "ui.cursor.select" = {}
-"ui.cursor.match" = { fg = "text", bg = "highlight_low" }
+"ui.cursor.match" = { fg = "text", bg = "overlay" }
 "ui.cursor.primary" = { fg = "text", bg = "muted"}
 
 # "ui.gutter" = {}
