@@ -538,10 +538,8 @@ alias dps = (docker ps)
 
 # Git aliases
 alias gs = git status -sb
-
-# Lazygit aliases
-alias gg = lazygit
-alias gu = gitui
+alias lg = lazygit
+alias gg = gitui
 
 # Tmux commands
 alias tmux = tmux -2
