@@ -38,7 +38,7 @@
 # "ui.text.focus" = {}
 "ui.text.info" = { fg = "subtle" }
 
-"ui.virtual.ruler" = { bg = "overlay" }
+"ui.virtual.ruler" = { bg = "surface" }
 "ui.virtual.whitespace" = { fg = "highlight_med" }
 "ui.virtual.indent-guide" = { fg = "highlight_low" }
 
