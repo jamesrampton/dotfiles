@@ -37,8 +37,8 @@ skip-levels = 1
 [keys.normal.space]
 c = ":buffer-close"
 C = ":buffer-close-others"
-W = ":write"
-Q = ":quit"
+# W = ":write"
+# Q = ":quit"
 # i = ":insert-output"
 
 [keys.normal.backspace]
