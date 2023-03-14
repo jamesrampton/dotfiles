@@ -560,7 +560,9 @@ def tk [session_name] {
 alias .. = (cd ..)
 alias ... = (cd ...)
 alias .... = (cd ....)
-alias server = (simple-http-server -p 80 -i) # -i flag auto-renders index.html files
+def server [] {
+  simple-http-server -p 80 -i # -i flag auto-renders index.html files
+} 
 alias s = ssh (rg "^Host ([^*]+)$" ~/.ssh/config | sd 'Host ' '' | sk | sd \n '')
 
 # Random aliases
