@@ -532,34 +532,43 @@ let-env config = {
 }
 
 # Docker aliases
-alias dsa = (docker ps -q | xargs docker stop)
-alias dcu = (docker-compose up -d)
-alias dps = (docker ps)
+def dsa [] {
+  docker ps -q | xargs docker stop
+}
+def dcu [] {
+  docker-compose up -d
+}
+def dps [] {
+  docker ps
+}
 
 # Git aliases
 alias gs = git status -sb
 alias lg = lazygit
 alias gg = gitui
 
-# Tmux commands
-alias tmux = tmux -2
-
 def mux [] {
-  tmux -f ~/dotfiles/tmux-default.conf attach
+  tmux -2 -f ~/dotfiles/tmux-default.conf attach
 }
 
 def tn [session_name] {
-  let-env TMUX = tmux new-session -d -s $session_name
-  tmux switch-client -t $session_name
+  let-env TMUX = tmux -2 new-session -d -s $session_name
+  tmux -2 switch-client -t $session_name
 }
 def tk [session_name] {
-  tmux kill-session -t $session_name
+  tmux -2 kill-session -t $session_name
 }
 
 # Utility aliases
-alias .. = (cd ..)
-alias ... = (cd ...)
-alias .... = (cd ....)
+def .. [] {
+  cd ..
+}
+def ... [] {
+  cd ...
+}
+def .... [] {
+  cd ....
+}
 def server [] {
   simple-http-server -p 80 -i # -i flag auto-renders index.html files
 } 
