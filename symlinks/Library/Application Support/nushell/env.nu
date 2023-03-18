@@ -64,6 +64,7 @@ let-env PATH = [
 "/usr/libexec",
 "/Users/jr/.local/bin",
 "/Users/jr/.bun/bin",
+"/Users/jr/dotfiles/bin",
 "/opt/homebrew/opt/llvm/bin"
 "/opt/homebrew/bin",
 ]
