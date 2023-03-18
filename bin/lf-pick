@@ -1,0 +1,2 @@
+lf -selection-path=/tmp/lfpick
+cat /tmp/lfpick
