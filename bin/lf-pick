@@ -1,2 +1,7 @@
-lf -selection-path=/tmp/lfpick
-cat /tmp/lfpick
+#! /bin/sh
+function lfp() {
+	local TMP_PICKS=$(mktemp)
+	lf -selection-path=$TMP_PICKS
+	cat $TMP_PICKS
+}
+lfp
