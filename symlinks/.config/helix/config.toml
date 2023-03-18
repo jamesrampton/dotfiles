@@ -1,7 +1,8 @@
 theme = "rose_pine_moon_custom"
 
 [editor]
-cursorline = false
+cursorline = true
+cursorcolumn = true
 line-number = "relative"
 color-modes = true
 shell = ["nu", "-c"]

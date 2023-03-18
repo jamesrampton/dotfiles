@@ -49,7 +49,7 @@
 "ui.selection" = { bg = "overlay" }
 "ui.selection.primary" = { bg = "highlight_med" }
 
-"ui.cursorline.primary" = { bg = "highlight_low" }
+"ui.cursorline.primary" = { bg = "surface" }
 "ui.cursorline.secondary" = { bg = "surface" }
 
 "warning" = "gold"
