@@ -48,6 +48,7 @@ cursor:
   unfocused_hollow: true
   thickness: 0.15
 
+live_config_reload: true
 hints:
   # Keys used for the hint labels.
   alphabet: "jfkdls;ahgurieowpq"
