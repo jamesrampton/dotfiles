@@ -27,7 +27,7 @@ font:
   bold_italic:
     family: MonoLisa
     style: Bold Italic
-  size: 22.0
+  size: 20.0
   offset:
     x: 0
     y: 0
