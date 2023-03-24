@@ -42,13 +42,14 @@ selection:
 
 cursor:
   style:
-     shape: Block
-     blinking: Never
+    shape: Block
+    blinking: On
   blink_timeout: 0
   unfocused_hollow: true
   thickness: 0.15
 
 live_config_reload: true
+
 hints:
   # Keys used for the hint labels.
   alphabet: "jfkdls;ahgurieowpq"
