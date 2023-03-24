@@ -47,26 +47,27 @@ let-env ENV_CONVERSIONS = {
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 let-env PATH = [
-"/Users/jr/.nvm/versions/node/v14.17.6/bin",
-"/usr/local/bin",
-"/usr/bin",
-"/bin",
-"/usr/sbin",
-"/sbin",
-"/Library/TeX/texbin",
-"/usr/local/go/bin",
-"/Library/Apple/usr/bin",
-"/Users/jr/.cargo/bin",
-"/usr/local/opt/ruby/bin",
-"/opt/bin",
-"/usr/local/sbin",
-"/Library/Apple/bin",
-"/usr/libexec",
-"/Users/jr/.local/bin",
-"/Users/jr/.bun/bin",
-"/Users/jr/dotfiles/bin",
-"/opt/homebrew/opt/llvm/bin"
-"/opt/homebrew/bin",
+    "/Library/Apple/bin",
+    "/Library/Apple/usr/bin",
+    "/Library/TeX/texbin",
+    "/Users/jr/.bun/bin",
+    "/Users/jr/.cargo/bin",
+    "/Users/jr/.local/bin",
+    "/Users/jr/.nvm/versions/node/v14.17.6/bin",
+    "/Users/jr/dotfiles/bin",
+    "/bin",
+    "/opt/bin",
+    "/opt/homebrew/bin",
+    "/opt/homebrew/opt/llvm/bin"
+    "/opt/homebrew/sbin",
+    "/sbin",
+    "/usr/bin",
+    "/usr/libexec",
+    "/usr/local/bin",
+    "/usr/local/go/bin",
+    "/usr/local/opt/ruby/bin",
+    "/usr/local/sbin",
+    "/usr/sbin",
 ]
 let-env PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 
