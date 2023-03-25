@@ -4,7 +4,7 @@ scope = "text.html.basic"
 injection-regex = "html"
 file-types = ["html"]
 roots = []
-language-server = { command = "html-languageserver", args = ["--stdio"] }
+language-server = { command = "html-languageserver", args = [ "--stdio"] }
 auto-format = false
 config = { "provideFormatter" = true }
 indent = { tab-width = 2, unit = "  " }
@@ -31,3 +31,19 @@ indent = { tab-width = 4, unit = "    " }
 [[grammar]]
 name = "python"
 source = { git = "https://github.com/tree-sitter/tree-sitter-python", rev = "de221eccf9a221f5b85474a553474a69b4b5784d" }
+
+[[language]]
+name = "toml"
+scope = "source.toml"
+injection-regex = "toml"
+file-types = ["toml"]
+roots = []
+comment-token = "#"
+language-server = { command = "taplo", args = ["lsp", "stdio"] }
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "toml"
+source = { git = "https://github.com/ikatyang/tree-sitter-toml", rev = "7cff70bbcbbc62001b465603ca1ea88edd668704" }
+
