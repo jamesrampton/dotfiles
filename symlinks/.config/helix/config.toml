@@ -43,3 +43,5 @@ C = ":buffer-close-others"
 [keys.normal.backspace]
 c = ":config-open"
 s = ":config-reload"
+r = ":reload-all"
+
