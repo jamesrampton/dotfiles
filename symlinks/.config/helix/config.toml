@@ -39,13 +39,7 @@ C-f = [":new", ":insert-output lf-pick", ":theme default", "select_all", "split_
 [keys.normal.space]
 c = ":buffer-close"
 C = ":buffer-close-others"
-# W = ":write"
-# Q = ":quit"
-# i = ":insert-output"
 
 [keys.normal.backspace]
 c = ":config-open"
 s = ":config-reload"
-
-# [keys.insert]
-# j = { b = "normal_mode" }
