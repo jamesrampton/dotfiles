@@ -27,10 +27,20 @@ hidden = false
 [editor.lsp]
 display-messages = true
 
+[editor.soft-wrap]
+enable = true
+
 [editor.indent-guides]
 render = true
 character = "│"
 skip-levels = 1
+
+[editor.statusline]
+left = ["mode", "spacer", "spinner", "spacer", "version-control",  "file-name"]
+right = ["diagnostics", "selections", "position", "total-line-numbers", "file-encoding"]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
 
 [keys.normal]
 "ret" = ["open_below", "normal_mode"]
