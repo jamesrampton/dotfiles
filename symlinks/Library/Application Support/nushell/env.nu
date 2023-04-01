@@ -55,6 +55,7 @@ let-env PATH = [
     "/Users/jr/.local/bin",
     "/Users/jr/.nvm/versions/node/v14.17.6/bin",
     "/Users/jr/dotfiles/bin",
+    "/Users/jr/.surrealdb/",
     "/bin",
     "/opt/bin",
     "/opt/homebrew/bin",
