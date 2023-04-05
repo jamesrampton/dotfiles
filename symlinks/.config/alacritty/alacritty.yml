@@ -43,7 +43,7 @@ selection:
 cursor:
   style:
     shape: Block
-    blinking: On
+    blinking: Never
   blink_timeout: 0
   unfocused_hollow: true
   thickness: 0.15
