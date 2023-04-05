@@ -293,10 +293,10 @@ let-env config = {
   show_banner: false # true or false to enable or disable the banner
   render_right_prompt_on_last_line: false # true or false to enable or disable right prompt to be rendered on last line of the prompt.
   hooks: {
-    pre_prompt: [{
+    pre_prompt: [{||
       $nothing  # replace with source code to run before the prompt is shown
     }]
-    pre_execution: [{
+    pre_execution: [{||
       $nothing  # replace with source code to run before the repl input is run
     }]
     env_change: {
@@ -304,7 +304,7 @@ let-env config = {
         $nothing  # replace with source code to run if the PWD environment is different since the last repl input
       }]
     }
-    display_output: {
+    display_output: {||
       if (term size).columns >= 100 { table -e } else { table }
     }
   }
@@ -552,7 +552,7 @@ def mux [] {
 }
 
 def tn [session_name] {
-  let-env TMUX = tmux -2 new-session -d -s $session_name
+  let-env TMUX = (tmux -2 new-session -d -s $session_name)
   tmux -2 switch-client -t $session_name
 }
 def tk [session_name] {
