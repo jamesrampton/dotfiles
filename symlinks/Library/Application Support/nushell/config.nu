@@ -546,6 +546,9 @@ def dps [] {
 alias gs = git status -sb
 alias lg = lazygit
 alias gg = gitui
+def-env gr [] {
+  cd (git rev-parse --show-toplevel | str trim)
+}
 
 def mux [] {
   tmux -2 -f ~/dotfiles/tmux-default.conf attach
