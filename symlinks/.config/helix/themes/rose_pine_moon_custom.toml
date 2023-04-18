@@ -4,7 +4,7 @@
 #   Please submit changes to https://github.com/rose-pine/helix.
 #   The Rosé Pine team will update Helix, including you as a co-author.
 
-"ui.background" = { bg = "base" }
+"ui.background" = { }
 "ui.background.separator" = { bg = "base" }
 
 "ui.bufferline" = { fg = "subtle" }
