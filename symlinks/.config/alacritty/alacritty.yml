@@ -11,7 +11,7 @@ window:
    y: 10
   dynamic_padding: true
   decorations: buttonless
-  opacity: 0.25
+  opacity: 0.5
   startup_mode: Maximized
 
 font:
@@ -27,7 +27,7 @@ font:
   bold_italic:
     family: MonoLisa
     style: Bold Italic
-  size: 17.0
+  size: 16.5
   offset:
     x: 0
     y: 0
