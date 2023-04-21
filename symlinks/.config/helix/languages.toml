@@ -7,7 +7,7 @@ roots = []
 language-server = { command = "html-languageserver", args = [ "--stdio"] }
 auto-format = false
 config = { "provideFormatter" = true }
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "  " }
 
 [[grammar]]
 name = "html"
