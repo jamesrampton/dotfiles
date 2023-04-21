@@ -549,6 +549,8 @@ def dps [] {
 
 # Git aliases
 alias gg = gitui
+alias ga = git add
+alias gaa = git add --all
 alias gst = git status
 alias gsb = git status -sb
 alias gco = git checkout
