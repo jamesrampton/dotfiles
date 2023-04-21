@@ -548,12 +548,18 @@ def dps [] {
 }
 
 # Git aliases
-alias gs = git status -sb
-alias lg = lazygit
 alias gg = gitui
+alias gst = git status
+alias gsb = git status -sb
+alias gco = git checkout
+alias gcm = git commit
+alias gps = git push
+alias gpl = git pull
+alias gft = git fetch --all
 def-env gr [] {
   cd (git rev-parse --show-toplevel | str trim)
 }
+alias lg = lazygit
 
 def mux [] {
   tmux -2 -f ~/dotfiles/tmux-default.conf attach
