@@ -5,7 +5,7 @@
 #   The Rosé Pine team will update Helix, including you as a co-author.
 
 "ui.background" = { }
-"ui.background.separator" = { bg = "base" }
+"ui.background.separator" = { }
 
 "ui.bufferline" = { fg = "subtle" }
 "ui.bufferline.active" = { fg = "subtle", modifiers = ["reversed"] }
@@ -23,9 +23,9 @@
 
 "ui.statusline" = { fg = "subtle", bg = "surface" }
 "ui.statusline.inactive" = { fg = "muted", bg = "surface" }
-"ui.statusline.normal" = { fg = "rose", bg = "rose_10" }
-"ui.statusline.insert" = { fg = "foam", bg = "foam_10" }
-"ui.statusline.select" = { fg = "iris", bg = "iris_10" }
+"ui.statusline.normal" = { fg = "rose", bg = "rose_10", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "foam", bg = "foam_10", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "iris", bg = "iris_10", modifiers = ["bold"] }
 # "ui.statusline.separator" = {}
 
 "ui.popup" = { bg = "surface" }
@@ -42,6 +42,7 @@
 "ui.virtual.whitespace" = { fg = "highlight_med" }
 "ui.virtual.indent-guide" = { fg = "highlight_low" }
 
+"ui.virtual.inlay-hint" = { fg = "muted", modifiers = ["italic"]}
 "ui.virtual.inlay-hint.parameter" = { fg = "muted", modifiers = ["italic"]}
 "ui.virtual.inlay-hint.type" = { fg = "muted", modifiers = ["italic"]}
 "ui.virtual.wrap" = { fg = "highlight_med" }
