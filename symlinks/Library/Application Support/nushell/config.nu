@@ -548,19 +548,23 @@ def dps [] {
 }
 
 # Git aliases
-alias gg = gitui
 alias ga = git add
 alias gaa = git add --all
-alias gst = git status
-alias gsb = git status -sb
-alias gco = git checkout
 alias gcm = git commit
-alias gps = git push
-alias gpl = git pull
+alias gco = git checkout
+alias gd = git diff
+alias gdt = git difftool
 alias gft = git fetch --all
+alias gl = git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+alias gm = git merge
+alias gpl = git pull
+alias gps = git push
+alias gsb = git status -sb
+alias gst = git status
 def-env gr [] {
   cd (git rev-parse --show-toplevel | str trim)
 }
+alias gg = gitui
 alias lg = lazygit
 
 def mux [] {
