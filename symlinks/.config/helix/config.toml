@@ -55,7 +55,5 @@ i = ":toggle lsp.display-inlay-hints"
 c = ":config-open"
 s = ":config-reload"
 r = ":reload-all"
-w = ":write"
-q = ":quit"
 l = ":lsp-restart"
 
