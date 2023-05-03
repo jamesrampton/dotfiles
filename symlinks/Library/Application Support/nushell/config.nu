@@ -550,6 +550,7 @@ def dps [] {
 # Git aliases
 alias ga = git add
 alias gaa = git add --all
+alias gcl = git clone
 alias gcm = git commit
 alias gco = git checkout
 alias gd = git diff
