@@ -6,13 +6,15 @@ env:
   TERM: alacritty
 
 window:
+  columns: 0
+  lines: 0
   padding:
    x: 10
    y: 10
   dynamic_padding: true
   decorations: buttonless
   opacity: 0.5
-  startup_mode: Maximized
+  startup_mode: Windowed
 
 font:
   normal:
@@ -35,6 +37,7 @@ font:
     x: 0
     y: 2
   builtin_box_drawing: true
+  option_as_alt: OnlyLeft
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
