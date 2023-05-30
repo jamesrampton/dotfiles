@@ -54,6 +54,7 @@ i = ":toggle lsp.display-inlay-hints"
 [keys.normal.backspace]
 c = ":config-open"
 s = ":config-reload"
-r = ":reload-all"
+r = ":reload"
+R = ":reload-all"
 l = ":lsp-restart"
 
