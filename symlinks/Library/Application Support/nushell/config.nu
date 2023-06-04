@@ -595,6 +595,11 @@ def server [] {
 } 
 alias s = ssh (rg "^Host ([^*]+)$" ~/.ssh/config | sd 'Host ' '' | sk | sd \n '')
 
+def-env take [dir] {
+  mkdir $dir
+  cd $dir
+}
+
 # Random aliases
 alias e = hx
 alias l = ls -a
