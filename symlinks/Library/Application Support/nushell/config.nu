@@ -543,6 +543,9 @@ def dsa [] {
 def dcu [] {
   docker-compose up -d
 }
+def dcd [] {
+  docker-compose down
+}
 def dps [] {
   docker ps
 }
@@ -550,6 +553,7 @@ def dps [] {
 # Git aliases
 alias ga = git add
 alias gaa = git add --all
+alias gb = git branch
 alias gcl = git clone
 alias gcm = git commit
 alias gco = git checkout
