@@ -71,7 +71,7 @@
 
 "attribute" = "iris"
 
-"type" = "foam"
+"type" = "pine"
 # "type.builtin" = ""
 
 "constructor" = "foam"
@@ -85,7 +85,7 @@
 # "constant.numeric.integer" = ""
 # "constant.numeric.float" = ""
 
-"string" = "gold"
+"string" = "rose"
 # "string.regexp" = ""
 # "string.special" = ""
 # "string.special.path" = ""
@@ -98,9 +98,9 @@
 # "comment.block.documenation" = ""
 
 "variable" = "text"
-"variable.builtin" = "love"
-"variable.parameter" = "iris"
-# "variable.other" = ""
+"variable.builtin" = "text"
+"variable.parameter" = "text"
+"variable.other" = "foam"
 # "variable.other.member" = ""
 
 "label" = "foam"
@@ -110,7 +110,7 @@
 # "punctuation.bracket" = ""
 # "punctuation.special" = ""
 
-"keyword" = "pine"
+"keyword" = "foam"
 # "keyword.control" = ""
 # "keyword.control.conditional" = ""
 # "keyword.control.repeat" = ""
@@ -124,9 +124,9 @@
 # "keyword.storage.type" = ""
 # "keyword.storage.modifier" = ""
 
-"operator" = "subtle"
+"operator" = "iris"
 
-"function" = "rose" # maybe pine
+"function" = "gold" # maybe pine
 "function.builtin" = "love"
 # "function.method" = ""
 # "function.macro" = ""
@@ -134,7 +134,7 @@
 
 "tag" = "foam"
 
-"namespace" = "iris"
+"namespace" = "text"
 
 "markup.heading.marker" = "muted"
 "markup.heading" = { fg = "iris", modifiers = ["bold"] }
@@ -183,7 +183,7 @@ love           = "#eb6f92"
 love_10        = "#3a2841"
 gold           = "#f6c177"
 gold_10        = "#39313e"
-rose           = "#ea9a97"
+rose           = "#ebbcba"
 rose_10        = "#392d41"
 pine           = "#3e8fb0"
 pine_10        = "#252c44"
