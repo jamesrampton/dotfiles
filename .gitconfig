@@ -1,29 +1,27 @@
-[push]
-	default = simple
 [user]
-	email = me@jamesrampton.com
 	name = James Rampton
+	email = me@jamesrampton.com
+[commit]
+	gpgsign = false
 [core]
-  editor = vim
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
+	editor = hx
+	pager = delta
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false
+	side-by-side = true
+	line-numbers = true
+	syntax-theme = base16
+	true-color = always
+[diff]
+	colorMoved = default
+[interactive]
+	diffFilter = delta --color-only --features=interactive
 [merge]
-	tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-  tool = Kaleidoscope
-[difftool]
-	prompt = false
-[mergetool]
-	prompt = false
-	keepBackup = false
-[diff]
-	tool = Kaleidoscope
-[alias]
-	ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+	conflictstyle = diff3
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
