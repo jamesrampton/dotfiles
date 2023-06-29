@@ -565,6 +565,7 @@ alias gm = git merge
 alias gpl = git pull
 alias gps = git push
 alias gsb = git status -sb
+alias gsh = git show
 alias gst = git status
 def-env gr [] {
   cd (git rev-parse --show-toplevel | str trim)
@@ -603,6 +604,13 @@ def-env take [dir] {
   mkdir $dir
   cd $dir
 }
+
+# Mutt aliases
+alias m = neomutt
+alias mp = neomutt -F ~/.config/mutt/personal
+alias mw = neomutt -F ~/.config/mutt/work
+
+alias mbsync = mbsync -c ~/.config/isync/mbsyncrc
 
 # Random aliases
 alias e = hx
