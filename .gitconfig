@@ -17,6 +17,7 @@
 	true-color = always
 [diff]
 	colorMoved = default
+	tool = delta
 [interactive]
 	diffFilter = delta --color-only --features=interactive
 [merge]
