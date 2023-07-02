@@ -618,6 +618,7 @@ alias e = hx
 alias l = ls -a
 alias ca = cargo
 alias pdf = /Applications/sioyek.app/Contents/MacOS/sioyek
+alias lgbt = exa -lbT --git-ignore
 
 # Starship config
 source ~/.cache/starship/init.nu
