@@ -554,6 +554,7 @@ def dps [] {
 alias ga = git add
 alias gaa = git add --all
 alias gb = git branch
+alias gbl = git blame
 alias gcl = git clone
 alias gcm = git commit
 alias gco = git checkout
@@ -616,6 +617,7 @@ alias mbsync = mbsync -c ~/.config/isync/mbsyncrc
 alias e = hx
 alias l = ls -a
 alias ca = cargo
+alias pdf = /Applications/sioyek.app/Contents/MacOS/sioyek
 
 # Starship config
 source ~/.cache/starship/init.nu
