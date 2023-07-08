@@ -12,7 +12,7 @@ window:
    x: 10
    y: 10
   dynamic_padding: true
-  decorations: buttonless
+  decorations: Buttonless
   opacity: 0.6
   startup_mode: Windowed
 
@@ -55,7 +55,7 @@ live_config_reload: true
 
 hints:
   # Keys used for the hint labels.
-  alphabet: "jfkdls;ahgurieowpq"
+  alphabet: "sateribhcumonyzqkf"
 
   enabled:
   - regex: "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
@@ -66,3 +66,6 @@ hints:
     mouse:
       enabled: true
       mods: None
+    binding:
+      key: U
+      mods: Control
