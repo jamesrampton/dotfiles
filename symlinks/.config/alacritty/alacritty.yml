@@ -69,3 +69,12 @@ hints:
     binding:
       key: U
       mods: Control | Shift
+
+colors:
+  hints:
+    start:
+      foreground: '#232136'
+      background: '#e0def4'
+    end:
+      foreground: '#232136'
+      background: '#9ccfd8'
