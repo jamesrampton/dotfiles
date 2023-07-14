@@ -9,11 +9,11 @@ window:
   columns: 264
   lines: 64
   padding:
-   x: 10
-   y: 10
+    x: 15
+    y: 15
   dynamic_padding: true
   decorations: Buttonless
-  opacity: 0.6
+  opacity: 0.95
   startup_mode: Windowed
 
 font:
@@ -64,7 +64,7 @@ hints:
     command: open
     post_processing: true
     mouse:
-      enabled: true
+      enabled: false
       mods: None
     binding:
       key: U
