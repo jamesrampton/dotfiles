@@ -13,8 +13,11 @@ window:
     y: 15
   dynamic_padding: true
   decorations: Buttonless
-  opacity: 0.95
+  opacity: 0.9
   startup_mode: Windowed
+
+scrolling:
+  multiplier: 0
 
 font:
   normal:
@@ -41,7 +44,7 @@ font:
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
-  save_to_clipboard: true
+  save_to_clipboard: false
 
 cursor:
   style:
@@ -52,6 +55,9 @@ cursor:
   thickness: 0.15
 
 live_config_reload: true
+
+mouse:
+  hide_when_typing: true
 
 hints:
   # Keys used for the hint labels.

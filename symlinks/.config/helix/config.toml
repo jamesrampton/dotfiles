@@ -8,6 +8,7 @@ color-modes = true
 shell = ["nu", "-c"]
 bufferline = "always"
 auto-pairs = false
+mouse = false
 # rulers = [100]
 
 [editor.cursor-shape]
