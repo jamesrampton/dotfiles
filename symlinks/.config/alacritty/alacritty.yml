@@ -52,7 +52,7 @@ cursor:
     blinking: Always
   blink_timeout: 0
   unfocused_hollow: true
-  thickness: 0.15
+  thickness: 0.25
 
 live_config_reload: true
 

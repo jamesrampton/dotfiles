@@ -624,3 +624,5 @@ source ~/.cache/starship/init.nu
 
 # zoxide config
 source ~/.cache/.zoxide.nu
+
+source /Users/jr/.config/broot/launcher/nushell/br
