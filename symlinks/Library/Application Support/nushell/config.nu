@@ -562,6 +562,7 @@ alias gd = git diff
 alias gdt = git difftool
 alias gft = git fetch --all
 alias gl = git log --graph --pretty=format:'%Cred%h%Creset - %Cgreen%ci%Creset - %C(blue)%an%Creset - %s %C(yellow)%d%Creset' --abbrev-commit
+alias glh = gl -10
 alias gm = git merge
 alias gpl = git pull
 alias gps = git push
