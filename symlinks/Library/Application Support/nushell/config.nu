@@ -242,7 +242,7 @@ let carapace_completer = {|spans|
 
 
 # The default config record. This is where much of your global configuration is setup.
-let-env config = {
+$env.config = {
   cursor_shape: {
     vi_insert: underscore
     vi_normal: block
@@ -580,7 +580,7 @@ def mux [] {
 }
 
 def tn [session_name] {
-  let-env TMUX = (tmux -2 new-session -d -s $session_name)
+  $env.TMUX = (tmux -2 new-session -d -s $session_name)
   tmux -2 switch-client -t $session_name
 }
 def tk [session_name] {
