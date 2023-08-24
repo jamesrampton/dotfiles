@@ -563,7 +563,7 @@ alias gdt = git difftool
 alias gft = git fetch --all
 alias gl = git log --graph --pretty=format:'%Cred%h%Creset - %Cgreen%ci%Creset - %C(blue)%an%Creset - %s %C(yellow)%d%Creset' --abbrev-commit
 alias glh = gl -10
-alias gm = git merge
+alias gmg = git merge
 alias gpl = git pull
 alias gps = git push
 alias gsb = git status -sb
@@ -620,10 +620,8 @@ alias ca = cargo
 alias pdf = /Applications/sioyek.app/Contents/MacOS/sioyek
 alias lgbt = exa -lbT --git-ignore --git
 
-# Starship config
+# External configs
 source ~/.cache/starship/init.nu
-
-# zoxide config
 source ~/.cache/.zoxide.nu
-
 source /Users/jr/.config/broot/launcher/nushell/br
+source ~/.local/share/atuin/init.nu
