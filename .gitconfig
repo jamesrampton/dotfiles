@@ -15,14 +15,23 @@
 	line-numbers = true
 	syntax-theme = base16
 	true-color = always
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
 [diff]
 	colorMoved = default
-	tool = delta
+	tool = Kaleidoscope
 [interactive]
 	diffFilter = delta --color-only --features=interactive
 [merge]
 	conflictstyle = diff3
+	tool = Kaleidoscope
 [init]
 	defaultBranch = main
 [pull]
 	rebase = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool]
+	prompt = false
