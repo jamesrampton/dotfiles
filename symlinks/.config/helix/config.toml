@@ -40,9 +40,9 @@ skip-levels = 1
 [editor.statusline]
 left = ["mode", "spacer", "spinner", "spacer", "file-name"]
 right = ["version-control", "spacer", "diagnostics", "selections", "position", "total-line-numbers", "file-encoding"]
-mode.normal = "N"
-mode.insert = "I"
-mode.select = "S"
+mode.normal = "normal"
+mode.insert = "insert"
+mode.select = "select"
 
 [keys.normal]
 "ret" = ["open_below", "normal_mode"]

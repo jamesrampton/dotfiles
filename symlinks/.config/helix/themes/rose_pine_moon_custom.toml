@@ -23,8 +23,8 @@
 
 "ui.statusline" = { fg = "subtle", bg = "surface" }
 "ui.statusline.inactive" = { fg = "muted", bg = "surface" }
-"ui.statusline.normal" = { fg = "rose", bg = "rose_10", modifiers = ["bold"] }
-"ui.statusline.insert" = { fg = "foam", bg = "foam_10", modifiers = ["bold"] }
+"ui.statusline.normal" = { fg = "love", bg = "cyan_10", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "gold", bg = "blue_10", modifiers = ["bold"] }
 "ui.statusline.select" = { fg = "iris", bg = "iris_10", modifiers = ["bold"] }
 # "ui.statusline.separator" = {}
 
@@ -59,33 +59,33 @@
 
 "warning" = "gold"
 "error" = "love"
-"info" = "foam"
+"info" = "blue"
 "hint" = "iris"
-"debug" = "rose"
+"debug" = "cyan"
 
 "diagnostic" = { underline = { color = "subtle", style = "curl" } }
 "diagnostic.hint" = { underline = { color = "iris", style = "curl" } }
-"diagnostic.info" = { underline = { color = "foam", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "gold", style = "curl" } }
 "diagnostic.error" = { underline = { color = "love", style = "curl" } }
 
 "attribute" = "iris"
 
-"type" = "pine"
+"type" = "green"
 # "type.builtin" = ""
 
-"constructor" = "foam"
+"constructor" = "blue"
 
-"constant" = "foam"
-"constant.builtin" = "pine"
+"constant" = "blue"
+"constant.builtin" = "green"
 # "constant.builtin.boolean" = ""
 "constant.character" = "gold"
-"constant.character.escape" = "pine"
+"constant.character.escape" = "green"
 "constant.numeric" = "gold"
 # "constant.numeric.integer" = ""
 # "constant.numeric.float" = ""
 
-"string" = "rose"
+"string" = "cyan"
 # "string.regexp" = ""
 # "string.special" = ""
 # "string.special.path" = ""
@@ -100,17 +100,17 @@
 "variable" = "text"
 "variable.builtin" = "text"
 "variable.parameter" = "text"
-"variable.other" = "foam"
+"variable.other" = "blue"
 # "variable.other.member" = ""
 
-"label" = "foam"
+"label" = "blue"
 
 "punctuation" = "subtle"
 # "punctuation.delimiter" = ""
 # "punctuation.bracket" = ""
 # "punctuation.special" = ""
 
-"keyword" = "foam"
+"keyword" = "blue"
 # "keyword.control" = ""
 # "keyword.control.conditional" = ""
 # "keyword.control.repeat" = ""
@@ -126,24 +126,24 @@
 
 "operator" = "iris"
 
-"function" = "gold" # maybe pine
-"function.builtin" = "love"
+"function" = "gold" # maybe green
+# "function.builtin" = ""
 # "function.method" = ""
 # "function.macro" = ""
 # "function.special" = ""
 
-"tag" = "foam"
+"tag" = "blue"
 
 "namespace" = "text"
 
 "markup.heading.marker" = "muted"
 "markup.heading" = { fg = "iris", modifiers = ["bold"] }
 "markup.heading.1" = { fg = "iris", modifiers = ["bold"] }
-"markup.heading.2" = { fg = "foam", modifiers = ["bold"] }
-"markup.heading.3" = { fg = "rose", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "cyan", modifiers = ["bold"] }
 "markup.heading.4" = { fg = "gold", modifiers = ["bold"] }
-"markup.heading.5" = { fg = "pine", modifiers = ["bold"] }
-"markup.heading.6" = { fg = "foam", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "blue", modifiers = ["bold"] }
 # "markup.heading.completion" = ""
 # "markup.heading.hover" = ""
 "markup.list" = "muted"
@@ -167,7 +167,7 @@
 # "markup.normal.hover" = ""
 
 "diff" = "overlay"
-"diff.plus" = "foam"
+"diff.plus" = "blue"
 "diff.minus" = "love"
 "diff.delta" = "highlight_high"
 # "diff.delta.moved" = ""
@@ -178,17 +178,17 @@ surface        = "#2a273f"
 overlay        = "#393552"
 muted          = "#6e6a86"
 subtle         = "#908caa"
-text           = "#e0def4"
+# text         "#e0def4"
 love           = "#eb6f92"
 love_10        = "#3a2841"
 gold           = "#f6c177"
 gold_10        = "#39313e"
-rose           = "#ebbcba"
-rose_10        = "#392d41"
-pine           = "#3e8fb0"
-pine_10        = "#252c44"
-foam           = "#9ccfd8"
-foam_10        = "#2e3248"
+cyan           = "#9ccfd8"
+cyan_10        = "#2e3248"
+green          = "#4aa683"
+green_10       = "#4aa683"
+blue           = "#3e8fb0"
+blue_10        = "#252c44"
 iris           = "#c4a7e7"
 iris_10        = "#342e4a"
 highlight_low  = "#2a283e"
