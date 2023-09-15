@@ -36,7 +36,7 @@ dialect = "uk"
 
 ## which filter mode to use
 ## possible values: global, host, session, directory
-filter_mode = "host"
+filter_mode = "global"
 
 ## which filter mode to use when atuin is invoked from a shell up-key binding
 ## the accepted values are identical to those of "filter_mode"
