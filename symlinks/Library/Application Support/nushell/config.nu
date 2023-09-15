@@ -608,7 +608,8 @@ def-env take [dir] {
 
 # Mutt aliases
 alias m = neomutt
-alias mp = neomutt -F ~/.config/mutt/personal
+#alias mp = neomutt -F ~/.config/mutt/personal
+alias mp = neomutt -F ~/.config/mutt/proton
 alias mw = neomutt -F ~/.config/mutt/work
 
 alias mbsync = mbsync -c ~/.config/isync/mbsyncrc
