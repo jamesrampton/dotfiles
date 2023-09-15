@@ -167,7 +167,7 @@
 # "markup.normal.hover" = ""
 
 "diff" = "overlay"
-"diff.plus" = "blue"
+"diff.plus" = "green"
 "diff.minus" = "love"
 "diff.delta" = "highlight_high"
 # "diff.delta.moved" = ""
