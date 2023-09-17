@@ -71,7 +71,7 @@
 
 "attribute" = "iris"
 
-"type" = "green"
+"type" = "iris"
 # "type.builtin" = ""
 
 "constructor" = "blue"
@@ -124,7 +124,7 @@
 # "keyword.storage.type" = ""
 # "keyword.storage.modifier" = ""
 
-"operator" = "iris"
+"operator" = "text"
 
 "function" = "gold" # maybe green
 # "function.builtin" = ""
