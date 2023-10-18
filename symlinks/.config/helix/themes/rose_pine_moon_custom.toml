@@ -77,10 +77,10 @@
 "constructor" = "blue"
 
 "constant" = "blue"
-"constant.builtin" = "green"
+"constant.builtin" = "blue"
 # "constant.builtin.boolean" = ""
 "constant.character" = "gold"
-"constant.character.escape" = "green"
+"constant.character.escape" = "iris"
 "constant.numeric" = "gold"
 # "constant.numeric.integer" = ""
 # "constant.numeric.float" = ""
