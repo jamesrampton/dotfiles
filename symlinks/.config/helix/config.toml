@@ -30,7 +30,7 @@ hidden = false
 display-messages = true
 
 [editor.soft-wrap]
-enable = false
+enable = true
 
 [editor.indent-guides]
 render = true
