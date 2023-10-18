@@ -1,6 +1,5 @@
 import:
   - ~/.config/alacritty/rosepine/rose-pine-moon.yml
-  # - ~/.config/alacritty/rosepine/rose-pine-dawn.yml
 
 env:
   TERM: alacritty
@@ -13,7 +12,7 @@ window:
     y: 15
   dynamic_padding: true
   decorations: Buttonless
-  opacity: 0.75
+  opacity: 1
   startup_mode: Windowed
 
 scrolling:
