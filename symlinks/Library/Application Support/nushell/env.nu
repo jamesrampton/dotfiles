@@ -61,6 +61,7 @@ $env.PATH = [
     "/opt/homebrew/bin",
     "/opt/homebrew/opt/llvm/bin"
     "/opt/homebrew/sbin",
+    "/opt/homebrew/opt/curl/bin", # Need homebrew curl first in the path
     "/sbin",
     "/usr/bin",
     "/usr/libexec",
