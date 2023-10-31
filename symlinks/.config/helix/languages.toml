@@ -1,49 +1,57 @@
-[[ language ]]
-name = "html"
-scope = "text.html.basic"
-injection-regex = "html"
-file-types = ["html"]
-roots = []
-language-server = { command = "html-languageserver", args = [ "--stdio"] }
-auto-format = false
-config = { "provideFormatter" = true }
-indent = { tab-width = 4, unit = "  " }
+# python
+
+[language-server.pylsp]
+command = "pylsp"
+[language-server.pylsp.config]
+provideFormatter = true
+
+[language-server.pylsp.config.plugins.pycodestyle]
+enabled = false
+
+[language-server.pylsp.config.plugins.flake8]
+enabled = true
+maxLineLength = 99
+
+[language-server.pylsp.config.plugins.pyflakes]
+enabled = false
+
+[language-server.black]
+command = "black"
+args = ["--quiet", "--line-length=99"]
+
+[language-server.isort]
+command = "isort"
+args = []
 
 [[grammar]]
 name = "html"
-source = { git = "https://github.com/tree-sitter/tree-sitter-html", rev = "d93af487cc75120c89257195e6be46c999c6ba18" }
+source = { git = "https://github.com/tree-sitter/tree-sitter-html", rev = "29f53d8f4f2335e61bf6418ab8958dac3282077a" }
 
 [[language]]
 name = "python"
 scope = "source.python"
 injection-regex = "python"
-file-types = ["py"]
+file-types = ["py","pyi","py3","pyw","ptl",".pythonstartup",".pythonrc","SConstruct", "rpy", "cpy", "ipy", "pyt", "SConscript"]
 shebangs = ["python"]
-roots = [".git"]
+roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json"]
 comment-token = "#"
-language-server = { command = "pylsp" }
-formatter = { command = "sh", args = ["-c", "isort - | black --quiet --line-length=99 -"]}
-auto-format = true
-config = {pylsp={plugins={pycodestyle={enabled=false},flake8={enabled=true,maxLineLength=99},pyflakes={enabled=false}}}}
-# TODO: pyls needs utf-8 offsets
+language-servers = [{ name = "pylsp", except-features = ["format"]},]
 indent = { tab-width = 4, unit = "    " }
+auto-format = true
+formatter = { command = "sh", args = ["-c", "isort - | black --quiet --line-length=99 -"]}
 
 [[grammar]]
 name = "python"
 source = { git = "https://github.com/tree-sitter/tree-sitter-python", rev = "de221eccf9a221f5b85474a553474a69b4b5784d" }
 
+# html
+
 [[language]]
-name = "toml"
-scope = "source.toml"
-injection-regex = "toml"
-file-types = ["toml"]
+name = "html"
+scope = "text.html.basic"
+injection-regex = "html"
+file-types = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml"]
 roots = []
-comment-token = "#"
-language-server = { command = "taplo", args = ["lsp", "stdio"] }
+language-servers = [ "vscode-html-language-server" ]
 auto-format = true
-indent = { tab-width = 2, unit = "  " }
-
-[[grammar]]
-name = "toml"
-source = { git = "https://github.com/ikatyang/tree-sitter-toml", rev = "7cff70bbcbbc62001b465603ca1ea88edd668704" }
-
+indent = { tab-width = 4, unit = "  " }
