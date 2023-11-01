@@ -1,15 +1,15 @@
 theme = "catppuccin_frappe"
 
 [editor]
-cursorline = false
-cursorcolumn = false
+cursorline = true
+cursorcolumn = true
 line-number = "relative"
 color-modes = true
 shell = ["nu", "-c"]
 bufferline = "always"
 auto-pairs = true
 mouse = false
-# rulers = [100]
+rulers = [80]
 
 [editor.cursor-shape]
 normal = "block"
@@ -19,9 +19,6 @@ insert = "bar"
 space = "none"
 tab = "all"
 newline = "all"
-
-[editor.whitespace.characters]
-newline = "⤶"
 
 [editor.file-picker]
 hidden = false
@@ -40,9 +37,9 @@ skip-levels = 1
 [editor.statusline]
 left = ["mode", "spacer", "spinner", "spacer", "file-name"]
 right = ["version-control", "spacer", "diagnostics", "selections", "position", "total-line-numbers", "file-encoding"]
-mode.normal = "normal"
-mode.insert = "insert"
-mode.select = "select"
+mode.normal = "nor"
+mode.insert = "ins"
+mode.select = "sel"
 
 [keys.normal]
 "ret" = ["open_below", "normal_mode"]
@@ -59,3 +56,4 @@ s = ":config-reload"
 r = ":reload"
 R = ":reload-all"
 l = ":lsp-restart"
+
