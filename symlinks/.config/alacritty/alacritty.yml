@@ -13,7 +13,7 @@ window:
   dynamic_padding: true
   decorations: Buttonless
   opacity: 1
-  startup_mode: Windowed
+  startup_mode: Fullscreen
 
 scrolling:
   multiplier: 0
