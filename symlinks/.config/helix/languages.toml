@@ -53,5 +53,5 @@ injection-regex = "html"
 file-types = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml"]
 roots = []
 language-servers = [ "vscode-html-language-server" ]
-auto-format = true
+auto-format = false
 indent = { tab-width = 4, unit = "  " }
