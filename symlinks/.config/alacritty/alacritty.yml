@@ -1,5 +1,6 @@
 import:
-  - ~/.config/alacritty/rosepine/rose-pine-moon.yml
+  # - ~/.config/alacritty/rosepine/rose-pine-moon.yml
+  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
 
 env:
   TERM: alacritty

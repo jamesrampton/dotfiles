@@ -1,4 +1,4 @@
-theme = "rose_pine_moon_custom"
+theme = "catppuccin_frappe"
 
 [editor]
 cursorline = false
@@ -59,4 +59,3 @@ s = ":config-reload"
 r = ":reload"
 R = ":reload-all"
 l = ":lsp-restart"
-
