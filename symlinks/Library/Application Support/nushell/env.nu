@@ -87,7 +87,7 @@ $env.NU_PLUGIN_DIRS = [
     ($nu.config-path | path dirname | path join 'plugins')
 ]
 
-$env.LS_COLORS = (vivid generate nord | str trim)
+$env.LS_COLORS = (vivid generate catppuccin-frappe | str trim)
 
 $env.EDITOR = 'hx'
 
