@@ -15,6 +15,7 @@ window:
   decorations: Buttonless
   opacity: 1
   startup_mode: Fullscreen
+  option_as_alt: OnlyLeft
 
 scrolling:
   multiplier: 0
