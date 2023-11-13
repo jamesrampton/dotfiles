@@ -623,3 +623,5 @@ source ~/.cache/starship/init.nu
 source ~/.cache/.zoxide.nu
 source /Users/jr/.config/broot/launcher/nushell/br
 source ~/.local/share/atuin/init.nu
+
+use job.nu
