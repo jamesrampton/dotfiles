@@ -20,6 +20,9 @@ space = "none"
 tab = "all"
 newline = "all"
 
+[editor.whitespace.characters]
+newline = "↵"
+
 [editor.file-picker]
 hidden = false
 
@@ -49,6 +52,8 @@ C-f = [":new", ":insert-output lf-pick", ":theme default", "select_all", "split_
 c = ":buffer-close"
 C = ":buffer-close-others"
 i = ":toggle lsp.display-inlay-hints"
+"minus" = ":write"
+_ = ":write-quit"
 
 [keys.normal.backspace]
 c = ":config-open"
