@@ -10,14 +10,14 @@ enabled = false
 
 [language-server.pylsp.config.plugins.flake8]
 enabled = true
-maxLineLength = 99
+maxLineLength = 79
 
 [language-server.pylsp.config.plugins.pyflakes]
 enabled = false
 
 [language-server.black]
 command = "black"
-args = ["--quiet", "--line-length=99"]
+args = ["--quiet", "--line-length=79"]
 
 [language-server.isort]
 command = "isort"
@@ -38,7 +38,7 @@ comment-token = "#"
 language-servers = [{ name = "pylsp", except-features = ["format"]},]
 indent = { tab-width = 4, unit = "    " }
 auto-format = true
-formatter = { command = "sh", args = ["-c", "isort - | black --quiet --line-length=99 -"]}
+formatter = { command = "sh", args = ["-c", "isort - | black --quiet --line-length=79 -"]}
 
 [[grammar]]
 name = "python"
