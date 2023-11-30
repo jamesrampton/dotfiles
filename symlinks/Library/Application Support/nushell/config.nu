@@ -566,7 +566,7 @@ alias gps = git push
 alias gsb = git status -sb
 alias gsh = git show
 alias gst = git status
-def-env gr [] {
+def --env gr [] {
   cd (git rev-parse --show-toplevel | str trim)
 }
 alias gg = gitui
@@ -598,15 +598,15 @@ def server [] {
   simple-http-server -p 80 -i # -i flag auto-renders index.html files
 } 
 
-def-env take [dir] {
+def --env take [dir] {
   mkdir $dir
   cd $dir
 }
 
 # Mutt aliases
 alias m = neomutt
-#alias mp = neomutt -F ~/.config/mutt/personal
-alias mp = neomutt -F ~/.config/mutt/proton
+alias mp = neomutt -F ~/.config/mutt/proton_jamesrampton_com
+alias mr = neomutt -F ~/.config/mutt/proton_rampton_io
 alias mw = neomutt -F ~/.config/mutt/work
 
 alias mbsync = mbsync -c ~/.config/isync/mbsyncrc
@@ -623,5 +623,8 @@ source ~/.cache/starship/init.nu
 source ~/.cache/.zoxide.nu
 source /Users/jr/.config/broot/launcher/nushell/br
 source ~/.local/share/atuin/init.nu
+
+# Zellij aliases
+alias zas = zellij action toggle-active-sync-tab
 
 use job.nu
