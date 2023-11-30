@@ -14,7 +14,7 @@ window:
   dynamic_padding: true
   decorations: Buttonless
   opacity: 1
-  startup_mode: Maximized
+  startup_mode: FullScreen
   option_as_alt: OnlyLeft
 
 scrolling:
