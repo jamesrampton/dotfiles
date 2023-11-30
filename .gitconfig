@@ -1,13 +1,9 @@
 [user]
 	name = James Rampton
 	email = me@jamesrampton.com
-[commit]
-	gpgsign = false
 [core]
 	editor = hx
 	pager = delta
-[gpg]
-	program = /opt/homebrew/bin/gpg
 [delta]
     navigate = true    # use n and N to move between diff sections
     light = false
@@ -35,3 +31,12 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool]
 	prompt = false
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+	gpgsign = true
