@@ -9,6 +9,7 @@ shell = ["nu", "-c"]
 bufferline = "always"
 auto-pairs = true
 mouse = false
+completion-trigger-len = 0
 # rulers = [80]
 
 [editor.cursor-shape]
@@ -61,4 +62,3 @@ s = ":config-reload"
 r = ":reload"
 R = ":reload-all"
 l = ":lsp-restart"
-
