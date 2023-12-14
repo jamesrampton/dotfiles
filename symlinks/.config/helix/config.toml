@@ -54,7 +54,6 @@ c = ":buffer-close"
 C = ":buffer-close-others"
 i = ":toggle lsp.display-inlay-hints"
 "minus" = ":write"
-_ = ":write-quit"
 
 [keys.normal.backspace]
 c = ":config-open"
@@ -62,3 +61,4 @@ s = ":config-reload"
 r = ":reload"
 R = ":reload-all"
 l = ":lsp-restart"
+
