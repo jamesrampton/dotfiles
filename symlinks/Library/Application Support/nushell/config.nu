@@ -550,6 +550,7 @@ def dps [] {
 # Git aliases
 alias ga = git add
 alias gaa = git add --all
+alias gap = git add -p
 alias gb = git branch
 alias gbl = git blame
 alias gcl = git clone
@@ -557,12 +558,15 @@ alias gcm = git commit
 alias gco = git checkout
 alias gd = git diff
 alias gdt = git difftool
+alias gdh = git difftool HEAD
 alias gft = git fetch --all
 alias gl = git log --graph --pretty=format:'%Cred%h%Creset - %Cgreen%ci%Creset - %C(blue)%an%Creset - %s %C(yellow)%d%Creset' --abbrev-commit
 alias glh = gl -10
 alias gmg = git merge
 alias gpl = git pull
 alias gps = git push
+alias grs = git reset
+alias grp = git reset -p
 alias gsb = git status -sb
 alias gsh = git show
 alias gst = git status
