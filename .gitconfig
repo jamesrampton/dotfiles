@@ -9,7 +9,7 @@
     light = false
 	side-by-side = true
 	line-numbers = true
-	syntax-theme = base16
+	syntax-theme = Catppuccin-frappe
 	true-color = always
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
