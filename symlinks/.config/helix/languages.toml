@@ -55,3 +55,7 @@ roots = []
 language-servers = [ "vscode-html-language-server" ]
 auto-format = false
 indent = { tab-width = 4, unit = "  " }
+
+[[language]]
+name = "c"
+auto-format = true
