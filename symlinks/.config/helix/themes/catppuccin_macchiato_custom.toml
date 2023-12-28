@@ -1,1 +1,4 @@
-/Users/jr/.config/helix/themes/catppuccin_macchiato_custom.toml
+inherits = "catppuccin_frappe"
+
+"ui.background" = {}
+"ui.bufferline.active" = { fg = "text", bg = "base", modifiers = ["bold"] }
