@@ -9,8 +9,14 @@
     light = false
 	side-by-side = true
 	line-numbers = true
-	syntax-theme = Catppuccin-frappe
+	syntax-theme = none
 	true-color = always
+	plus-emph-style = reverse green
+	minus-emph-style = reverse red
+	line-numbers-plus-style = green
+	line-numbers-minus-style = red
+	line-numbers-zero-style = gray
+
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
