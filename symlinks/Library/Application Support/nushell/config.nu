@@ -558,7 +558,8 @@ alias gcm = git commit
 alias gco = git checkout
 alias gd = git diff
 alias gdt = git difftool
-alias gdh = git difftool HEAD
+alias gdh = git diff HEAD
+alias gdth = git difftool HEAD
 alias gft = git fetch --all
 alias gl = git log --graph --pretty=format:'%Cred%h%Creset - %Cgreen%ci%Creset - %C(blue)%an%Creset - %s %C(yellow)%d%Creset' --abbrev-commit
 alias glh = gl -10
