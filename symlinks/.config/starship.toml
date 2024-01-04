@@ -9,18 +9,18 @@ $git_status\
 $cmd_duration
 $character"""
 [directory]
-style = "purple"
+style = "white"
 
 [package]
 disabled = true
 
 [character]
-success_symbol = "[❯](green)"
+success_symbol = "[❯](white)"
 error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](purple)"
+vicmd_symbol = "[❮](green)"
 
 [git_branch]
-format = "[$branch]($style)"
+format = "[$branch ]($style)"
 style = "bright-black"
 
 [git_status]
