@@ -1,0 +1,72 @@
+### General settings
+
+set imap_check_subscribed=yes
+set sidebar_visible=no
+set mail_check_stats
+set mail_check = 5
+set timeout = 3
+set sleep_time = 0
+set mark_old = no
+set mime_forward = no
+set forward_attachments=yes
+set fcc_attach # save attachments with the body
+set include # include messages with replies
+set sort=threads
+set sort_aux=reverse-last-date-received # sort threads by last date recieved - newest first
+set date_format="%a %b %d %y %I:%M%p" # show date in year/month/day hour:minute format
+set index_format="%4C %Z %[%a %b %d %y %I:%M%p] %-30.30L (%?l?%4l&%4c?) %s"
+set local_date_header=no
+set quit=ask-yes
+set auto_tag=yes
+set edit_headers=yes
+set header_cache = ~/.cache/mutt
+set help=no
+set fast_reply=yes
+set send_charset="utf-8"
+set confirmappend=no
+set delete=yes
+
+
+### View settings
+
+set pager_index_lines = 6
+set pager_context = 3
+set pager_stop # don't go to the next message automatically
+set reflow_wrap = 90
+set wrap = 90
+auto_view text/html
+alternative_order text/enriched text/plain text/html text
+set mailcap_path = ~/.config/mutt/mailcap
+
+
+### Composition settings ###
+
+set editor="hx"
+set abort_noattach = ask-yes
+set query_command="~/dotfiles/bin/icloud-address-book-query.py '%s'"
+set query_format="%4c %t %-70.70a %-70.70n %?e?(%e)?"
+
+
+### Hooks ###
+
+folder-hook . 'set record=^'
+timeout-hook 'exec sync-mailbox'
+
+
+### Keybindings ###
+
+#macro index,pager S ":set confirmappend=no delete=yes\n<tag-prefix><save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+macro index,pager S "<tag-prefix><save-message>=Archive\n<sync-mailbox>"
+macro index d '<delete-message><sync-mailbox>'
+bind index G imap-fetch-mail
+
+bind editor <Tab> complete-query
+bind editor ^T complete
+
+bind pager <up> previous-line
+bind pager <down> next-line
+
+set abort_key = "<Esc>"
+
+source colours
+
