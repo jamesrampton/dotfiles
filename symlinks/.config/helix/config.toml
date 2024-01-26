@@ -8,13 +8,14 @@ color-modes = true
 shell = ["nu", "-c"]
 bufferline = "always"
 auto-pairs = true
-mouse = false
-completion-trigger-len = 0
+mouse = true
+completion-trigger-len = 1
 # rulers = [80]
 
 [editor.cursor-shape]
 normal = "block"
 insert = "bar"
+select = "underline"
 
 [editor.whitespace.render]
 space = "none"
@@ -28,6 +29,7 @@ newline = "↵"
 hidden = false
 
 [editor.lsp]
+auto-signature-help = false
 display-messages = true
 
 [editor.soft-wrap]
@@ -47,16 +49,16 @@ mode.select = "sel"
 
 [keys.normal]
 "ret" = ["open_below", "normal_mode"]
-C-f = [":new", ":insert-output lf-pick", ":theme default", "select_all", "split_selection_on_newline", "goto_file", "goto_last_modified_file", ":buffer-close!", ":theme rose_pine_moon_custom"]
+A-f = [":new", ":insert-output lf-pick", ":theme default", "select_all", "split_selection_on_newline", "goto_file", "goto_last_modified_file", ":buffer-close!", ":theme catppuccin_macchiato_custom"]
 "A-," = "goto_previous_buffer"
 "A-." = "goto_next_buffer"
-"A-w" = ":buffer-close"
-"A-W" = ":buffer-close-others"
 "A-/" = "repeat_last_motion"
+"X" = ["extend_line_up", "extend_to_line_bounds"]
 
 [keys.normal.space]
 i = ":toggle lsp.display-inlay-hints"
-"ret" = ":write"
+c = ":buffer-close"
+C = ":buffer-close-others"
 
 [keys.normal.backspace]
 c = ":config-open"
@@ -64,4 +66,11 @@ s = ":config-reload"
 r = ":reload"
 R = ":reload-all"
 l = ":lsp-restart"
+"w" = ":write"
+"W" = ":write-all"
+"q" = ":quit"
+"Q" = ":write-quit"
+
+[keys.select]
+"X" = ["extend_line_up", "extend_to_line_bounds"]
 
