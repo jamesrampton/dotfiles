@@ -1,4 +1,6 @@
-import = ["/Users/jr/.config/alacritty/catppuccin/catppuccin-macchiato.toml"]
+# get themes from:
+# https://github.com/ckolos/alacritty-theme-toml
+import = ["/Users/jr/.config/alacritty/themes/themes/nord.toml"]
 live_config_reload = true
 
 [colors.hints.end]
@@ -81,7 +83,7 @@ decorations = "Buttonless"
 dynamic_padding = true
 option_as_alt = "OnlyLeft"
 startup_mode = "Windowed"
-opacity = 0.80
+opacity = 0.85
 blur = true
 
 [window.dimensions]
