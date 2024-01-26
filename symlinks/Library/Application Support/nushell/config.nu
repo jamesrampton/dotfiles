@@ -547,8 +547,11 @@ def dps [] {
   docker ps
 }
 
+def dcul [] {
+  docker compose -f compose/local.yml up -d
+}
+
 # Git aliases
-alias ga = git add
 alias gaa = git add --all
 alias gap = git add -p
 alias gb = git branch
@@ -573,6 +576,9 @@ alias gsh = git show
 alias gst = git status
 def --env gr [] {
   cd (git rev-parse --show-toplevel | str trim)
+}
+def --env gap [] {
+  git add --intent-to-add (git rev-parse --show-toplevel | str trim); git add -p
 }
 alias gg = gitui
 alias lg = lazygit

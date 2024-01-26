@@ -24,7 +24,7 @@ export def spawn [
     if $group != null {
         $args = ($args | prepend ["--group", $group])
     }
-    let job_id = (pueue add -p $args)
+    let job_id = (pueue add -p ...$args)
 
     {"job_id": $job_id}
 }
