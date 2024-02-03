@@ -1,14 +1,14 @@
 # vim: filetype=neomuttrc
 # Default index colors:
 color index yellow default '.*'
-color index_author red default '.*'
+color index_author blue default '.*'
 color index_number blue default
-color index_subject blue default '.*'
+color index_subject white default '.*'
 
 # For new mail:
 color index brightyellow default "~N"
-color index_author brightred default "~N"
-color index_subject brightblue default "~N"
+color index_author brightblue default "~N"
+color index_subject brightwhite default "~N"
 
 # Header colors:
 color header blue default ".*"
