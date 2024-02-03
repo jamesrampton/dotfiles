@@ -13,7 +13,7 @@ foreground = "#232136"
 
 [cursor]
 blink_timeout = 0
-thickness = 0.25
+thickness = 0.15
 unfocused_hollow = true
 
 [cursor.style]
@@ -25,34 +25,34 @@ TERM = "alacritty"
 
 [font]
 builtin_box_drawing = false
-size = 13
+size = 16
+
+[font.normal]
+family = "MonoLisa JR"
+style = "ExtraLight"
+
+[font.italic]
+family = "MonoLisa JR"
+style = "ExtraLight Italic"
 
 [font.bold]
-family = "MonoLisa"
-style = "Bold"
+family = "MonoLisa JR"
+style = "Black"
 
 [font.bold_italic]
-family = "MonoLisa"
-style = "Bold Italic"
+family = "MonoLisa JR"
+style = "Black Italic"
 
 [font.glyph_offset]
 x = 0
 y = 2
-
-[font.italic]
-family = "MonoLisa"
-style = "Light Italic"
-
-[font.normal]
-family = "MonoLisa"
-style = "Light"
 
 [font.offset]
 x = 0
 y = 0
 
 [hints]
-alphabet = "sateribhcumonyzqkf"
+alphabet = "sateribhcumony"
 
 [[hints.enabled]]
 command = "open"
@@ -83,7 +83,7 @@ decorations = "Buttonless"
 dynamic_padding = true
 option_as_alt = "OnlyLeft"
 startup_mode = "Windowed"
-opacity = 0.85
+opacity = 0.95
 blur = true
 
 [window.dimensions]

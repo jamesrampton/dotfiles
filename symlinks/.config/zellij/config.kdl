@@ -1,4 +1,4 @@
-simplified_ui false
+simplified_ui true
 default_layout "compact"
 ui {
     pane_frames {
@@ -7,7 +7,7 @@ ui {
     }
 }
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
-theme "catppuccin-frappe"
+theme "nord"
 keybinds clear-defaults=true {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
@@ -151,10 +151,12 @@ keybinds clear-defaults=true {
         bind "Ctrl z" { SwitchToMode "Locked"; }
         // bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
-        bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
-        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
+        bind "Alt h" "Alt Left" { MoveFocus "Left"; }
+        bind "Alt l" "Alt Right" { MoveFocus "Right"; }
         bind "Alt j" "Alt Down" { MoveFocus "Down"; }
         bind "Alt k" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt ]" { GoToNextTab; }
+        bind "Alt [" { GoToPreviousTab; }
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
     }
