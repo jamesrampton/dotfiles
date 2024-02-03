@@ -614,12 +614,8 @@ def --env take [dir] {
   cd $dir
 }
 
-# Mutt aliases
+# Mail aliases
 alias m = neomutt
-alias mp = neomutt -F ~/.config/mutt/proton_jamesrampton_com
-alias mr = neomutt -F ~/.config/mutt/proton_rampton_io
-alias mw = neomutt -F ~/.config/mutt/work
-
 alias mbsync = mbsync -c ~/.config/isync/mbsyncrc
 
 # Random aliases
@@ -628,6 +624,7 @@ alias l = ls -a
 alias ca = cargo
 alias pdf = /Applications/sioyek.app/Contents/MacOS/sioyek
 alias lgbt = exa -lbT --git-ignore --git
+alias cls = tput reset
 
 # External configs
 source ~/.cache/starship/init.nu
@@ -637,5 +634,6 @@ source ~/.local/share/atuin/init.nu
 
 # Zellij aliases
 alias zas = zellij action toggle-active-sync-tab
+alias ze = zellij edit
 
 use job.nu
