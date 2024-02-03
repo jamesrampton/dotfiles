@@ -16,6 +16,6 @@ set smtp_authenticators = 'gssapi:login'
 set record="+Sent"
 set postponed="+Drafts"
 set trash="+Trash"
+unmailboxes *
 mailboxes `find ~/.mail/work/* -maxdepth 0 -type d | grep -v "tmp\|new\|cur" | sed 's|/Users/jr/.mail/work/|=\"|g' | sed 's|$|\"|g' | tr '\n' ' '`
-
-source muttrc
+set status_format="$from"

@@ -50,6 +50,9 @@ set query_format="%4c %t %-70.70a %-70.70n %?e?(%e)?"
 ### Hooks ###
 
 folder-hook . 'set record=^'
+folder-hook  ''~/.mail/work' 'source ~/.config/mutt/work'
+folder-hook  ''~/.mail/proton_jamesrampton_com' 'source ~/.config/mutt/proton_jamesrampton_com'
+folder-hook  ''~/.mail/proton_rampton_io' 'source ~/.config/mutt/proton_rampton_io'
 timeout-hook 'exec sync-mailbox'
 
 
@@ -60,6 +63,11 @@ macro index,pager S "<tag-prefix><save-message>=Archive\n<sync-mailbox>"
 macro index d '<delete-message><sync-mailbox>'
 bind index G imap-fetch-mail
 
+bind index a noop
+macro index a1 '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/work<enter><change-folder>!<enter>'
+macro index a2 '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/proton_jamesrampton_com<enter><change-folder>!<enter>'
+macro index a3 '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/proton_rampton_io<enter><change-folder>!<enter>'
+
 bind editor <Tab> complete-query
 bind editor ^T complete
 
@@ -69,4 +77,4 @@ bind pager <down> next-line
 set abort_key = "<Esc>"
 
 source colours
-
+set status_format=""

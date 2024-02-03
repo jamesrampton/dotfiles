@@ -16,7 +16,7 @@ set smtp_authenticators = 'gssapi:login'
 set record="+Sent"
 set postponed="+Drafts"
 set trash="+Trash"
-#mailboxes `find ~/.mail/proton_rampton_io/* -type d | grep -v "tmp\|new\|cur" | sed 's|/Users/jr/.mail/proton_rampton_io/|=\"|g' | sed 's|$|\"|g' | tr '\n' ' '`
+unmailboxes *
 mailboxes `find ~/.mail/proton_rampton_io/* -type d -name cur | sed 's|/Users/jr/.mail/proton_rampton_io/|=\"|g' | sed 's|/cur|\"|g' | tr '\n' ' '`
+set status_format="$from"
 
-source muttrc
