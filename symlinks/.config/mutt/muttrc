@@ -77,4 +77,4 @@ bind pager <down> next-line
 set abort_key = "<Esc>"
 
 source colours
-set status_format=""
+set status_format="No account selected"
