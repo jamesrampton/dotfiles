@@ -10,7 +10,7 @@ bufferline = "always"
 auto-pairs = true
 mouse = true
 completion-trigger-len = 1
-# rulers = [80]
+rulers = [80]
 
 [editor.cursor-shape]
 normal = "block"
