@@ -284,7 +284,7 @@ $env.config = {
     metric: true # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
     format: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, zb, zib, auto
   }
-  color_config: $dark_theme   # if you want a light theme, replace `$dark_theme` to `$light_theme`
+  color_config: $light_theme   # if you want a light theme, replace `$dark_theme` to `$light_theme`
   use_grid_icons: true
   footer_mode: "25" # always, never, number_of_rows, auto
   float_precision: 2
@@ -325,8 +325,43 @@ $env.config = {
         }
         style: {
             text: green
-            selected_text: green_reverse
+            selected_text: {attr: r}
             description_text: yellow
+            match_text: {attr: u}
+            selected_match_text: {attr: ur}
+        }
+      }
+      {
+        name: ide_completion_menu
+        only_buffer_difference: false
+        marker: "| "
+        type: {
+            layout: ide
+            min_completion_width: 0,
+            max_completion_width: 50,
+            # max_completion_height: 10, # will be limited by the available lines in the terminal
+            padding: 0,
+            border: true,
+            cursor_offset: 0,
+            description_mode: "prefer_right"
+            min_description_width: 0
+            max_description_width: 50
+            max_description_height: 10
+            description_offset: 1
+            # If true, the cursor pos will be corrected, so the suggestions match up with the typed text
+            #
+            # C:\> str
+            #      str join
+            #      str trim
+            #      str split
+            correct_cursor_pos: false
+        }
+        style: {
+            text: green
+            selected_text: {attr: r}
+            description_text: yellow
+            match_text: {attr: u}
+            selected_match_text: {attr: ur}
         }
       }
       {
@@ -443,6 +478,19 @@ $env.config = {
       }
     }
     {
+      name: ide_completion_menu
+      modifier: control
+      keycode: char_n
+      mode: [emacs vi_normal vi_insert]
+      event: {
+        until: [
+          { send: menu name: ide_completion_menu }
+          { send: menunext }
+          { edit: complete }
+        ]
+      }
+    }
+    {
       name: completion_previous
       modifier: shift
       keycode: backtab
@@ -455,6 +503,34 @@ $env.config = {
       keycode: char_r
       mode: emacs
       event: { send: menu name: history_menu }
+    }
+    {
+      name: copy_selection
+      modifier: control_shift
+      keycode: char_c
+      mode: emacs
+      event: { edit: copyselection }
+    }
+    {
+      name: cut_selection
+      modifier: control_shift
+      keycode: char_x
+      mode: emacs
+      event: { edit: cutselection }
+    }
+    {
+      name: select_all
+      modifier: control_shift
+      keycode: char_a
+      mode: emacs
+      event: { edit: selectall }
+    }
+    {
+      name: paste
+      modifier: control_shift
+      keycode: char_v
+      mode: emacs
+      event: { edit: pastecutbufferbefore }
     }
     {
       name: next_page
@@ -580,6 +656,7 @@ def --env gr [] {
 def --env gap [] {
   git add --intent-to-add (git rev-parse --show-toplevel | str trim); git add -p
 }
+alias gskim = git show (git log --oneline | sk | cut -c1-8)
 alias gg = gitui
 alias lg = lazygit
 
