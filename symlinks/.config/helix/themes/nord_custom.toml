@@ -109,6 +109,7 @@
 
 # Cursor
 "ui.cursor" = { fg = "nord0", bg = "nord4" }
+"ui.cursor.match" = { fg = "nord0", bg = "nord13" }
 "ui.cursorcolumn.primary" = { bg = "nord1" }
 "ui.cursorline.primary" = { bg = "nord1" }
 

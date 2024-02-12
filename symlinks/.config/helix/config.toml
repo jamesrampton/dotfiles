@@ -1,4 +1,4 @@
-theme = "nord_custom"
+theme = "solarized_light"
 
 [editor]
 cursorline = true

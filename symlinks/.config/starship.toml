@@ -9,7 +9,7 @@ $git_status\
 $cmd_duration
 $character"""
 [directory]
-style = "white"
+style = "blue"
 
 [package]
 disabled = true

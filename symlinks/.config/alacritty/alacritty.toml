@@ -1,6 +1,7 @@
 # get themes from:
 # https://github.com/ckolos/alacritty-theme-toml
-import = ["/Users/jr/.config/alacritty/nord.toml"]
+# import = ["/Users/jr/.config/alacritty/nord.toml"]
+import = ["/Users/jr/.config/alacritty/solarized_light.toml"]
 live_config_reload = true
 
 [colors.hints.end]
@@ -29,11 +30,11 @@ size = 16
 
 [font.normal]
 family = "MonoLisa JR"
-style = "ExtraLight"
+style = "Light"
 
 [font.italic]
 family = "MonoLisa JR"
-style = "ExtraLight Italic"
+style = "Light Italic"
 
 [font.bold]
 family = "MonoLisa JR"
@@ -83,7 +84,7 @@ decorations = "Buttonless"
 dynamic_padding = true
 option_as_alt = "OnlyLeft"
 startup_mode = "Windowed"
-opacity = 0.95
+opacity = 1#0.95
 blur = true
 
 [window.dimensions]
