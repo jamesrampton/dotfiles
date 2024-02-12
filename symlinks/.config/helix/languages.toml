@@ -59,3 +59,8 @@ indent = { tab-width = 4, unit = "  " }
 [[language]]
 name = "c"
 auto-format = true
+
+[[language]]
+name = "nix"
+formatter = { command = "nixpkgs-fmt" }
+auto-format = true

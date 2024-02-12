@@ -70,6 +70,8 @@ $env.PATH = [
     "/usr/local/opt/ruby/bin",
     "/usr/local/sbin",
     "/usr/sbin",
+    "/nix/var/nix/profiles/default/bin/",
+    "/Users/jr/.nix-profile/bin",
 ]
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 
