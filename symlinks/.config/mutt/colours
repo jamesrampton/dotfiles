@@ -12,9 +12,9 @@ color index_subject brightblack default "~N"
 
 # Header colors:
 color header blue default ".*"
-color header brightmagenta default "^(From)"
-color header brightmagenta default "^(Subject)"
-color header brightwhite default "^(CC|BCC)"
+color header brightcyan default "^(From)"
+color header brightcyan default "^(Subject)"
+color header brightblue default "^(CC|BCC)"
 
 mono bold bold
 mono underline underline
@@ -31,7 +31,7 @@ color error red default
 color tilde black default
 color message magenta default
 color markers red default
-color attachment white default
+color attachment black default
 color search brightmagenta default
 color status black white
 color hdrdefault brightgreen default
