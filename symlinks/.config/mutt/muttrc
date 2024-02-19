@@ -67,7 +67,10 @@ bind index a noop
 macro index a1 '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/work<enter><change-folder>!<enter>'
 macro index a2 '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/proton_jamesrampton_com<enter><change-folder>!<enter>'
 macro index a3 '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/proton_rampton_io<enter><change-folder>!<enter>'
-
+### Notmuch macros ###
+macro index F \
+     "<enter-command>unset wait_key<enter><shell-escape>notmuch-mutt --prompt search<enter><change-folder-readonly>`echo ${XDG_CACHE_HOME:-$HOME/.cache}/notmuch/mutt/results`<enter>" \
+     "notmuch: search mail"
 bind editor <Tab> complete-query
 bind editor ^T complete
 
