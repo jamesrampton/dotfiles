@@ -16,12 +16,10 @@ magenta = '#d33682' # magenta
 cyan = '#2aa198'    # cyan
 white = '#eee8d5'   # base2
 
-[colors.bright]
-black = '#002b36'   # base03
-red = '#cb4b16'     # orange
-green = '#586e75'   # base01
-yellow = '#657b83'  # base00
-blue = '#839496'    # base0
-magenta = '#6c71c4' # violet
-cyan = '#93a1a1'    # base1
-white = '#fdf6e3'   # base3
+[colors.hints.end]
+background = "#9ccfd8"
+foreground = "#232136"
+
+[colors.hints.start]
+background = "#e0def4"
+foreground = "#232136"

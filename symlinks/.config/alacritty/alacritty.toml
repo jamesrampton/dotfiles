@@ -4,14 +4,6 @@
 import = ["/Users/jr/.config/alacritty/solarized_light.toml"]
 live_config_reload = true
 
-[colors.hints.end]
-background = "#9ccfd8"
-foreground = "#232136"
-
-[colors.hints.start]
-background = "#e0def4"
-foreground = "#232136"
-
 [cursor]
 blink_timeout = 0
 thickness = 0.15
@@ -26,7 +18,7 @@ TERM = "alacritty"
 
 [font]
 builtin_box_drawing = false
-size = 16
+size = 17
 
 [font.normal]
 family = "MonoLisa JR"
@@ -38,11 +30,11 @@ style = "Light Italic"
 
 [font.bold]
 family = "MonoLisa JR"
-style = "Black"
+style = "Bold"
 
 [font.bold_italic]
 family = "MonoLisa JR"
-style = "Black Italic"
+style = "Bold Italic"
 
 [font.glyph_offset]
 x = 0
