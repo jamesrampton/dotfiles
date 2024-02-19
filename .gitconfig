@@ -1,6 +1,11 @@
 [user]
 	name = James Rampton
 	email = me@jamesrampton.com
+[branch]
+	sort = -committerdate
+[commit]
+	gpgsign = true
+	verbose = true
 [core]
 	editor = hx
 	pager = delta
@@ -16,33 +21,31 @@
 	line-numbers-plus-style = green
 	line-numbers-minus-style = red
 	line-numbers-zero-style = gray
-
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
 [diff]
 	colorMoved = default
 	tool = Kaleidoscope
+	algorithm = histogram
+	context = 10
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	prompt = false
+[gpg]
+  format = ssh
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[init]
+	defaultBranch = main
 [interactive]
 	diffFilter = delta --color-only --features=interactive
 [merge]
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 	tool = Kaleidoscope
-[init]
-	defaultBranch = main
-[pull]
-	rebase = false
+	keepbackup = false
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool]
 	prompt = false
-
-[gpg]
-  format = ssh
-
-[gpg "ssh"]
-	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
-
-[commit]
-	gpgsign = true
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true
