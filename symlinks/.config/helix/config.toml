@@ -1,4 +1,4 @@
-theme = "solarized_light"
+theme = "solarized_light_custom"
 
 [editor]
 cursorline = true

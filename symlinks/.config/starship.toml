@@ -15,9 +15,9 @@ style = "blue"
 disabled = true
 
 [character]
-success_symbol = "[❯](white)"
+success_symbol = "[❯](green)"
 error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](green)"
+vicmd_symbol = "[❮](cyan)"
 
 [git_branch]
 format = "[$branch ]($style)"
