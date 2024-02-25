@@ -703,6 +703,9 @@ alias pdf = /Applications/sioyek.app/Contents/MacOS/sioyek
 alias lgbt = exa -lbT --git-ignore --git
 alias cls = tput reset
 
+# File aliases
+alias hunt = hx (rg . -n --hidden --glob '!.git'| sk | cut -d : -f1,2)
+
 # External configs
 source ~/.cache/starship/init.nu
 source ~/.cache/.zoxide.nu

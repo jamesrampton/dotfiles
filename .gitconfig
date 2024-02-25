@@ -16,8 +16,10 @@
 	line-numbers = true
 	syntax-theme = none
 	true-color = always
-	plus-emph-style = reverse green
-	minus-emph-style = reverse red
+	plus-style = reverse green
+	plus-emph-style = reverse blue
+	minus-style = reverse red
+	minus-emph-style = reverse blue
 	line-numbers-plus-style = green
 	line-numbers-minus-style = red
 	line-numbers-zero-style = gray

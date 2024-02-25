@@ -92,6 +92,7 @@ $env.NU_PLUGIN_DIRS = [
 $env.LS_COLORS = (vivid generate solarized-light | str trim)
 
 $env.EDITOR = 'hx'
+$env.MANPAGER = "sh -c 'col -bx | bat -l man -p'"
 
 $env.RUSTC_WRAPPER = 'sccache'
 
@@ -104,3 +105,4 @@ $env.HOMEBREW_INSTALL_BADGE = '🫖'
 # zoxide init
 $env._ZO_ECHO = 1
 # zoxide init nushell --cmd j --hook prompt | save ~/.cache/.zoxide.nu
+
