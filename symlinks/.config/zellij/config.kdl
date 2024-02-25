@@ -1,5 +1,6 @@
 simplified_ui true
 default_layout "compact"
+pane_frames true
 ui {
     pane_frames {
         rounded_corners true

@@ -1,0 +1,43 @@
+layout {
+    pane {
+    }
+    pane size=1 borderless=true {
+        plugin location="file:/usr/local/bin/zjstatus.wasm" {
+            format_left  " {mode} {tabs}"
+            format_right ""
+            format_space ""
+
+            border_enabled  "false"
+            border_char     "─"
+            border_format   "#[fg=#6C7086]{char}"
+            border_position "top"
+
+            hide_frame_for_single_pane "true"
+
+            mode_normal  "#[bg=green,fg=white] {name} "
+            mode_locked  "#[bg=magenta,fg=white] {name} "
+            mode_resize  "#[bg=red,fg=white] {name} "
+            mode_tab     "#[bg=red,fg=white]  {name}   "
+            mode_pane    "#[bg=red,fg=white]  {name}  "
+            mode_scroll  "#[bg=blue,fg=white] {name} "
+            mode_tmux    "#[bg=#ffc387] "
+
+            tab_active             "#[bg=#eee8d5,fg=black] {name} "
+            tab_active_sync        "#[bg=magenta,fg=white] {name} ↔ "
+            tab_active_fullscreen  "#[bg=cyan,fg=white] {name} ⇱ "
+            tab_normal             "#[fg=black] {name} "
+            tab_normal_sync        "#[bg=magenta,fg=white] {name} ↔ "
+            tab_normal_fullscreen  "#[bg=cyan, fg=white] {name} ⇱ "
+
+            command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
+            command_git_branch_format      "#[fg=blue] {stdout} "
+            command_git_branch_interval    "10"
+            command_git_branch_rendermode  "static"
+
+            datetime        "#[fg=#6C7086,bold] {format} "
+            datetime_format "%A, %d %b %Y %H:%M"
+            datetime_timezone "Europe/Berlin"
+        }
+    }
+}
+
