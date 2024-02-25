@@ -60,7 +60,7 @@
 "ui.statusline.inactive" = { fg = "base1", bg = "base01" }
 
 # Completion window, preview window
-"ui.popup" = { bg = "base03" }
+"ui.popup" = { bg = "base02" }
 # Affect completion selection, cmd pop-up information selection
 "ui.menu.selected" = { fg = "base02", bg = "base2"}
 "ui.menu" = { fg = "base0", bg = "base02" }
