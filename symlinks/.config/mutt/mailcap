@@ -1,5 +1,5 @@
 text/html; ~/.config/mutt/view_attachment %s html
 text/html; w3m -dump -T text/html -I %{charset} -O utf-8 %s; copiousoutput; description=HTML text; nametemplate=%s.html
 #text/html; beautiful_html_render %s; nametemplate=%s.html; copiousoutput;
-image/*; open %s -a "/Applications/Safari.app"
-application/pdf; open %s -a "/Applications/sioyek.app"
+image/*; open %s -a "/System/Applications/Preview.app"
+application/pdf; open %s -a "/System/Applications/Preview.app"
