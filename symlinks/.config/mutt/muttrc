@@ -29,7 +29,7 @@ set delete=yes
 
 ### View settings
 
-set pager_index_lines = 6
+# set pager_index_lines = 6
 set pager_context = 3
 set pager_stop # don't go to the next message automatically
 set reflow_wrap = 90
