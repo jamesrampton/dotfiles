@@ -1,4 +1,4 @@
-theme = "solarized_light_custom"
+theme = "solarized_light_mono"
 
 [editor]
 cursorline = true
@@ -9,7 +9,8 @@ shell = ["nu", "-c"]
 bufferline = "always"
 auto-pairs = false
 mouse = true
-completion-trigger-len = 1
+auto-completion = false
+preview-completion-insert = false
 # rulers = [80]
 
 [editor.cursor-shape]
@@ -50,6 +51,7 @@ mode.select = "sel"
 [keys.normal]
 "ret" = ["open_below", "normal_mode"]
 "X" = ["extend_line_up", "extend_to_line_bounds"]
+C-r = ":reflow"
 
 [keys.normal.space]
 i = ":toggle lsp.display-inlay-hints"
@@ -70,3 +72,6 @@ l = ":lsp-restart"
 [keys.select]
 "X" = ["extend_line_up", "extend_to_line_bounds"]
 
+[keys.insert]
+C-d = "kill_to_line_end"
+"tab" = "completion"
