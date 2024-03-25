@@ -702,6 +702,8 @@ alias ca = cargo
 alias pdf = /Applications/sioyek.app/Contents/MacOS/sioyek
 alias lgbt = exa -lbT --git-ignore --git
 alias cls = tput reset
+alias glow = glow -s light
+alias btm = btm --color default-light
 
 # File aliases
 alias hunt = hx (rg . -n --hidden --glob '!.git'| sk | cut -d : -f1,2)
