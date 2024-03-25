@@ -1,0 +1,136 @@
+"attribute" = { fg = "base1" }
+"keyword" = { fg = "base3" }
+"keyword.directive" = { fg = "base1" }
+"namespace" = { fg = "base1" }
+"operator" = { fg = "base00" }
+"special" = { fg = "base1" }
+"variable.builtin" = { fg = "base1" }
+"variable.function" = { fg = "base1" }
+"type" = { fg = "base2" }
+"type.builtin" = { fg = "base1" }
+"constructor" = { fg = "base1" }
+"function" = { fg = "base1" }
+"function.macro" = { fg = "base2" }
+"function.builtin" = { fg = "base2" }
+"function.special" = { fg = "base2" }
+"comment" = { fg = "orange", modifiers = ["italic"] }
+"string" = { fg = "base3" }
+"constant" = { fg = "base1" }
+"constant.builtin" = { fg = "base1" }
+"constant.character.escape" = { fg = "orange" }
+"label" = { fg = "base1" }
+"module" = { fg = "base1" }
+"tag" = { fg = "base1" }
+
+# TODO
+"markup.heading" = "blue"
+"markup.list" = "red"
+"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "magenta", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "yellow", modifiers = ["underlined"] }
+"markup.link.text" = "red"
+"markup.quote" = "cyan"
+"markup.raw" = "green"
+
+"diff.plus" = { fg = "cyan" }
+"diff.delta" = { fg = "base0" }
+"diff.minus" = { fg = "red" }
+
+# background
+"ui.background" = {  }
+
+"ui.virtual.whitespace" = { fg = "base01" }
+"ui.virtual.inlay-hint" = { fg = "base01", modifiers = ["italic"] }
+
+# line number column
+"ui.linenr" = { fg = "base015" }
+# current line number column
+"ui.linenr.selected" = { fg = "base2" }
+# cursorline
+"ui.cursorline" = { bg = "base0" }
+
+# status bar
+"ui.statusline" = { fg = "base03", bg = "base01" }
+"ui.statusline.normal" = { bg = "blue" }
+"ui.statusline.insert" = { bg = "green" }
+"ui.statusline.select" = { bg = "yellow" }
+
+# inactive status bar
+"ui.statusline.inactive" = { fg = "base1", bg = "base01" }
+
+# Completion window, preview window
+"ui.popup" = { bg = "base02" }
+# Affect completion selection, cmd pop-up information selection
+"ui.menu.selected" = { fg = "base02", bg = "base2"}
+"ui.menu" = { fg = "base0", bg = "base02" }
+"ui.window" = { fg = "base3" }
+# Command line completion help information
+"ui.help" = { modifiers = ["reversed"] }
+
+# Shortcut window
+"ui.popup.info" = { bg = "base03" }
+# Shortcut font
+"ui.text.info" = { fg = "base0" }
+
+# Normal ui font style
+"ui.text" = { fg = "base1" }
+# Affects picker list selection, shortcut key help window text
+"ui.text.focus" = { fg = "base1", modifiers = ["bold"]}
+# In file picker, the currently selected item of the preview
+"ui.highlight" = { fg = "cyan", modifiers = ["bold"] }
+
+# main cursor/selection
+"ui.cursor.primary" = { fg = "base03", bg = "base1" }
+"ui.cursor.select" = { fg = "base02", bg = "cyan" }
+
+"ui.cursorline.primary" = { bg = "base02" }
+"ui.cursorline.secondary" = { bg = "base025" }
+
+"ui.selection" = { bg = "base0175" }
+"ui.selection.primary" = { bg = "base015" }
+
+"ui.virtual.indent-guide" = { fg = "base02" }
+"ui.virtual.ruler" = { fg = "red" }
+
+# normal mode cursor
+"ui.cursor" = {fg = "base02", bg = "cyan"}
+"ui.cursor.insert" = {fg = "base03", bg = "base3"}
+# The punctuation character matched by the current cursor
+"ui.cursor.match" = { fg = "base02", bg = "base015" }
+
+"warning" =  { fg = "yellow" }
+"error" = { fg = "red" }
+"info" = { fg = "blue" }
+"hint" = { fg = "violet" }
+
+"diagnostic.warning" = { underline = { style = "curl", color = "yellow" } }
+"diagnostic.error" = { underline = { style = "curl", color = "red" } }
+"diagnostic.info" = { underline = { style = "curl", color = "blue" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "violet" } }
+
+
+[palette]
+red      = '#dc322f'
+green    = '#859900'
+yellow   = '#b58900'
+blue     = '#268bd2'
+magenta  = '#d33682'
+cyan     = '#2aa198'
+orange   = '#cb4b16'
+violet   = '#6c71c4'
+
+# dark getting darker
+base0    = '#657b83'
+base1    = '#586e75'
+base2    = '#073642'
+base3    = '#002b36'
+
+# Lighter and lighter
+base00   = '#839496'
+base01   = '#93a1a1'
+base015  = '#c5c8bd'
+base0175 = '#dddbcc'
+base02   = '#eee8d5'
+base025  = '#f5eedb'
+base03   = '#fdf6e3'
