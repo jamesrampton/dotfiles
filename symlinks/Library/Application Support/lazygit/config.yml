@@ -1,9 +1,9 @@
 os:
   editCommand: "hx"
 
-keybinding:
-  universal:
-    return: '<c-\>'
+# keybinding:
+#   universal:
+#     return: '<c-\>'
 
 gui:
   theme:
